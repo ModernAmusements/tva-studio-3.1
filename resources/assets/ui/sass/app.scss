@@ -142,7 +142,7 @@ a:active {
 ::selection {
     background-color: $selection-color;
     color: $color-white;
-  }
+}
 
 textarea {
     resize: none;
@@ -396,7 +396,7 @@ h5 {
 
     .secton-title {
         font-size: 18px;
-        color: #8E8E8E;
+        color: #8e8e8e;
         padding: 15px 0;
         border-bottom: 1px solid $border-color;
     }
@@ -448,7 +448,6 @@ h5 {
             vertical-align: top;
 
             &.actions {
-
                 .action {
                     display: inline-flex;
                 }
@@ -500,9 +499,9 @@ h5 {
         }
 
         &.active {
-            background: #544AC1;
+            background: #544ac1;
             color: #fff;
-            border-color: #544AC1;
+            border-color: #544ac1;
         }
 
         .icon {
@@ -636,12 +635,13 @@ h5 {
         }
     }
 
-    &.date, &.datetime {
+    &.date,
+    &.datetime {
         &::after {
             background-image: url("../images/Icon-Calendar.svg");
             width: 24px;
             height: 24px;
-            content: '';
+            content: "";
             display: inline-block;
             vertical-align: middle;
             margin-left: -34px;
@@ -655,7 +655,7 @@ h5 {
     .control-info {
         display: block;
         font-size: 14px;
-        color: #6F6F6F;
+        color: #6f6f6f;
         font-style: italic;
     }
 
@@ -705,8 +705,8 @@ h5 {
         right: 0;
         bottom: 0;
         background-color: $filter-toggle-color;
-        -webkit-transition: .2s;
-        transition: .2s;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
     }
 
     .slider:before {
@@ -717,8 +717,8 @@ h5 {
         left: 4px;
         bottom: 4px;
         background-color: $color-white;
-        -webkit-transition: .2s;
-        transition: .2s;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
     }
 
     input:checked + .slider {
@@ -738,7 +738,7 @@ h5 {
     /* Rounded sliders */
     .slider.round {
         border-radius: 34px;
-        }
+    }
 
     .slider.round:before {
         border-radius: 50%;
@@ -757,7 +757,7 @@ h5 {
     position: fixed;
     z-index: 100;
     text-align: left;
-
+    border-left: none;
     .alert {
         width: 300px;
         padding: 15px;
@@ -828,11 +828,13 @@ h5 {
     }
 }
 
-.accordian, accordian {
+.accordian,
+accordian {
     display: inline-block;
     width: 100%;
 
-    .accordian-header, div[slot*="header"] {
+    .accordian-header,
+    div[slot*="header"] {
         width: 100%;
         display: inline-block;
         font-size: 18px;
@@ -871,7 +873,8 @@ h5 {
         }
     }
 
-    .accordian-content, div[slot*="body"] {
+    .accordian-content,
+    div[slot*="body"] {
         width: 100%;
         padding: 20px 15px;
         display: none;
@@ -1028,7 +1031,7 @@ modal {
 }
 
 .label {
-    background: #E7E7E7;
+    background: #e7e7e7;
     @include border-radius(2px);
     padding: 8px;
     color: #000311;
@@ -1101,7 +1104,7 @@ modal {
         width: 200px;
         height: 200px;
         margin-right: 20px;
-        background: #F8F9FA;
+        background: #f8f9fa;
         @include border-radius(3px);
         display: inline-block;
         position: relative;
@@ -1121,7 +1124,11 @@ modal {
         }
 
         .remove-image {
-            background-image: linear-gradient(-180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.24) 100%);
+            background-image: linear-gradient(
+                -180deg,
+                rgba(0, 0, 0, 0.08) 0%,
+                rgba(0, 0, 0, 0.24) 100%
+            );
             @include border-radius(0 0 4px 4px);
             position: absolute;
             bottom: 0;
@@ -1129,7 +1136,7 @@ modal {
             padding: 10px;
             text-align: center;
             color: #fff;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.24);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
             margin-right: 20px;
             cursor: pointer;
         }
@@ -1147,7 +1154,6 @@ modal {
 .vue-swatches__trigger {
     border: 1px solid #d3d3d3;
 }
-
 
 .helper-container {
     display: block;
