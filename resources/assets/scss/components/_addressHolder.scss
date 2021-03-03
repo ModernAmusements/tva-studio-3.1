@@ -1,0 +1,46 @@
+.address-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.address-card {
+    width: 100%;
+    border-bottom: var(--border);
+    padding: 1em;
+    .details {
+        .card-info {
+            padding: 14px
+        }
+    }
+}
+.address-card-no-padding{
+    padding: 0;
+}
+
+.address-card .control-group {
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+}
+
+.address-card .details span {
+    display: block;
+}
+.address-card .details .control-links {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.address-card .details .control-links .btn {
+    height: 30px;
+}
+.account-content .account-layout .account-table-content .address-holder {
+    justify-content: flex-start;
+}
