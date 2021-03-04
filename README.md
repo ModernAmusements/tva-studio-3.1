@@ -166,3 +166,19 @@ git reset
 fresh db
 fresh install of composer and node  
 php artisan bagisto:install
+
+
+
+fortrabbit 
+
+edit composer 
+
+
+    "config": {
+        "preferred-install": "stable",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.3"
+        }
+    },
