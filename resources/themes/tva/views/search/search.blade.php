@@ -1,16 +1,20 @@
 @extends('shop::layouts.master')
 
-@section('page_title')
+{{-- @section('page_title')
     {{ __('shop::app.search.page-title') }}
-@endsection
+@endsection --}}
 
 @section('content-wrapper')
     @if (! $results)
-        {{  __('shop::app.search.no-results') }}
+    <div class="main-search">
+        <div class="search-result-status medium">
+            {{  __('shop::app.search.no-results') }}
+        </div>
+    </div>
     @endif
 
     @if ($results)
-        <div class="main mb-30" style="min-height: 27vh;">
+        <div class="main-search" style="min-height: 27vh;">
             @if ($results->isEmpty())
                 <div class="search-result-status">
                     <h2>{{ __('shop::app.products.whoops') }}</h2>
@@ -18,11 +22,11 @@
                 </div>
             @else
                 @if ($results->total() == 1)
-                    <div class="search-result-status mb-20">
+                    <div class="search-result-status medium">
                         <span><b>{{ $results->total() }} </b>{{ __('shop::app.search.found-result') }}</span>
                     </div>
                 @else
-                    <div class="search-result-status mb-20">
+                    <div class="search-result-status medium">
                         <span><b>{{ $results->total() }} </b>{{ __('shop::app.search.found-results') }}</span>
                     </div>
                 @endif

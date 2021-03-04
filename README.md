@@ -159,3 +159,7 @@ git reset
 complete relocate 
 
 fresh install of composer and node 
+
+
+fresh db 
+php artisan bagisto:install
