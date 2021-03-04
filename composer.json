@@ -1,6 +1,6 @@
 {
-    "name": "bagisto/bagisto",
-    "description": "Bagisto Laravel ECommerce",
+    "name": "modernamusments/tvastudio",
+    "description": "Tva Studio ECommerce",
     "keywords": [
         "framework",
         "laravel"
@@ -9,7 +9,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.2.0",
+        "php": "^7.2.5|^8.0",
         "ext-curl": "*",
         "ext-intl": "*",
         "ext-mbstring": "*",
@@ -24,7 +24,6 @@
         "doctrine/dbal": "2.9.2",
         "fideloper/proxy": "^4.0",
         "flynsarmy/db-blade-compiler": "^5.5",
-        "fzaninotto/faker": "^1.4",
         "guzzlehttp/guzzle": "~6.0",
         "intervention/image": "^2.4",
         "intervention/imagecache": "^2.3",
@@ -40,7 +39,6 @@
     },
 
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.1",
         "codeception/codeception": "4.1.1",
         "codeception/module-asserts": "^1.1",
         "codeception/module-filesystem": "^1.0",

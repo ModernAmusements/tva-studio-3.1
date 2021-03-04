@@ -6,7 +6,7 @@ php artisan route:clear
 php artisan config:clear
 php artisan view:clear
 
-
+-----------------------------------------------------
 
 Server Settings:
 (possible problems: mac os update)
@@ -20,12 +20,12 @@ composer self-update --rollback to return to version 1.10.10
 
 updated to composer2.0 
 
-
+-----------------------------------------------------
 To get the current memory_limit value, run:
 
 php -r "echo ini_get('memory_limit').PHP_EOL;"
 
-
+-----------------------------------------------------
 edit#
 
 update yes 
@@ -34,7 +34,7 @@ vendor replace complete no
 
 + breadcrumbs Yes 
 
-
+-----------------------------------------------------
 # Install for testing 
 
 1. Add Webkul Core Folder to Main
@@ -45,10 +45,6 @@ CODECEPTION_
 important .yml files !!
 
 Run Test 
-
-
-
-
 
 > php vendor/bin/codecept run unit Checkout
 > php vendor/bin/codecept run trigger
@@ -64,7 +60,7 @@ Test related Packs
 
 
 
---------------------------
+-----------------------------------------------------
 
     "require-dev": {
         "codeception/codeception": ">=2.3.0",
@@ -77,7 +73,7 @@ Test related Packs
     }
 
 
-    
+-----------------------------------------------------  
 
 
 
@@ -103,7 +99,7 @@ master
 - shop.css
 
 
-
+-----------------------------------------------------
 
 // admin css to resourcess assetes admin scsss
 // us css same 
@@ -116,7 +112,7 @@ removed from config/concord.php
 \Webkul\Velocity\Providers\ModuleServiceProvider::class,
 
 
-
+-----------------------------------------------------
 
 
 php --ini where is file 
@@ -132,12 +128,17 @@ Additional .ini files parsed:      /usr/local/etc/php/7.4/conf.d/ext-opcache.ini
 
 memorylimit: unlimeted
 
+-----------------------------------------------------
+
+
 composer update 
+
+composer clearcache
+
+composer  outdated 
 
 
 composer rollback
-
-
 
 
 
@@ -156,10 +157,12 @@ git reset
 
 
 
-complete relocate 
 
-fresh install of composer and node 
+-----------------------------------------------------
 
 
-fresh db 
+
+
+fresh db
+fresh install of composer and node  
 php artisan bagisto:install
