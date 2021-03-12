@@ -24,27 +24,7 @@
     box-sizing: inherit;
 }
 
-::-webkit-scrollbar {
-    width: 3px;
-    height: 5px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-    background: #D8D8D8;
-}
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #666666;
-}
-
-*::-webkit-input-placeholder {
-    font-family: $font-family-pro;
-}
-
-*::-webkit-input-placeholder {
-    font-family: $font-family-pro;
-}
 
 input[type=checkbox] {
     width: 24px;

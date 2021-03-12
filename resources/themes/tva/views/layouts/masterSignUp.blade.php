@@ -9,8 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="content-language" content="{{ app()->getLocale() }}">
     {{-- STYLE --}}
-    {{-- <link rel="stylesheet" href="{{ bagisto_asset('css/shop.css') }}"> --}}
-    <link rel="stylesheet" href="{{ bagisto_asset('css/index.css') }}">
+    <link rel="stylesheet prefetch" href="{{ bagisto_asset('css/index.css') }}">
     @if ($favicon = core()->getCurrentChannel()->favicon_url)
         <link rel="icon" sizes="16x16" href="{{ $favicon }}" />
     @else
@@ -24,6 +23,8 @@
         @endif
     @show
     @stack('css')
+    {{-- STYLE --}}
+    <link rel="prefetch" href="https://use.typekit.net/yxr4ufi.css">
 </head>
 <body @if (core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif>
       {{-- Nav --}}

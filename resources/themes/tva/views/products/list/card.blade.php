@@ -14,8 +14,10 @@
 
     <div class="article-image">
         <a href="{{ route('shop.productOrCategory.index', $product->url_key) }}" title="{{ $product->name }}">
-            <img class="tva-image" src="{{ $productBaseImage['medium_image_url'] }}"
-                onerror="this.src='{{ asset('vendor/backend/ui/assets/images/product/meduim-product-placeholder.png') }}'" />
+            <img class="tva-image"
+                 src="{{ $productBaseImage['medium_image_url'] }}"
+                 onerror="this.src='{{ asset('vendor/backend/ui/assets/images/product/meduim-product-placeholder.png') }}'"
+                />
         </a>
     </div>
 

@@ -31,8 +31,8 @@
                 <h2>{{ __('shop::app.customer.signup-form.title') }}</h2>
             </div> --}}
             <div class="login-image">
-                <img class="border-b" src="http://127.0.0.1:8000/cache/large/product/8/z98HfFrlPUKfaSFTT30a62JwP9wk7NgAfa1ps9wx.png"
-                id="pro-img" data-image="http://127.0.0.1:8000/cache/original/product/8/z98HfFrlPUKfaSFTT30a62JwP9wk7NgAfa1ps9wx.png">
+                <img class="border-b" src="/themes/tva/assets/images/tva-team.png"
+                 alt="tva team Sina und Alina" />
             </div>
 
             {!! view_render_event('bagisto.shop.customers.signup_form_controls.before') !!}
