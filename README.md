@@ -298,3 +298,9 @@ AddOutputFilterByType DEFLATE application/x-javascript
 
 
 shop.js jquery version 3.5.1
+
+
+function 
+
+getFeaturedProducts
+ })->paginate(8);
