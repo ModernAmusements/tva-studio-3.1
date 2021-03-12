@@ -14,10 +14,22 @@
     width: 25%;
 
     a {
-      text-decoration: underline;
-      align-self: flex-end;
+        text-decoration: underline;
+        align-self: flex-end;
     }
     &.hidden {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
+
+@media (max-width: 1120px) {
+    #consent-popup {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #consent-popup {
+        width: 100%;
+    }
+}
