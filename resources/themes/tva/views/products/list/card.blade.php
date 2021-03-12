@@ -13,8 +13,9 @@
     @endif
 
     <div class="article-image">
-        <a href="{{ route('shop.productOrCategory.index', $product->url_key) }}" title="{{ $product->name }}">
+        <a  href="{{ route('shop.productOrCategory.index', $product->url_key) }}" title="{{ $product->name }}">
             <img class="tva-image"
+                 alt="{{ $product->name }}"
                  src="{{ $productBaseImage['medium_image_url'] }}"
                  onerror="this.src='{{ asset('vendor/backend/ui/assets/images/product/meduim-product-placeholder.png') }}'"
                 />
@@ -24,11 +25,11 @@
     <div class="article-information">
 
         <div class="description">
-            <a href="{{ route('shop.productOrCategory.index', $product->url_key) }}" title="{{ $product->name }}">
+
                 <h1 class="large">
                     {{ $product->name }}
                 </h1>
-            </a>
+
         </div>
 
         @include ('shop::products.price', ['product' => $product])

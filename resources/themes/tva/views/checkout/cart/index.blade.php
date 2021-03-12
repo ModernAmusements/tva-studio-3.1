@@ -24,7 +24,7 @@
                         <div class="item">
                             <div class="item-image">
                                 <a href="{{ route('shop.productOrCategory.index', $item->product->url_key) }}">
-                                    <img class="cart-img" src="{{ $productBaseImage['medium_image_url'] }}" />
+                                    <img alt="{{ $item->product->name }}" class="cart-img" src="{{ $productBaseImage['medium_image_url'] }}" />
                                 </a>
                             </div>
 

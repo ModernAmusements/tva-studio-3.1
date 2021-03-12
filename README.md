@@ -294,3 +294,7 @@ AddOutputFilterByType DEFLATE application/x-javascript
         Header set Cache-Control "max-age=604800, public"
     </filesMatch>
 </ifModule>
+
+
+
+shop.js jquery version 3.5.1

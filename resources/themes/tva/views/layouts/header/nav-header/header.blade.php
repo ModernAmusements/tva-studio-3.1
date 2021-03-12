@@ -66,7 +66,7 @@
           </div>
        </div>
        <div class="nav-menu">
-
+            <ul>
             <li class="{{ Request::is('/') ? ' active' : '' }}" >
                 <a href="/">Home</a>
             </li>
@@ -98,6 +98,7 @@
             <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
                 <a href="/page/about-us">Social</a>
             </li>
+        </ul>
        </div>
     <div class="register-area">
         <div class="login-panel-heading p-1">
@@ -150,6 +151,7 @@
             </div>
          </div>
              <div class="nav-menu">
+            </ul>
                 <li class="{{ Request::is('/') ? ' active' : '' }}" >
                     <a href="/">Home</a>
                 </li>
@@ -181,13 +183,14 @@
                 <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
                     <a href="/page/about-us">Social</a>
                 </li>
+            </ul>
         </div>
         <div class="register-area">
             <div class="login-panel-heading">
                 <h1 class="single-line">Hey {{ auth()->guard('customer')->user()->first_name }}, nice to see you again</h1>
              </div>
                 <div class="nav-menu nav-menu-profile">
-
+                </ul>
                     <li class="{{ Request::is('customer/account/profile') ? ' active' : '' }}" >
                         <a href="/customer/account/profile">Account</a>
                     </li>
@@ -203,7 +206,7 @@
                     <li class="{{ Request::is('customer/account/orders') ? ' active' : '' }}" >
                         <a href="/customer/account/orders">Orders</a>
                     </li>
-
+                </ul>
                     </div>
                 <div class="login-area border-b border-t btn-grid btn-grid-neutral btn-grid-large">
                     <a class="btn-hover" href="{{ route('customer.session.destroy') }}">

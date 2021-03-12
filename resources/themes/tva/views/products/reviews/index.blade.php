@@ -18,7 +18,7 @@
             <div class="product-info">
                 <div class="product-image">
                     <a href="{{ route('shop.productOrCategory.index', $product->url_key) }}" title="{{ $product->name }}">
-                        <img src="{{ $productBaseImage['medium_image_url'] }}" />
+                        <img alt=""{{ $product->name }}" src="{{ $productBaseImage['medium_image_url'] }}" />
                     </a>
                 </div>
 

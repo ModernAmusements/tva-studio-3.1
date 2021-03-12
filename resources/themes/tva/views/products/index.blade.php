@@ -29,7 +29,7 @@
 
                 <div class="hero-image">
                     @if (!is_null($category->image))
-                        <img class="logo" src="{{ $category->image_url }}" />
+                        <img alt="{{ $category }}" class="logo" src="{{ $category->image_url }}" />
                     @endif
                 </div>
 

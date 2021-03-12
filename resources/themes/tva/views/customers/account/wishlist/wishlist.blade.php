@@ -44,7 +44,7 @@
                                     $image = $item->product->getTypeInstance()->getBaseImage($item);
                                 @endphp
 
-                                <img class="media" src="{{ $image['small_image_url'] }}" />
+                                <img class="media" alt="{{ config('app.name') }}" src="{{ $image['small_image_url'] }}" />
 
                                 <div class="info">
                                     <div class="product-name">

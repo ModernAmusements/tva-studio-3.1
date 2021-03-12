@@ -21,7 +21,7 @@
                                 <div class="cart-content-img">
                                     @php $images = $item->product->getTypeInstance()->getBaseImage($item);
                                     @endphp
-                                    <img src="{{ $images['small_image_url'] }}" />
+                                    <img alt="{{ $item->name }}" src="{{ $images['small_image_url'] }}" />
                                 </div>
                                 <div class="cart-content-info">
 
@@ -94,7 +94,7 @@
                             <div class="cart-content-img">
                                 @php $images = $item->product->getTypeInstance()->getBaseImage($item);
                                 @endphp
-                                <img src="{{ $images['small_image_url'] }}" />
+                                <img alt="{{ $item->name }}" src="{{ $images['small_image_url'] }}" />
                             </div>
                             <div class="cart-content-info medium">
 

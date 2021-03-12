@@ -9,16 +9,13 @@ let mix = require("laravel-mix");
  | file for the application as well as bundling up all the JS files.
  |
  */
-mix.webpackConfig({
+
+ mix.webpackConfig({
     externals: {
         'vue':'Vue'
     }
 });
-
-
-
 // Shop
-
 mix.sass("resources/assets/scss/index.scss", "public/themes/tva/assets/css");
 mix.js([
     'resources/assets/js/homePageToggles.js',
@@ -29,8 +26,6 @@ mix.js([
 
 
 // Admin
-
 mix.sass("resources/assets/admin/sass/app.scss", "public/vendor/backend/admin/assets/css/admin-test.css");
 mix.sass("resources/assets/ui/sass/app.scss", "public/vendor/backend/ui/assets/css/ui-test.css");
-
-
+// mix.js("resources/assets/shop/js/app.js", "public/themes/tva/assets/js/shop-test.js");
