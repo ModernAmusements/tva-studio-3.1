@@ -46,4 +46,13 @@ $metaKeywords = $homeSEO->meta_keywords;
 
 {{ view_render_event('bagisto.shop.home.content.after') }}
 
+<div id="preload-homepage">
+    <div class="intro">
+        <h1 class="xxxlarge">två studio</h1>
+        <h1 class="xlarge">ceramics handmade in germany</h1>
+        <h1 class="">2016-<?=date('Y')?></h1>
+        <span class="intro-enter medium">(Click to Enter)</span>
+    </div>
+  </div>
+
 @endsection

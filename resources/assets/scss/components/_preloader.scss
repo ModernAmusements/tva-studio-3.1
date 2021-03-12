@@ -1,0 +1,19 @@
+#preload-homepage {
+    display: none;
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overflow-y: scroll;
+    justify-content: center;
+    transition: background var(--duration) ease;
+    background-color: var(--background-color);
+    .intro {
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+}

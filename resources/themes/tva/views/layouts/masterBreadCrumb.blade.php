@@ -80,5 +80,9 @@
     @stack('scripts')
     {{-- MODAL --}}
     <div class="modal-overlay"></div>
+    <div id="consent-popup" class="hidden">
+        <p class="small">We use cookies for analysis and marketing purposes. Please accept <a href="@php echo route('shop.cms.page', 'about-us') @endphp">Terms and Conditions</a> these before using the site.</p>
+        <a id="accept" href="#">Accept</a>
+    </div>
 </body>
 </html>

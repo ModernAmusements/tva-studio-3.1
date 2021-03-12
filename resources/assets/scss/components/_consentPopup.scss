@@ -1,0 +1,23 @@
+#consent-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 1s ease;
+    padding: calc(var(--lineHeight) * 1) calc(var(--lineHeight) * 2);
+    z-index: 1001;
+    border-top: var(--border);
+    border-right: var(--border);
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+
+    a {
+      text-decoration: underline;
+      align-self: flex-end;
+    }
+    &.hidden {
+      opacity: 0;
+    }
+  }
