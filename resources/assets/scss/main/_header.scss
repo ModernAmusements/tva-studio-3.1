@@ -10,14 +10,9 @@ header {
 }
 .header-logo {
     grid-column: 1 / 3;
-    a {
-        font-size: 30px;
-    }
         svg.tva-desktop {
-            width: auto;
-            fill: none;
-            height: 26px;
-            padding: 5px;
+            width: 40px;
+            height: auto;
             margin-top: 4px;
             path {
                 fill: var(--foreground-color);
@@ -157,9 +152,8 @@ header {
     .header-logo {
         grid-column: 1 / 2;
         svg.tva-desktop {
-            width: auto;
-            height: 26px;
-            padding: 5px;
+            width: 40px;
+            height: auto;
             margin-top: 4px;
         }
     }
