@@ -16,6 +16,7 @@
 @endsection
 
 @push('scripts')
+
     @include('shop::checkout.cart.coupon')
 
     <script type="text/x-template" id="checkout-template">

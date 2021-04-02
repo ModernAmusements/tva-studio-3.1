@@ -1,6 +1,10 @@
-Laravel Framework 6.20.16
+Laravel Framework 6.20.18
+php artisan --version
+
 
 php artisan route:list
+
+
 php artisan cache:clear
 php artisan route:clear
 php artisan config:clear
@@ -297,10 +301,50 @@ AddOutputFilterByType DEFLATE application/x-javascript
 
 
 
+-----------------------------------------------------
 shop.js jquery version 3.5.1
 
+-----------------------------------------------------
 
 function 
 
 getFeaturedProducts
  })->paginate(8);
+
+
+
+-----------------------------------------------------
+.htacces auto umleitung auf ssl 
+
+
+ RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
+
+
+-----------------------------------------------------
+error in ResourceController.php
+
+change 
+
+ public function __construct()
+    {
+        $this->guard = request()->has('token') ? 'api' : 'customer';
+
+        $this->_config = request('_config');
+
+        if (isset($this->_config['authorization_required']) && $this->_config['authorization_required']) {
+
+            auth()->setDefaultDriver($this->guard);
+
+            $this->middleware('auth:' . $this->guard);
+        }
+
+        if ($this->_config) {
+            $this->repository = app($this->_config['repository']);
+        }
+    }
+
+-----------------------------------------------------
+
+Updating guzzlehttp/guzzle (6.5.5 => 7.2.0): Downloading (100%)   
+

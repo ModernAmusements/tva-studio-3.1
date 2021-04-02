@@ -12,7 +12,7 @@ class ResourceController extends Controller
      * @var array
      */
     protected $guard;
-    
+
     /**
      * Contains route related configuration
      *
@@ -45,7 +45,9 @@ class ResourceController extends Controller
             $this->middleware('auth:' . $this->guard);
         }
 
-        $this->repository = app($this->_config['repository']);
+        if ($this->_config) {
+            $this->repository = app($this->_config['repository']);
+        }
     }
 
     /**
@@ -102,7 +104,7 @@ class ResourceController extends Controller
         $wishlistProduct = $this->repository->findOrFail($id);
 
         $this->repository->delete($id);
-        
+
         return response()->json([
             'message' => 'Item removed successfully.',
         ]);

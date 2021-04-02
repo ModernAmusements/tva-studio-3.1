@@ -7,6 +7,11 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
+
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
+
+
 # make sure to set the RewriteBase correctly
 # if you are running the site in a subfolder.
 # Otherwise links or the entire site will break.
@@ -99,3 +104,5 @@ AddOutputFilterByType DEFLATE application/x-javascript
         Header set Cache-Control "max-age=31536000, public"
     </filesMatch>
 </ifModule>
+
+
