@@ -18,7 +18,8 @@
         svg {
             width: 30vw;
             height: auto;
-            path {
+            path,
+            circle {
                 fill: var(--foreground-color);
             }
         }

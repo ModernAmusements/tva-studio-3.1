@@ -36,6 +36,10 @@
             }
             .item-detail {
                 border-bottom: var(--border);
+                label.right{
+
+                }
+
             }
             .order-summary:last-child {
                 border-bottom: none;
@@ -110,12 +114,23 @@
     }
 }
 
+
+
 .coupon-container {
+
     display: flex;
     width: 100%;
     .discount-control  {
         display: flex;
         width: 100%;
+    }
+    .applied-coupon-details{
+        display: flex;
+        border-right: var(--border);
+        border-bottom: var(--border);
+        flex-direction: column;
+        padding: 5px;
+        padding-top: 14px;
     }
 }
 
