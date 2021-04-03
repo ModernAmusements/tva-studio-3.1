@@ -51,7 +51,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="btn-grid form-grid btn-grid-secondary">
+                <div class="btn-grid form-grid btn-grid-black">
                     <a class="btn-hover" :class="[errors.has('subscriber_email') ? 'has-error' : '']">
                         <button class="">{{ __('shop::app.subscription.subscribe') }}</button>
                     </a>

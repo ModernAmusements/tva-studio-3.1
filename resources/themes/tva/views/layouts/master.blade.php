@@ -39,7 +39,7 @@
             <circle  cx="69.32" cy="3.22" r="3.22"/>
         </svg>
         <h1 class="large"><em>Ceramics Handmade In Germany</em></h1>
-        <h1 class="">2016-<?=date('Y')?></h1>
+        <h3 class="">2016-<?=date('Y')?></h1>
     </div>
   </div>
 <body class="animation">
