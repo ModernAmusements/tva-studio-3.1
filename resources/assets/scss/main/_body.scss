@@ -1,5 +1,11 @@
 
-html {
+
+html{
+
+}
+
+
+body {
   background: var(--background-color);
   color: var(--foreground-color);
   font-family: var(--sansFont), sans-serif;
@@ -13,4 +19,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-weight: 500;
+  perspective: 40em;
 }
+
+

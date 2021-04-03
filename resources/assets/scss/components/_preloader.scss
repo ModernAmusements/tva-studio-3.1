@@ -1,5 +1,4 @@
 #preload-homepage {
-    display: none;
     z-index: 1001;
     position: fixed;
     top: 0;
@@ -11,9 +10,22 @@
     justify-content: center;
     transition: background var(--duration) ease;
     background-color: var(--background-color);
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.86, 0, 0.07, 1);
     .intro {
-        align-self: center;
-        justify-self: center;
         text-align: center;
+        padding: 10em;
+        svg {
+            width: 30vw;
+            height: auto;
+            path {
+                fill: var(--foreground-color);
+            }
+        }
     }
+}
+
+#preload-homepage.loaded {
+    display: grid;
+    opacity: 1;
 }

@@ -1,4 +1,4 @@
-<header>
+<header class="title-animation">
     <!-- Header Logo -->
     <div class="header-logo">
         <a href="{{ route('shop.home.index') }}">
