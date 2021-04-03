@@ -42,7 +42,7 @@
         <h1 class="">2016-<?=date('Y')?></h1>
     </div>
   </div>
-<body @if (core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif>
+<body class="animation">
       {{-- Nav --}}
       @include('shop::layouts.header.index')
         {{-- Vue + Main App--}}

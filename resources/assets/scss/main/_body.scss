@@ -19,7 +19,9 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-weight: 500;
-  perspective: 40em;
+}
+body.animation {
+    perspective: 40em;
 }
 
 

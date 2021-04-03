@@ -6,7 +6,6 @@ header {
     background: var(--background-color);
     z-index: 3;
     width: 100%;
-    transition: transform .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .header-logo {
     grid-column: 1 / 3;
