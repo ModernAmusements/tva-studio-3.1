@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="content-language" content="{{ app()->getLocale() }}">
-    <link rel="stylesheet prefetch" href="{{ bagisto_asset('css/index.css') }}">
+    <link rel="stylesheet prefetch" href="{{ mix('themes/tva/assets/css/index.css') }}">
 
     @if ($favicon = core()->getCurrentChannel()->favicon_url)
         <link rel="icon" sizes="16x16" href="{{ $favicon }}" />
@@ -92,7 +92,7 @@
     {{-- JSCRIPT --}}
     <script type="text/javascript" src="{{ bagisto_asset('js/shop.js') }}"></script>
     <script type="text/javascript" src="{{ bagisto_asset('js/ui.js') }}"></script>
-    <script type="text/javascript" src="{{ bagisto_asset('js/mainApp.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('themes/tva/assets/js/mainApp.js') }}"></script>
     @stack('scripts')
     {{-- MODAL --}}
     <div class="modal-overlay"></div>
