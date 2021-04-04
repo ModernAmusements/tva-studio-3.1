@@ -13,7 +13,7 @@
     @if ($favicon = core()->getCurrentChannel()->favicon_url)
         <link rel="icon" sizes="16x16" href="{{ $favicon }}" />
     @else
-        <link rel="icon" sizes="16x16" href="{{ bagisto_asset('images/favicon.ico') }}" />
+        <link rel="icon" sizes="16x16" href="{{ tva_asset('images/favicon.ico') }}" />
     @endif
     @yield('head')
     {{-- SEO --}}
@@ -74,8 +74,8 @@
         @endif
     </script>
     {{-- JSCRIPT --}}
-    <script type="text/javascript" src="{{ bagisto_asset('js/shop.js') }}"></script>
-    <script type="text/javascript" src="{{ bagisto_asset('js/ui.js') }}"></script>
+    <script type="text/javascript" src="{{ tva_asset('js/shop.js') }}"></script>
+    <script type="text/javascript" src="{{ tva_asset('js/ui.js') }}"></script>
     <script type="text/javascript" src="{{ mix('themes/tva/assets/js/mainApp.js') }}"></script>
     @stack('scripts')
     {{-- MODAL --}}
