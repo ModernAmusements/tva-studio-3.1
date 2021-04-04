@@ -1,4 +1,4 @@
-# Kirby .htaccess
+# ionos .htaccess
 
 # rewrite rules
 <IfModule mod_rewrite.c>
@@ -7,10 +7,8 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
-
 RewriteCond %{SERVER_PORT} !=443
-RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
-
+RewriteRule ^(.*)$ https://tva-studio.de/$1 [R=301,L]
 
 # make sure to set the RewriteBase correctly
 # if you are running the site in a subfolder.
@@ -103,6 +101,14 @@ AddOutputFilterByType DEFLATE application/x-javascript
     <filesMatch ".(css)$">
         Header set Cache-Control "max-age=31536000, public"
     </filesMatch>
+
+    # Extra Security Headers
+    <filesMatch ".(php)$">
+        Header set Content-Security-Policy "default-src 'self';"
+    </filesMatch>
+
 </ifModule>
+
+
 
 
