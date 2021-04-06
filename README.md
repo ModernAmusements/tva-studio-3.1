@@ -367,3 +367,4 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
 
 added to header
 
+- .product remove view_render_event

@@ -1,8 +1,7 @@
 @if ($product->type == 'downloadable')
-    {!! view_render_event('bagisto.shop.products.view.downloadable.before', ['product' => $product]) !!}
 
     <div class="downloadable-container">
-        
+
         @if ($product->downloadable_samples->count())
             <div class="sample-list">
                 <h3>{{ __('shop::app.products.samples') }}</h3>
@@ -46,5 +45,5 @@
         @endif
     </div>
 
-    {!! view_render_event('bagisto.shop.products.view.downloadable.before', ['product' => $product]) !!}
+
 @endif

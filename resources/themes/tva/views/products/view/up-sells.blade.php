@@ -1,5 +1,3 @@
-{!! view_render_event('bagisto.shop.products.view.up-sells.after', ['product' => $product]) !!}
-
 <?php
     $productUpSells = $product->up_sells()->get();
 ?>
@@ -24,5 +22,3 @@
 
     </div>
 @endif
-
-{!! view_render_event('bagisto.shop.products.view.up-sells.after', ['product' => $product]) !!}

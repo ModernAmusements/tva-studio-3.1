@@ -2,11 +2,9 @@
 
     @inject ('configurableOptionHelper', 'Webkul\Product\Helpers\ConfigurableOption')
 
-    {!! view_render_event('bagisto.shop.products.view.configurable-options.before', ['product' => $product]) !!}
 
     <product-options></product-options>
 
-    {!! view_render_event('bagisto.shop.products.view.configurable-options.after', ['product' => $product]) !!}
 
     @push('scripts')
 
