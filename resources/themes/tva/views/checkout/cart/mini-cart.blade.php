@@ -26,7 +26,7 @@
                                 <div class="cart-content-info">
 
                                     <div class="title large">
-                                        You have added <strong>{{ $item->name }}</strong> to the cart!
+                                       <strong>{{ $item->name }}</strong> im Warenkorb !
                                     </div>
 
                                     {{-- Atts --}}

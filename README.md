@@ -368,3 +368,6 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
 added to header
 
 - .product remove view_render_event
+
+
+            'invalid-coupon' => 'Dieser Gutschein-Code ist nicht gültig',

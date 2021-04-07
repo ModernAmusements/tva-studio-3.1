@@ -9,7 +9,7 @@
         <input type="hidden" name="product_id" value="{{ $product->product_id }}">
         <input type="hidden" name="quantity" value="1">
         <button class="btn-hover"{{ $product->isSaleable() ? '' : 'disabled' }}>
-            In den Warenkorb
+            {{ __('shop::app.products.add-to-cart') }}
         </button>
     </form>
 </div>
