@@ -93,6 +93,7 @@ class RegistrationController extends Controller
         $data['customer_group_id'] = $this->customerGroupRepository->findOneWhere(['code' => 'general'])->id;
 
         $verificationData['email'] = $data['email'];
+
         $verificationData['token'] = md5(uniqid(rand(), true));
         $data['token'] = $verificationData['token'];
 
@@ -109,7 +110,6 @@ class RegistrationController extends Controller
                     if (core()->getConfigData($configKey)) {
                         Mail::queue(new VerificationEmail($verificationData));
                     }
-
                     session()->flash('success', trans('shop::app.customer.signup-form.success-verify'));
                 } catch (\Exception $e) {
                     report($e);
@@ -189,7 +189,7 @@ class RegistrationController extends Controller
 
             return redirect()->back();
         }
-        
+
         session()->flash('success', trans('shop::app.customer.signup-form.verification-sent'));
 
         return redirect()->back();

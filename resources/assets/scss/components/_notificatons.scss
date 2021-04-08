@@ -61,9 +61,10 @@
 
 
 .control-error {
-    color: var(--primary-color);
+    color: var(--background-color);
     background: var(--foreground-color);
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding: 5px;
 }
