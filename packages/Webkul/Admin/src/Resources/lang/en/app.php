@@ -232,7 +232,7 @@ return [
         'general' => 'General',
         'name' => 'Name',
         'email' => 'Email',
-        'password' => 'Password',
+        'password' => 'Passwort',
         'confirm-password' => 'Confirm Password',
         'change-password' => 'Change Account Password',
         'current-password' => 'Current Password'
@@ -243,7 +243,7 @@ return [
             'title' => 'Forget Password',
             'header-title' => 'Recover Password',
             'email' => 'Registered Email',
-            'password' => 'Password',
+            'password' => 'Passwort',
             'confirm-password' => 'Confirm Password',
             'back-link-title' => 'Back to Sign In',
             'submit-btn-title' => 'Send Password Reset Email'
@@ -252,7 +252,7 @@ return [
         'reset-password' => [
             'title' => 'Reset Password',
             'email' => 'Registered Email',
-            'password' => 'Password',
+            'password' => 'Passwort',
             'confirm-password' => 'Confirm Password',
             'back-link-title' => 'Back to Sign In',
             'submit-btn-title' => 'Reset Password'
@@ -280,7 +280,7 @@ return [
             'general' => 'General',
             'email' => 'Email',
             'name' => 'Name',
-            'password' => 'Password',
+            'password' => 'Passwort',
             'confirm-password' => 'Confirm Password',
             'status-and-role' => 'Status and Role',
             'role' => 'Role',
@@ -301,7 +301,7 @@ return [
         'sessions' => [
             'title' => 'Sign In',
             'email' => 'Email',
-            'password' => 'Password',
+            'password' => 'Passwort',
             'forget-password-link-title' => 'Forget Password ?',
             'remember-me' => 'Remember Me',
             'submit-btn-title' => 'Sign In'

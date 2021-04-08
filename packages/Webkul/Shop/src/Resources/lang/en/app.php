@@ -50,15 +50,15 @@ return [
     ],
 
     'footer' => [
-        'subscribe-newsletter' => 'Subscribe Newsletter',
-        'subscribe' => 'Subscribe',
+        'subscribe-newsletter' => 'Newsletter abonnieren',
+        'subscribe' => 'Abonnieren',
         'locale' => 'Locale',
         'currency' => 'Currency',
     ],
 
     'subscription' => [
         'unsubscribe' => 'Unsubcribe',
-        'subscribe' => 'Subscribe',
+        'subscribe' => 'Abonnieren',
         'subscribed' => 'You are now subscribed to subscription emails.',
         'not-subscribed' => 'You can not be subscribed to subscription emails, please try again later.',
         'already' => 'You are already subscribed to our subscription list.',
@@ -92,71 +92,71 @@ return [
 
     'customer' => [
         'signup-text' => [
-            'account_exists' => 'Already have an account',
-            'title' => 'Sign In'
+            'account_exists' => 'Sie haben bereits ein Konto',
+            'title' => 'Anmelden'
         ],
 
         'signup-form' => [
-            'page-title' => 'Create New Customer Account',
-            'title' => 'Sign Up',
-            'firstname' => 'First Name',
-            'lastname' => 'Last Name',
+            'page-title' => 'Neues Kundenkonto anlegen',
+            'title' => 'Anmelden',
+            'firstname' => 'Vorname',
+            'lastname' => 'Nachname',
             'email' => 'Email',
-            'password' => 'Password',
-            'confirm_pass' => 'Confirm Password',
-            'button_title' => 'Register',
-            'agree' => 'Agree',
-            'terms' => 'Terms',
-            'conditions' => 'Conditions',
-            'using' => 'by using this website',
-            'agreement' => 'Agreement',
-            'success' => 'Account created successfully.',
-            'success-verify' => 'Account created successfully, an e-mail has been sent for verification.',
-            'success-verify-email-unsent' => 'Account created successfully, but verification e-mail unsent.',
-            'failed' => 'Error! Can not create your account, pleae try again later.',
-            'already-verified' => 'Your account is already verified Or please try sending a new verification email again.',
-            'verification-not-sent' => 'Error! Problem in sending verification email, please try again later.',
-            'verification-sent' => 'Verification email sent',
-            'verified' => 'Your account has been verified, try to login now.',
-            'verify-failed' => 'We cannot verify your mail account.',
-            'dont-have-account' => 'You do not have account with us.',
-            'customer-registration' => 'Customer Registered Successfully'
+            'password' => 'Passwort',
+            'confirm_pass' => 'Passwort bestätigen',
+            'button_title' => 'Registrieren',
+            'agree' => 'Zustimmen',
+            'terms' => 'Bedingungen',
+            'conditions' => 'Konditionen',
+            'using' => 'der Nutzung dieser Website',
+            'agreement' => 'Vereinbarung',
+            'success' => 'Konto erfolgreich erstellt.',
+            'success-verify' => 'Konto erfolgreich erstellt, eine E-Mail zur Verifizierung wurde gesendet.',
+            'success-verify-email-unsent' => 'Konto erfolgreich erstellt, aber Bestätigungs-E-Mail nicht gesendet.',
+            'failed' => 'Fehler! Ihr Konto kann nicht erstellt werden, bitte versuchen Sie es später erneut.',
+            'already-verified' => 'Ihr Konto ist bereits verifiziert Oder versuchen Sie bitte erneut, eine Verifizierungs-E-Mail zu senden.',
+            'verification-not-sent' => 'Fehler! Problem beim Senden der Bestätigungs-E-Mail, bitte versuchen Sie es später erneut.',
+            'verification-sent' => 'Verifizierungs-E-Mail gesendet',
+            'verified' => 'Ihr Konto wurde verifiziert, versuchen Sie jetzt, sich anzumelden.',
+            'verify-failed' => 'Wir können Ihr Mailkonto nicht verifizieren.',
+            'dont-have-account' => 'Sie haben kein Konto bei uns.',
+            'customer-registration' => 'Kunde erfolgreich registriert'
         ],
 
         'login-text' => [
-            'no_account' => 'Do not have account',
-            'title' => 'Sign Up',
+            'no_account' => 'Sie haben kein Konto?',
+            'title' => 'Hier anmelden!',
         ],
 
         'login-form' => [
-            'page-title' => 'Customer Login',
-            'title' => 'Sign In',
+            'page-title' => 'Kunden-Login',
+            'title' => 'Anmelden',
             'email' => 'Email',
-            'password' => 'Password',
-            'forgot_pass' => 'Forgot Password?',
-            'button_title' => 'Sign In',
-            'remember' => 'Remember Me',
-            'footer' => '© Copyright :year Webkul Software, All rights reserved',
-            'invalid-creds' => 'Please check your credentials and try again.',
-            'verify-first' => 'Verify your email account first.',
-            'not-activated' => 'Your activation seeks admin approval',
-            'resend-verification' => 'Resend verification mail again'
+            'password' => 'Passwort',
+            'forgot_pass' => 'Passwort vergessen?',
+            'button_title' => 'Anmelden',
+            'remember' => 'Passwort merken',
+            'footer' => '©',
+            'invalid-creds' => 'Bitte überprüfen Sie Ihre Anmeldedaten und versuchen Sie es erneut',
+            'verify-first' => 'Überprüfen Sie zunächst Ihr E-Mail-Konto',
+            'not-activated' => 'Ihre Aktivierung bedarf der Genehmigung durch den Administrator',
+            'resend-verification' => 'Bestätigungsmail erneut senden'
         ],
 
         'forgot-password' => [
-            'title' => 'Recover Password',
+            'title' => 'Passwort wiederherstellen',
             'email' => 'Email',
-            'submit' => 'Send Password Reset Email',
-            'page_title' => 'Forgot your password ?'
+            'submit' => 'E-Mail zum Zurücksetzen des Passworts senden',
+            'page_title' => 'Haben Sie Ihr Passwort vergessen?'
         ],
 
         'reset-password' => [
-            'title' => 'Reset Password',
-            'email' => 'Registered Email',
-            'password' => 'Password',
-            'confirm-password' => 'Confirm Password',
-            'back-link-title' => 'Back to Sign In',
-            'submit-btn-title' => 'Reset Password'
+            'title' => 'Passwort zurücksetzen',
+            'email' => 'Registrierte E-Mail',
+            'password' => 'Passwort',
+            'confirm-password' => 'Bestätigen Sie das Passwort',
+            'back-link-title' => 'Zurück zur Anmeldung',
+            'submit-btn-title' => 'Passwort zurücksetzen'
         ],
 
         'account' => [
@@ -174,8 +174,8 @@ return [
                 'edit-fail' => 'Error! Profile cannot be updated, please try again later.',
                 'unmatch' => 'The old password does not match.',
 
-                'fname' => 'First Name',
-                'lname' => 'Last Name',
+                'fname' => 'Vorname',
+                'lname' => 'Nachname',
                 'gender' => 'Gender',
                 'other' => 'Other',
                 'male' => 'Male',
@@ -184,7 +184,7 @@ return [
                 'phone' => 'Phone',
                 'email' => 'Email',
                 'opassword' => 'Old Password',
-                'password' => 'Password',
+                'password' => 'Passwort',
                 'cpassword' => 'Confirm Password',
                 'submit' => 'Update Profile',
 
@@ -477,8 +477,8 @@ return [
             'billing-address' => 'Billing Address',
             'sign-in' => 'Sign In',
             'company-name' => 'Company Name',
-            'first-name' => 'First Name',
-            'last-name' => 'Last Name',
+            'first-name' => 'Vorname',
+            'last-name' => 'Nachname',
             'email' => 'Email',
             'address1' => 'Street Address',
             'city' => 'City',
@@ -515,7 +515,7 @@ return [
             'paypal-desc' => 'Paypal Standard',
             'free-desc' => 'This is a free shipping',
             'flat-desc' => 'This is a flat rate',
-            'password' => 'Password',
+            'password' => 'Passwort',
             'login-exist-message' => 'You already have an account with us, Sign in or continue as guest.',
             'enter-coupon-code' => 'Gutscheincode eingeben'
         ],
@@ -632,7 +632,7 @@ return [
                 'dear' => 'Dear :customer_name',
                 'username-email' => 'UserName/Email',
                 'subject' => 'New Customer Registration',
-                'password' => 'Password',
+                'password' => 'Passwort',
                 'summary' => 'Your account has been created.
                 Your account details are below: ',
                 'thanks' => 'Thanks!',

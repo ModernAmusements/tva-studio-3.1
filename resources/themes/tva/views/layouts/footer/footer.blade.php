@@ -12,42 +12,43 @@
     @if(core()->getConfigData('customer.settings.newsletter.subscription'))
     <div class="footer-newsletter-panel">
             <div class="newsletter-heading">
-                <h2>Sign up forour newsletter</h2>
+                <h2>Registrieren Sie sich für unseren Newsletter</h2>
                 <p class="medium">
-                Are you interested in following along? Let´s stay in touch Big things are in
-                the works. Stay connected to know what's next.
+                    Haben Sie Interesse, mitzumachen? Lassen Sie uns in Kontakt
+                    bleiben Große Dinge sind in Arbeit. Bleiben Sie in Verbindung,
+                    um zu erfahren, was als Nächstes kommt.
                 </p>
             </div>
             <div class="form-group">
             <form action="{{ route('shop.subscribe') }}">
                 <div class="newsletter-subheading">
-                    <h4>What is your name?
+                    <h4>Wie lautet Ihr Name?
                     </h4>
                 </div>
                 <div class="control-group">
-                    <input type="name" class="form-control subscribe-field form-sub" name="FirstName" placeholder="Frist Name Optional">
+                    <input type="name" class="form-control subscribe-field form-sub" name="FirstName" placeholder="{{ __('shop::app.customer.signup-form.firstname') }}">
                 </div>
                 <div class="control-group" >
-                    <input type="name" class="form-control subscribe-field form-sub" name="LastName" placeholder="Last Name Optional">
+                    <input type="name" class="form-control subscribe-field form-sub" name="LastName" placeholder="{{ __('shop::app.customer.signup-form.lastname') }}">
                 </div>
                 <div class="newsletter-subheading">
                     <h4>
-                        What is your email?
+                        Wie lautet Ihre E-Mail?
                     </h4>
                 </div>
                 <div class="control-group" :class="[errors.has('subscriber_email') ? 'has-error' : '']">
-                    <input type="email" class="form-control subscribe-field form-sub" name="subscriber_email" placeholder="Email Address" required>
+                    <input type="email" class="form-control subscribe-field form-sub" name="subscriber_email" placeholder="{{ __('shop::app.customer.signup-form.email') }}" required>
                     <span class="control-error" v-if="errors.has('email')">@{{ errors.first('email') }}</span>
                 </div>
                 <div class="newsletter-info">
                     <h4>
-                        Are you an clayroom member?
+                        Sind Sie ein Clayroom-Mitglied?
                     </h4>
                     <div class="control-group-radio">
                         <input type="checkbox" id="clayroom" value="clayroom">
                         <label for="clayroom" class="checkbox-view"></label>
                         <span class="medium">
-                            Yes
+                            Ja!
                         </span>
                     </div>
                 </div>
@@ -69,10 +70,10 @@
     {{-- MENU --}}
     <div class="footer-menu">
         <div class="btn-grid btn-grid-neutral border-r">
-            <a class="btn-hover" href="@php echo route('shop.cms.page', 'about-us') @endphp"><span class="text">Imprint</span></a>
+            <a class="btn-hover" href="@php echo route('shop.cms.page', 'about-us') @endphp"><span class="text">Impressum</span></a>
         </div>
         <div class="btn-grid btn-grid-neutral border-r">
-            <a class="btn-hover" href="@php echo route('shop.cms.page', 'about-us') @endphp"><span class="text">Contact</span></a>
+            <a class="btn-hover" href="@php echo route('shop.cms.page', 'about-us') @endphp"><span class="text">Kontakt</span></a>
         </div>
 
         <div class="btn-grid btn-grid-neutral">
@@ -86,7 +87,7 @@
     <div class="footer-newsletter">
         <div class="newsletter-cta btn-grid btn-grid-primary">
             <a class="btn-hover" :class="[errors.has('subscriber_email') ? 'has-error' : '']">
-                <span class="text">Join our Newsletter</span>
+                <span class="text">Newsletter abonnieren</span>
             </a>
         </div>
     </div>
@@ -100,10 +101,10 @@
     {{-- Credentials --}}
     <div class="footer-trade-mark medium">
         <div class="rights">
-            <p>©2020 all rights reserved</p>
+            <p>©2020 alle Rechte vorbehalten</p>
         </div>
         <div class="philo">
-            <p>två studio - ceramics handmade in germany</p>
+            <p>två studio - Keramik handgefertigt in Deutschland</p>
         </div>
     </div>
 </footer>
