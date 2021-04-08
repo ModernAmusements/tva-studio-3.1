@@ -120,7 +120,13 @@ return [
             'verified' => 'Ihr Konto wurde verifiziert, versuchen Sie jetzt, sich anzumelden.',
             'verify-failed' => 'Wir können Ihr Mailkonto nicht verifizieren.',
             'dont-have-account' => 'Sie haben kein Konto bei uns.',
-            'customer-registration' => 'Kunde erfolgreich registriert'
+            'customer-registration' => 'Kunde erfolgreich registriert',
+            'invalid-email' => 'Das Feld E-Mail muss eine gültige E-Mail sein',
+            'invalid-name' => 'Das Feld Vorname ist erforderlich',
+            'invalid-lastname' => 'Das Feld Nachname ist erforderlich',
+            'invalid-password' => 'Das Feld Passwort ist erforderlich',
+            'invalid-match' => 'Die Passwörter stimmen NICHT überein!',
+            'invalid-agreement' => 'Das Feld Vereinbarung ist erforderlich',
         ],
 
         'login-text' => [
@@ -140,7 +146,13 @@ return [
             'invalid-creds' => 'Bitte überprüfen Sie Ihre Anmeldedaten und versuchen Sie es erneut',
             'verify-first' => 'Überprüfen Sie zunächst Ihr E-Mail-Konto',
             'not-activated' => 'Ihre Aktivierung bedarf der Genehmigung durch den Administrator',
-            'resend-verification' => 'Bestätigungsmail erneut senden'
+            'resend-verification' => 'Bestätigungsmail erneut senden',
+            'invalid-email' => 'Das Feld E-Mail muss eine gültige E-Mail sein',
+            'invalid-name' => 'Das Feld Vorname ist erforderlich',
+            'invalid-lastname' => 'Das Feld Nachname ist erforderlich',
+            'invalid-password' => 'Das Feld Passwort ist erforderlich',
+            'invalid-match' => 'Die Passwörter stimmen NICHT überein!',
+            'invalid-agreement' => 'Das Feld Vereinbarung ist erforderlich',
         ],
 
         'forgot-password' => [
