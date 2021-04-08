@@ -108,14 +108,17 @@
 }
 
 .featured-heading {
-    text-align: center;
+    width: 100%;
+    text-align: start;
+    text-transform: uppercase;
+    border-top: var(--border);
+    padding: 15px;
     h1 {
-       margin: 0;
+        margin:0;
     }
 }
 .featured-pro {
     margin-top: -10px;
-
     margin-bottom: 10%;
 }
 

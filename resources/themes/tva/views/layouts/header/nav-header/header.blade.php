@@ -116,12 +116,13 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
             <h1 class="single-line">Erstelle dein Konto und werde Teil des Tva-Universums.</h1>
          </div>
         <div class="login-heading-registered">
-            <div class="login-heading">Already registered?</div>
+            <div class="login-heading">Bereits registriert?</div>
             <div class="login-content medium">
-                <p>If you are already registered, please log in.</p>
+                <p>Wenn Sie bereits registriert sind, melden Sie sich bitte an.</p>
+            </br>
                 <ul>
-                    <li class="">- Manage Cart</li>
-                    <li class="">- Orders</li>
+                    <li class="">- Warenkorb verwalten</li>
+                    <li class="">- Bestellungen</li>
                     <li class="">- Wishlist</li>
                 </ul>
             </div>
@@ -132,13 +133,14 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
             </div>
         </div>
     <div class="login-heading-sign-up">
-        <div class="login-heading">Not yet registered!</div>
+        <div class="login-heading">Noch nicht registriert!?</div>
         <div class="login-content medium">
-            <p>If you are already registered, please log in.</p>
+            <p>Wenn Sie bereits registriert sind, melden Sie sich bitte an.</p>
+        </br>
             <ul>
-                <li class="">- Order updates</li>
-                <li class="">- Personalized</li>
-                <li class="">- Save items</li>
+                <li class="">- Aktualisierung der Bestellung</li>
+                <li class="">- Personalisiert</li>
+                <li class="">- Artikel speichern</li>
             </ul>
         </div>
         <div class="login-area  border-t btn-grid btn-grid-primary btn-grid-large">

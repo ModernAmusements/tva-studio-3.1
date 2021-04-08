@@ -2,10 +2,8 @@
 <section class="featured-pro">
 
     <div class="featured-heading">
-        <h1 class="xlarge">Summer 2021</h1>
-        {{-- {{ __('shop::app.home.featured-products') }}<br />
-
-        <span class="featured-seperator" style="color:lightgrey;">_____</span> --}}
+        <h1 class="large">Autumn/Winter 2020/21</h1>
+        <p class="small">{{ __('shop::app.home.featured-products') }}</p>
     </div>
 
     <div class="featured-grid product-grid-4">
