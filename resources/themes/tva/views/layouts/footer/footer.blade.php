@@ -1,5 +1,4 @@
 <footer>
-    {{-- Hidden Cats --}}
     <?php
         $categories = [];
         foreach (app('Webkul\Category\Repositories\CategoryRepository')->getVisibleCategoryTree(core()->getCurrentChannel()->root_category_id) as $category){
@@ -7,9 +6,10 @@
                 array_push($categories, $category);
         }
     ?>
-    {{-- DB FOOTER --}}
     {!! DbView::make(core()->getCurrentChannel())->field('footer_content')->render() !!}
+
     @if(core()->getConfigData('customer.settings.newsletter.subscription'))
+
     <div class="footer-newsletter-panel">
             <div class="newsletter-heading">
                 <h2>Registrieren Sie sich für unseren Newsletter</h2>
@@ -26,19 +26,34 @@
                     </h4>
                 </div>
                 <div class="control-group">
-                    <input type="name" class="form-control subscribe-field form-sub" name="FirstName" placeholder="{{ __('shop::app.customer.signup-form.firstname') }}">
+                    <input type="name"
+                           class="form-control subscribe-field form-sub"
+                           name="FirstName"
+                           placeholder="{{ __('shop::app.customer.signup-form.firstname') }}">
                 </div>
                 <div class="control-group" >
-                    <input type="name" class="form-control subscribe-field form-sub" name="LastName" placeholder="{{ __('shop::app.customer.signup-form.lastname') }}">
+                    <input type="name"
+                           class="form-control subscribe-field form-sub"
+                           name="LastName"
+                           placeholder="{{ __('shop::app.customer.signup-form.lastname') }}">
                 </div>
                 <div class="newsletter-subheading">
-                    <h4>
-                        Wie lautet Ihre E-Mail?
-                    </h4>
+                    <h4>Wie lautet Ihre E-Mail?</h4>
                 </div>
-                <div class="control-group" :class="[errors.has('subscriber_email') ? 'has-error' : '']">
-                    <input type="email" class="form-control subscribe-field form-sub" name="subscriber_email" placeholder="{{ __('shop::app.customer.signup-form.email') }}" required>
-                    <span class="control-error" v-if="errors.has('email')">@{{ errors.first('email') }}</span>
+                <div class="control-group"
+                     :class="[errors.has('email') ? 'has-error' : '']">
+                     <span class="control-error"
+                        v-if="errors.has('email')">
+                        @{{ errors.first('email') }}
+                    </span>
+                    <input type="email"
+                        placeholder="{{ __('shop::app.customer.signup-form.email') }}"
+                        class="form-control subscribe-field form-sub"
+                        name="email"
+                        v-validate="'required|email'"
+                        value="{{ old('email') }}"
+                        data-vv-as="&quot;{{ __('shop::app.customer.signup-form.email') }}&quot;"
+                        required>
                 </div>
                 <div class="newsletter-info">
                     <h4>
@@ -53,7 +68,7 @@
                     </div>
                 </div>
                 <div class="btn-grid form-grid btn-grid-black">
-                    <a class="btn-hover" :class="[errors.has('subscriber_email') ? 'has-error' : '']">
+                    <a class="btn-hover">
                         <button class="">{{ __('shop::app.subscription.subscribe') }}</button>
                     </a>
                 </div>

@@ -12,7 +12,7 @@
         $filterAttributes = $productFlatRepository->getFilterableAttributes($category, $products);
 
         $maxPrice = core()->convertPrice($productFlatRepository->getCategoryProductMaximumPrice($category));
-    } 
+    }
 
     if (! count($filterAttributes) > 0) {
         $filterAttributes = $attributeRepository->getFilterAttributes();
@@ -33,11 +33,11 @@
 
 <div class="layered-filter-wrapper left">
 
-    {!! view_render_event('bagisto.shop.products.list.layered-nagigation.before') !!}
+
 
         <layered-navigation></layered-navigation>
 
-    {!! view_render_event('bagisto.shop.products.list.layered-nagigation.after') !!}
+
 
 </div>
 

@@ -1665,7 +1665,7 @@ section.slider-block div.slider-content div.slider-control .light-right-icon {
   margin-right: 10px;
 }
 
-.main .category-container .layered-filter-wrapper .filter-attributes .filter-attributes-item .filter-attributes-title .icon, .main .category-container .responsive-layred-filter .filter-attributes .filter-attributes-item .filter-attributes-title .icon {
+.main .category-container . .filter-attributes .filter-attributes-item .filter-attributes-title .icon, .main .category-container .responsive-layred-filter .filter-attributes .filter-attributes-item .filter-attributes-title .icon {
   background-image: url("../images/icon-dropdown.svg") !important;
   width: 10px;
   height: 10px;
