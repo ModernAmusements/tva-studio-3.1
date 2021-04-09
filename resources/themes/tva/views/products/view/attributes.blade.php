@@ -1,9 +1,15 @@
 @inject ('productViewHelper', 'Webkul\Product\Helpers\View')
 
-
+{!! view_render_event('bagisto.shop.products.view.attributes.before', ['product' => $product]) !!}
 
 @if ($customAttributeValues = $productViewHelper->getAdditionalData($product))
+    {{-- <accordian :title="'{{ __('shop::app.products.specification') }}'" :active="false">
+        <div slot="header">
+            {{ __('shop::app.products.specification') }}
+            <i class="icon expand-icon right"></i>
+        </div> --}}
 
+        {{-- <div slot="body"> --}}
             <div class="full-specifications medium">
 
                 @foreach ($customAttributeValues as $attribute)
@@ -32,6 +38,8 @@
                 @endforeach
 
             </div>
-
+        {{-- </div>
+    </accordian> --}}
 @endif
 
+{!! view_render_event('bagisto.shop.products.view.attributes.after', ['product' => $product]) !!}

@@ -1,3 +1,5 @@
+{!! view_render_event('bagisto.shop.products.list.card.before', ['product' => $product]) !!}
+
 <div class="product-card shop-article scroll">
 
     @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
@@ -37,3 +39,5 @@
     @include('shop::products.add-buttons', ['product' => $product])
 
 </div>
+
+{!! view_render_event('bagisto.shop.products.list.card.after', ['product' => $product]) !!}
