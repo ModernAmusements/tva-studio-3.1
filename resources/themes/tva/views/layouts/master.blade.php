@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="de">
 <head>
     <title>@yield('page_title')</title>
     {{-- META --}}
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta http-equiv="content-language" content="{{ app()->getLocale() }}">
+    <meta http-equiv="content-language" content="de">
     <link rel="stylesheet prefetch" href="{{ mix('themes/tva/assets/css/index.css') }}">
 
     @if ($favicon = core()->getCurrentChannel()->favicon_url)

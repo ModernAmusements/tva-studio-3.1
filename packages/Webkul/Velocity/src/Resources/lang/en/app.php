@@ -147,7 +147,7 @@ return [
         'hot-categories'     => 'Hot Categories',
         'payment-methods'    => 'Payment Methods',
         'customer-reviews'   => 'Customer Reviews',
-        'shipping-methods'   => 'Shipping Methods',
+        'shipping-methods'   => 'Versandmethoden',
         'popular-categories' => 'Popular Categories',
     ],
 

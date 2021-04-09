@@ -87,15 +87,15 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
             </li>
 
             <li class="{{ Request::is('archive') ? ' active' : '' }}" >
-                <a class="disabled" href="/">Archive</a>
+                <a class="disabled" href="/">Archiv</a>
             </li>
 
             <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                <a href="/page/about-us">Philosophy</a>
+                <a href="/page/about-us">Philosophie</a>
             </li>
 
             <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                <a href="/page/about-us">About</a>
+                <a href="/page/about-us">Über uns</a>
             </li>
 
             <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
@@ -103,11 +103,11 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
             </li>
 
             <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                <a href="/page/about-us">Imprint</a>
+                <a href="/page/about-us">Impressum</a>
             </li>
 
             <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                <a href="/page/about-us">Social</a>
+                <a href="/page/about-us">Soziale Medien</a>
             </li>
         </ul>
        </div>
@@ -160,7 +160,7 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
                   Close
             </div>
             <div class="menu-heading">
-                  Menu
+                  Menü
             </div>
          </div>
              <div class="nav-menu">
@@ -174,15 +174,15 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
                 </li>
 
                 <li class="{{ Request::is('archive') ? ' active' : '' }}" >
-                    <a class="disabled" href="">Archive</a>
+                    <a class="disabled" href="">Archiv</a>
                 </li>
 
                 <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                    <a href="/page/about-us">Philosophy</a>
+                    <a href="/page/about-us">Philosophie</a>
                 </li>
 
                 <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                    <a href="/page/about-us">About</a>
+                    <a href="/page/about-us">Über uns</a>
                 </li>
 
                 <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
@@ -190,22 +190,22 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
                 </li>
 
                 <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                    <a href="/page/about-us">Imprint</a>
+                    <a href="/page/about-us">Impressum</a>
                 </li>
 
                 <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                    <a href="/page/about-us">Social</a>
+                    <a href="/page/about-us">Soziale Medien</a>
                 </li>
             </ul>
         </div>
         <div class="register-area">
             <div class="login-panel-heading">
-                <h1 class="single-line">Hey {{ auth()->guard('customer')->user()->first_name }}, nice to see you again</h1>
+                <h1 class="single-line">Hallo {{ auth()->guard('customer')->user()->first_name }}, schön, Sie wiederzusehen.</h1>
              </div>
                 <div class="nav-menu nav-menu-profile">
                 </ul>
                     <li class="{{ Request::is('customer/account/profile') ? ' active' : '' }}" >
-                        <a href="/customer/account/profile">Account</a>
+                        <a href="/customer/account/profile">Konto</a>
                     </li>
 
                     <li class="{{ Request::is('customer/account/wishlist') ? ' active' : '' }}" >
@@ -213,11 +213,11 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
                     </li>
 
                     <li class="{{ Request::is('checkout/cart') ? ' active' : '' }}" >
-                        <a href="/checkout/cart">Cart</a>
+                        <a href="/checkout/cart">Warenkorb</a>
                     </li>
 
                     <li class="{{ Request::is('customer/account/orders') ? ' active' : '' }}" >
-                        <a href="/customer/account/orders">Orders</a>
+                        <a href="/customer/account/orders">Bestellungen</a>
                     </li>
                 </ul>
                     </div>

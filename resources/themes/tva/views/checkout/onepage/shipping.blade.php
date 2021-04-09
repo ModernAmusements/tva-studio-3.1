@@ -1,18 +1,13 @@
 <form data-vv-scope="shipping-form">
     <div class="form-container">
-
         <div class="form-header">
             <h1 class="checkout-step-heading">
                 {{ __('shop::app.checkout.onepage.shipping-method') }}
             </h1>
         </div>
-
         <div class="shipping-methods">
-
             <div class="control-group" :class="[errors.has('shipping-form.shipping_method') ? 'has-error' : '']">
-
                 @foreach ($shippingRateGroups as $rateGroup)
-
                 <div class="method">
                     <div class="method-content">
                     @foreach ($rateGroup['rates'] as $rate)
@@ -35,7 +30,6 @@
                     </div>
                 </div>
                 @endforeach
-
                 <span class="control-error" v-if="errors.has('shipping-form.shipping_method')">
                     @{{ errors.first('shipping-form.shipping_method') }}
                 </span>

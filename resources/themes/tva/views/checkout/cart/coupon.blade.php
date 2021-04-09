@@ -2,18 +2,35 @@
     <script type="text/x-template" id="coupon-component-template">
         <div class="coupon-container">
             <div class="discount-control">
-                <form class="coupon-form" method="post" @submit.prevent="applyCoupon">
-                    <div class="control-group" :class="[error_message ? 'has-error' : '']">
-                        <input type="text" class="form-control border-r subscribe-field form-sub" v-model="coupon_code" name="code" placeholder="{{ __('shop::app.checkout.onepage.enter-coupon-code') }}">
-                        <div class="control-error">@{{ error_message }}</div>
+                <form class="coupon-form"
+                      method="post"
+                      @submit.prevent="applyCoupon">
+
+                    <div class="control-group"
+                         :class="[error_message ? 'has-error' : '']">
+                        <input type="text"
+                               class="form-control border-r subscribe-field form-sub"
+                               v-model="coupon_code"
+                               name="code"
+                               placeholder="{{ __('shop::app.checkout.onepage.enter-coupon-code') }}">
+
+
+
+                        <span class="control-error">
+                            @{{ error_message }}
+                        </span>
+
+
+
                     </div>
+
                     <div class="btn-grid border-b border-t border-r btn-grid-primary">
                         <button class="btn-hover" :disabled="disable_button">
                             <span>
                             {{ __('shop::app.checkout.onepage.apply-coupon') }}
                             </span>
-                    </button>
-                </div>
+                        </button>
+                    </div>
                 </form>
             </div>
 

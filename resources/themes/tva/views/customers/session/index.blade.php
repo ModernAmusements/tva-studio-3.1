@@ -24,7 +24,8 @@
                      :class="[errors.has('email') ? 'has-error' : '']">
 
                     <span class="control-error"
-                          v-if="errors.has('email')">{{ __('shop::app.customer.login-form.invalid-email') }}
+                          v-if="errors.has('email')">
+                          @{{ errors.first('email') }}
                     </span>
                     <input type="text"
                            placeholder="{{ __('shop::app.customer.login-form.email') }}"
@@ -39,7 +40,8 @@
                      :class="[errors.has('password') ? 'has-error' : '']">
 
                     <span class="control-error"
-                          v-if="errors.has('password')">{{ __('shop::app.customer.login-form.invalid-password') }}
+                          v-if="errors.has('password')">
+                          @{{ errors.first('password') }}
                     </span>
                     <input type="password"
                            placeholder="{{ __('shop::app.customer.login-form.password') }}"
@@ -57,7 +59,9 @@
                     <div>
                         @if (Cookie::has('enable-resend'))
                             @if (Cookie::get('enable-resend') == true)
-                                <a href="{{ route('customer.resend.verification-email', Cookie::get('email-for-resend')) }}">{{ __('shop::app.customer.login-form.resend-verification') }}</a>
+                                <a href="{{ route('customer.resend.verification-email', Cookie::get('email-for-resend')) }}">
+                                    {{ __('shop::app.customer.login-form.resend-verification') }}
+                                </a>
                             @endif
                         @endif
                     </div>

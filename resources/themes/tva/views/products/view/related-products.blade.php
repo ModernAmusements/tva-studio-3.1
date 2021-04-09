@@ -6,7 +6,7 @@
     <div class="attached-products-wrapper">
 
         <div class="related-title">
-            <h2>You may also like</h2>
+            <h2>Das könnte Ihnen auch gefallen</h2>
 
         </div>
 

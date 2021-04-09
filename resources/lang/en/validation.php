@@ -84,6 +84,7 @@ return [
     ],
     'string'               => ':attribute muss Text sein.',
     'timezone'             => ':attribute muss eine korrekte Zeitzone sein.',
+    'required'             => ':attribute field wird ben&ouml;tigt.',
     'unique'               => ':attribute wurde bereits verwendet.',
     'uploaded'             => 'Der Upload von :attribute schlug fehl.',
     'url'                  => 'Das :attribute-Format ist inkorrekt.',

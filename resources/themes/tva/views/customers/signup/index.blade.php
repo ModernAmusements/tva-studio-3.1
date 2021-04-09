@@ -28,7 +28,8 @@
             <div class="control-group"
                  :class="[errors.has('first_name') ? 'has-error' : '']">
                     <span class="control-error"
-                        v-if="errors.has('first_name')">{{ __('shop::app.customer.login-form.invalid-name') }}
+                        v-if="errors.has('first_name')">
+                        @{{ errors.first('first_name') }}
                     </span>
                 <input type="text"
                        placeholder="{{ __('shop::app.customer.signup-form.firstname') }}"
@@ -40,8 +41,8 @@
             </div>
             <div class="control-group"
                  :class="[errors.has('last_name') ? 'has-error' : '']">
-                <span class="control-error" v-if="errors.has('last_name')">{{ __('shop::app.customer.login-form.invalid-lastname') }}
-
+                <span class="control-error" v-if="errors.has('last_name')">
+                    @{{ errors.first('last_name') }}
                 </span>
                 <input type="text"
                        placeholder="{{ __('shop::app.customer.signup-form.lastname') }}"
@@ -54,7 +55,7 @@
             <div class="control-group"
                  :class="[errors.has('email') ? 'has-error' : '']">
                 <span class="control-error" v-if="errors.has('email')">
-                    {{ __('shop::app.customer.login-form.invalid-email') }}
+                    @{{ errors.first('email') }}
                 </span>
                 <input type="email"
                        placeholder="{{ __('shop::app.customer.signup-form.email') }}"
@@ -66,7 +67,7 @@
             <div class="control-group"
                  :class="[errors.has('password') ? 'has-error' : '']">
                 <span class="control-error" v-if="errors.has('password')">
-                    {{ __('shop::app.customer.login-form.invalid-password') }}
+                    @{{ errors.first('password') }}
                 </span>
                 <input type="password"
                        placeholder="{{ __('shop::app.customer.signup-form.password') }}"
@@ -80,7 +81,7 @@
             <div class="control-group"
                  :class="[errors.has('password_confirmation') ? 'has-error' : '']">
                 <span class="control-error" v-if="errors.has('password_confirmation')">
-                    {{ __('shop::app.customer.login-form.invalid-match') }}
+                    @{{ errors.first('password_confirmation') }}
                 </span>
                 <input type="password"
                        placeholder="{{ __('shop::app.customer.signup-form.confirm_pass') }}"
@@ -92,7 +93,7 @@
             <div class="signup-confirm"
                  :class="[errors.has('agreement') ? 'has-error' : '']">
                 <span class="control-error" v-if="errors.has('agreement')">
-                    {{ __('shop::app.customer.login-form.invalid-agreement') }}
+                    @{{ errors.first('agreement') }}
                 </span>
                 <div class="confirm-group">
                     <input type="checkbox"

@@ -23,9 +23,9 @@ return [
     'home' => [
         'page-title' => config('app.name') . ' - Home',
         'featured-products' => 'Produkte der Sommerkollektion 2021',
-        'new-products' => 'New Products',
-        'verify-email' => 'Verify your email account',
-        'resend-verify-email' => 'Resend Verification Email'
+        'new-products' => 'Produkte der Winterkollektion 2021',
+        'verify-email' => 'Überprüfen Sie Ihr E-Mail-Konto',
+        'resend-verify-email' => 'Verifizierungs-E-Mail erneut senden'
     ],
 
     'header' => [
@@ -57,21 +57,21 @@ return [
     ],
 
     'subscription' => [
-        'unsubscribe' => 'Unsubcribe',
+        'unsubscribe' => 'Abbestellen',
         'subscribe' => 'Abonnieren',
-        'subscribed' => 'You are now subscribed to subscription emails.',
-        'not-subscribed' => 'You can not be subscribed to subscription emails, please try again later.',
-        'already' => 'You are already subscribed to our subscription list.',
-        'unsubscribed' => 'You are unsubscribed from subscription mails.',
-        'already-unsub' => 'You are already unsubscribed.',
-        'not-subscribed' => 'Error! Mail can not be sent currently, please try again later.'
+        'subscribed' => 'Sie sind nun für Abonnement-E-Mails angemeldet.',
+        'not-subscribed' => 'Sie können keine Abonnement-E-Mails erhalten, bitte versuchen Sie es später noch einmal.',
+        'already' => 'Sie sind bereits in unserer Abonnentenliste eingetragen.',
+        'unsubscribed' => 'Sie sind von den Abo-Mails abgemeldet.',
+        'already-unsub' => 'Sie sind bereits abgemeldet.',
+        'not-subscribed' => 'Fehler! Mail kann derzeit nicht gesendet werden, bitte versuchen Sie es später noch einmal.'
     ],
 
     'search' => [
-        'no-results' => 'No Results Found',
+        'no-results' => 'Keine Ergebnisse gefunden',
         'page-title' => config('app.name') . ' - Search',
-        'found-results' => 'Search Results Found',
-        'found-result' => 'Search Result Found'
+        'found-results' => 'Suchergebnisse gefunden',
+        'found-result' => 'Suchergebnis gefunden'
     ],
 
     'reviews' => [
@@ -172,37 +172,37 @@ return [
         ],
 
         'account' => [
-            'dashboard' => 'Edit Profile',
-            'menu' => 'Menu',
+            'dashboard' => 'Konto bearbeiten',
+            'menu' => 'Menü',
 
             'profile' => [
                 'index' => [
-                    'page-title' => 'Profile',
-                    'title' => 'Profile',
-                    'edit' => 'Edit',
+                    'page-title' => 'Konto',
+                    'title' => 'Profilformular',
+                    'edit' => 'Bearbeiten',
                 ],
 
-                'edit-success' => 'Profile updated successfully.',
-                'edit-fail' => 'Error! Profile cannot be updated, please try again later.',
-                'unmatch' => 'The old password does not match.',
+                'edit-success' => 'Profil erfolgreich aktualisiert.',
+                'edit-fail' => 'Fehler! Profil kann nicht aktualisiert werden, bitte versuchen Sie es später erneut.',
+                'unmatch' => 'Das alte Passwort stimmt nicht überein.',
 
                 'fname' => 'Vorname',
                 'lname' => 'Nachname',
-                'gender' => 'Gender',
-                'other' => 'Other',
-                'male' => 'Male',
-                'female' => 'Female',
-                'dob' => 'Date Of Birth',
+                'gender' => 'Geschlecht',
+                'other' => 'Divers',
+                'male' => 'Männlich',
+                'female' => 'Weiblich',
+                'dob' => 'Geburtsdatum',
                 'phone' => 'Phone',
-                'email' => 'Email',
-                'opassword' => 'Old Password',
+                'email' => 'Telefon',
+                'opassword' => 'Altes Passwort',
                 'password' => 'Passwort',
-                'cpassword' => 'Confirm Password',
-                'submit' => 'Update Profile',
+                'cpassword' => 'Passwort bestätigen',
+                'submit' => 'Profil aktualisieren',
 
                 'edit-profile' => [
-                    'title' => 'Edit Profile',
-                    'page-title' => 'Edit Profile Form'
+                    'title' => 'Konto bearbeiten',
+                    'page-title' => 'Profilformular bearbeiten'
                 ]
             ],
 
@@ -536,19 +536,19 @@ return [
             'order-summary' => 'Zusammenfassung der Bestellung',
             'sub-total' => 'Artikel',
             'grand-total' => 'Gesamtbetrag',
-            'delivery-charges' => 'Delivery Charges',
+            'delivery-charges' => 'Kosten der Lieferung',
             'tax' => 'Steuern',
-            'discount' => 'Discount',
+            'discount' => 'Rabatt',
             'price' => 'Preis',
-            'disc-amount' => 'Amount discounted',
-            'new-grand-total' => 'New Grand Total',
-            'coupon' => 'Coupon',
-            'coupon-applied' => 'Applied Coupon',
-            'remove-coupon' => 'Remove Coupon',
-            'cannot-apply-coupon' => 'Cannot Apply Coupon',
+            'disc-amount' => 'Ermäßigter Betrag',
+            'new-grand-total' => 'Neue Gesamtsumme',
+            'coupon' => 'Gutschein',
+            'coupon-applied' => 'Angewandter Gutschein',
+            'remove-coupon' => 'Gutschein entfernen',
+            'cannot-apply-coupon' => 'Gutschein kann nicht angewendet werden',
             'invalid-coupon' => 'Dieser Gutschein-Code ist nicht gültig',
-            'success-coupon' => 'Coupon code applied successfully.',
-            'coupon-apply-issue' => 'Coupon code can\'t be applied.'
+            'success-coupon' => 'Gutschein-Code erfolgreich angewendet',
+            'coupon-apply-issue' => 'Gutschein-Code kann nicht angewendet werden'
         ],
 
         'success' => [

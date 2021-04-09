@@ -2,7 +2,7 @@
 <section class="featured-pro">
 
     <div class="featured-heading">
-        <h1 class="large">Autumn/Winter 2020/21</h1>
+        <h1 class="large">Frühjahr/Sommer 2021/22</h1>
         <p class="small">{{ __('shop::app.home.featured-products') }}</p>
     </div>
 

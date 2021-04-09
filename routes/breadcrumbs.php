@@ -8,36 +8,36 @@ Breadcrumbs::for('home', function ($trail) {
 // Sing In
 Breadcrumbs::for('register', function ($trail) {
     $trail->parent('home');
-    $trail->push('Register', route('customer.register.index'));
+    $trail->push('Registrieren', route('customer.register.index'));
 });
 
 // log In
 Breadcrumbs::for('login', function ($trail) {
     $trail->parent('register');
-    $trail->push('Login', route('customer.session.index'));
+    $trail->push('Anmelden', route('customer.session.index'));
 });
 
 
 // Profile Index
 Breadcrumbs::for('profileIndex', function ($trail) {
     $trail->parent('home');
-    $trail->push('Profil', route('customer.profile.index'));
+    $trail->push('Konto', route('customer.profile.index'));
 });
 
 // Profile Edit
 Breadcrumbs::for('profileEdit', function ($trail) {
     $trail->parent('profileIndex');
-    $trail->push('Edit', route('customer.profile.edit'));
+    $trail->push('Bearbeiten', route('customer.profile.edit'));
 });
 
 Breadcrumbs::for('profileAddress', function ($trail) {
     $trail->parent('profileIndex');
-    $trail->push('Address', route('customer.address.index'));
+    $trail->push('Anschrift', route('customer.address.index'));
 });
 
 Breadcrumbs::for('profileReviews', function ($trail) {
     $trail->parent('profileIndex');
-    $trail->push('Reviews', route('customer.reviews.index'));
+    $trail->push('Bewertungen', route('customer.reviews.index'));
 });
 
 Breadcrumbs::for('profileWishlist', function ($trail) {
@@ -53,7 +53,7 @@ Breadcrumbs::for('profileCompare', function ($trail) {
 
 Breadcrumbs::for('profileOrders', function ($trail) {
     $trail->parent('profileIndex');
-    $trail->push('Review Orders', route('customer.orders.index'));
+    $trail->push('Aufträge prüfen', route('customer.orders.index'));
 });
 
 
