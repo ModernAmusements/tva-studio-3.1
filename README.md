@@ -371,3 +371,14 @@ added to header
 
 
             'invalid-coupon' => 'Dieser Gutschein-Code ist nicht gültig',
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+main branch bug: status ?
+master branch: clear

@@ -378,9 +378,9 @@ return [
     ],
 
     'products' => [
-        'layered-nav-title' => 'Shop By',
+        'layered-nav-title' => 'Einkaufen nach',
         'price-label' => 'As low as',
-        'remove-filter-link-title' => 'Clear All',
+        'remove-filter-link-title' => 'Entfernen',
         'sort-by' => 'Sort By',
         'from-a-z' => 'From A-Z',
         'from-z-a' => 'From Z-A',
@@ -403,7 +403,7 @@ return [
         'choose-option' => 'Choose an option',
         'sale' => 'Sale',
         'new' => 'New',
-        'empty' => 'No products available in this category',
+        'empty' => 'Keine Produkte in dieser Kategorie verfügbar',
         'add-to-cart' => 'In den Warenkorb',
         'buy-now' => 'Jetzt kaufen',
         'whoops' => 'Whoops!',

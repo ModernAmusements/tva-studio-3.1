@@ -65,41 +65,28 @@ Breadcrumbs::for('profileDownload', function ($trail) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Product
 Breadcrumbs::for('product', function ($trail) {
     $trail->parent('home');
-    $trail->push('Product', route('shop.home.index'));
+    $trail->push('Produkt', route('shop.home.index'));
 });
 
 
 // Product
 Breadcrumbs::for('cart', function ($trail) {
     $trail->parent('product');
-    $trail->push('Cart', route('shop.checkout.cart.index'));
+    $trail->push('Warenkorb', route('shop.checkout.cart.index'));
 });
 
 // Product
 Breadcrumbs::for('checkout', function ($trail) {
     $trail->parent('cart');
-    $trail->push('Checkout', route('shop.checkout.onepage.index'));
+    $trail->push('Kasse', route('shop.checkout.onepage.index'));
 });
 
 Breadcrumbs::for('orderSuccess', function ($trail) {
     $trail->parent('checkout');
-    $trail->push('Success', route('shop.checkout.success'));
+    $trail->push('Erfolg', route('shop.checkout.success'));
 });
 
 
