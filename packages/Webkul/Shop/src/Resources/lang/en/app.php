@@ -6,18 +6,18 @@ return [
     'nothing-to-delete' => 'Nothing to delete',
 
     'layouts' => [
-        'my-account' => 'My Account',
+        'my-account' => 'Mein Konto',
         'profile' => 'Profile',
-        'address' => 'Address',
-        'reviews' => 'Reviews',
+        'address' => 'Adresse',
+        'reviews' => 'Bewertungen',
         'wishlist' => 'Wishlist',
-        'orders' => 'Orders',
-        'downloadable-products' => 'Downloadable Products'
+        'orders' => 'Bestellungen',
+        'downloadable-products' => 'Produkte zum Herunterladen'
     ],
 
     'common' => [
-        'error' => 'Something went wrong, please try again later.',
-        'no-result-found' => 'We could not find any records.'
+        'error' => 'Etwas ist schief gelaufen, bitte versuchen Sie es später noch einmal.',
+        'no-result-found' => 'Wir konnten keine Aufzeichnungen finden.'
     ],
 
     'home' => [
@@ -93,7 +93,7 @@ return [
     'customer' => [
         'signup-text' => [
             'account_exists' => 'Sie haben bereits ein Konto',
-            'title' => 'Anmelden'
+            'title' => 'Anmelden - Tva Studio'
         ],
 
         'signup-form' => [
@@ -131,11 +131,11 @@ return [
 
         'login-text' => [
             'no_account' => 'Sie haben kein Konto?',
-            'title' => 'Hier anmelden!',
+            'title' => 'Hier registrieren!',
         ],
 
         'login-form' => [
-            'page-title' => 'Kunden-Login',
+            'page-title' => 'Kunden-Login - Tva Studio',
             'title' => 'Anmelden',
             'email' => 'Email',
             'password' => 'Passwort',
@@ -177,7 +177,7 @@ return [
 
             'profile' => [
                 'index' => [
-                    'page-title' => 'Konto',
+                    'page-title' => 'Konto - Tva Studio',
                     'title' => 'Profilformular',
                     'edit' => 'Bearbeiten',
                 ],
@@ -193,7 +193,7 @@ return [
                 'male' => 'Männlich',
                 'female' => 'Weiblich',
                 'dob' => 'Geburtsdatum',
-                'phone' => 'Phone',
+                'phone' => 'Telefonnummer',
                 'email' => 'Telefon',
                 'opassword' => 'Altes Passwort',
                 'password' => 'Passwort',
@@ -208,75 +208,75 @@ return [
 
             'address' => [
                 'index' => [
-                    'page-title' => 'Address',
-                    'title' => 'Address',
-                    'add' => 'Add Address',
-                    'edit' => 'Edit',
-                    'empty' => 'You do not have any saved addresses here, please try to create it by clicking the link below',
-                    'create' => 'Create Address',
-                    'delete' => 'Delete',
-                    'make-default' => 'Make Default',
-                    'default' => 'Default',
-                    'contact' => 'Contact',
-                    'confirm-delete' =>  'Do you really want to delete this address?',
-                    'default-delete' => 'Default address cannot be changed.',
-                    'enter-password' => 'Enter Your Password.',
+                    'page-title' => 'Adresse - Tva Studio',
+                    'title' => 'Anschrift',
+                    'add' => 'Anschrift hinzufügen',
+                    'edit' => 'Bearbeiten',
+                    'empty' => 'Sie haben hier keine gespeicherten Adressen, bitte versuchen Sie, diese über den unten stehenden Link anzulegen',
+                    'create' => 'Adresse anlegen',
+                    'delete' => 'Löschen',
+                    'make-default' => 'Als Standard festlegen',
+                    'default' => 'Standard',
+                    'contact' => 'Kontakt',
+                    'confirm-delete' =>  'Möchten Sie diese Adresse wirklich löschen?',
+                    'default-delete' => 'Die Standardadresse kann nicht geändert werden.',
+                    'enter-password' => 'Geben Sie Ihr Passwort ein',
                 ],
 
                 'create' => [
-                    'page-title' => 'Add Address Form',
-                    'company_name' => 'Company name',
-                    'first_name' => 'First name',
-                    'last_name' => 'Last name',
-                    'vat_id' => 'Vat id',
+                    'page-title' => 'Anschrift hinzufügen - Tva Studio',
+                    'company_name' => 'Firmenname',
+                    'first_name' => 'Vorname',
+                    'last_name' => 'Nachname',
+                    'vat_id' => 'Umsatzsteuer-Identifikationsnummer',
                     'vat_help_note' => '[Note: Use Country Code with VAT Id. Eg. INV01234567891]',
-                    'title' => 'Add Address',
-                    'street-address' => 'Street Address',
-                    'country' => 'Country',
-                    'state' => 'State',
-                    'select-state' => 'Select a region, state or province',
+                    'title' => 'Adresse hinzufügen',
+                    'street-address' => 'Straße und Hausnummer',
+                    'country' => 'Land',
+                    'state' => 'Bundesland',
+                    'select-state' => 'Wählen Sie eine Region, ein Bundesland oder eine Provinz',
                     'city' => 'City',
-                    'postcode' => 'Postal Code',
-                    'phone' => 'Phone',
-                    'submit' => 'Save Address',
+                    'postcode' => 'Postleitzahl',
+                    'phone' => 'Telefonnummer',
+                    'submit' => 'Adresse speichern',
                     'success' => 'Address have been successfully added.',
                     'error' => 'Address cannot be added.'
                 ],
 
                 'edit' => [
                     'page-title' => 'Edit Address',
-                    'company_name' => 'Company name',
-                    'first_name' => 'First name',
-                    'last_name' => 'Last name',
-                    'vat_id' => 'Vat id',
+                    'company_name' => 'Firmenname',
+                    'first_name' => 'Vorname',
+                    'last_name' => 'Nachname',
+                    'vat_id' => 'Umsatzsteuer-Identifikationsnummer',
                     'title' => 'Edit Address',
-                    'street-address' => 'Street Address',
-                    'submit' => 'Save Address',
-                    'success' => 'Address updated successfully.',
+                    'street-address' => 'Straße und Hausnummer',
+                    'submit' => 'Adresse speichern',
+                    'success' => 'Adresse erfolgreich aktualisiert.',
                 ],
                 'delete' => [
-                    'success' => 'Address successfully deleted',
-                    'failure' => 'Address cannot be deleted',
-                    'wrong-password' => 'Wrong Password !'
+                    'success' => 'Adresse erfolgreich gelöscht',
+                    'failure' => 'Adresse kann nicht gelöscht werden',
+                    'wrong-password' => 'Falsches Passwort!'
                 ]
             ],
 
             'order' => [
                 'index' => [
-                    'page-title' => 'Orders',
-                    'title' => 'Orders',
-                    'order_id' => 'Order ID',
-                    'date' => 'Date',
+                    'page-title' => 'Bestellungen - Tva Studio ',
+                    'title' => 'Bestellungen',
+                    'order_id' => 'Auftrags-ID',
+                    'date' => 'Datum',
                     'status' => 'Status',
-                    'total' => 'Total',
-                    'order_number' => 'Order Number',
-                    'processing' => 'Processing',
-                    'completed' => 'Completed',
-                    'canceled' => 'Canceled',
-                    'closed' => 'Closed',
-                    'pending' => 'Pending',
-                    'pending-payment' => 'Pending Payment',
-                    'fraud' => 'Fraud'
+                    'total' => 'Insgesamt',
+                    'order_number' => 'Bestellnummer',
+                    'processing' => 'Verarbeitung',
+                    'completed' => 'Abgeschlossen',
+                    'canceled' => 'Storniert',
+                    'closed' => 'Abgeschlossen',
+                    'pending' => 'Ausstehend',
+                    'pending-payment' => 'Ausstehende Zahlung',
+                    'fraud' => 'Betrug'
                 ],
 
                 'view' => [
@@ -445,8 +445,8 @@ return [
                 'qty_impossible' => 'Cannot add more than one of these products to cart.'
             ],
             'create-error' => 'Encountered some issue while making cart instance.',
-            'title' => 'Shopping Cart',
-            'empty' => 'Your shopping cart is empty',
+            'title' => 'Einkaufswagen',
+            'empty' => 'Ihr Einkaufswagen ist leer',
             'update-cart' => 'Warenkorb aktualisieren',
             'continue-shopping' => 'Weiter einkaufen',
             'proceed-to-checkout' => 'Zur Kasse gehen',
@@ -458,25 +458,25 @@ return [
             'add-config-warning' => 'Please select option before adding to cart.',
             'quantity' => [
                 'quantity' => 'Menge',
-                'success' => 'Cart Item(s) successfully updated.',
-                'illegal' => 'Quantity cannot be lesser than one.',
-                'inventory_warning' => 'The requested quantity is not available, please try again later.',
-                'error' => 'Cannot update the item(s) at the moment, please try again later.'
+                'success' => 'Warenkorb Artikel erfolgreich aktualisiert.',
+                'illegal' => 'Die Anzahl kann nicht kleiner als eins sein.',
+                'inventory_warning' => 'Die gewünschte Menge ist nicht verfügbar, bitte versuchen Sie es später noch einmal.',
+                'error' => 'Kann den/die Artikel im Moment nicht aktualisieren, bitte versuchen Sie es später noch einmal.'
             ],
 
             'item' => [
-                'error_remove' => 'No items to remove from the cart.',
-                'success' => 'Item was successfully added to cart.',
-                'success-remove' => 'Item was removed successfully from the cart.',
-                'error-add' => 'Item cannot be added to cart, please try again later.',
+                'error_remove' => 'Keine Artikel zum Entfernen aus dem Warenkorb.',
+                'success' => 'Artikel wurde erfolgreich in den Warenkorb gelegt.',
+                'success-remove' => 'Artikel wurde erfolgreich aus dem Warenkorb entfernt.',
+                'error-add' => 'Artikel kann nicht in den Warenkorb gelegt werden, bitte versuchen Sie es später noch einmal.',
             ],
-            'quantity-error' => 'Requested quantity is not available.',
+            'quantity-error' => 'Angeforderte Menge ist nicht verfügbar.',
             'cart-subtotal' => 'Warenkorb Zwischensumme',
-            'cart-remove-action' => 'Do you really want to do this ?',
-            'partial-cart-update' => 'Only some of the product(s) were updated',
+            'cart-remove-action' => 'Wollen Sie das wirklich tun?',
+            'partial-cart-update' => 'Nur ein Teil des/der Produkte(s) wurde aktualisiert',
             'link-missing' => '',
             'event' => [
-                'expired' => 'This event has been expired.'
+                'expired' => 'Dieses Ereignis ist abgelaufen.'
             ]
         ],
 
@@ -518,15 +518,15 @@ return [
             'apply-coupon' => 'Coupon anwenden',
             'amt-payable' => 'Zu zahlender Betrag',
             'got' => 'Erhalten',
-            'free' => 'Free',
+            'free' => 'Gratis',
             'coupon-used' => 'Coupon verwendet',
             'applied' => 'Angewandt',
             'back' => 'Zurück',
             'cash-desc' => 'Nachnahme',
             'money-desc' => 'Geldüberweisung',
             'paypal-desc' => 'Paypal Standard',
-            'free-desc' => 'This is a free shipping',
-            'flat-desc' => 'This is a flat rate',
+            'free-desc' => 'Dies ist ein kostenloser Versand',
+            'flat-desc' => 'Dies ist ein Pauschalbetrag',
             'password' => 'Passwort',
             'login-exist-message' => 'Sie haben bereits ein Konto bei uns, melden Sie sich an oder fahren Sie als Gast fort.',
             'enter-coupon-code' => 'Gutscheincode eingeben'
@@ -552,10 +552,10 @@ return [
         ],
 
         'success' => [
-            'title' => 'Order successfully placed',
-            'thanks' => 'Thank you for your order!',
-            'order-id-info' => 'Your order id is #:order_id',
-            'info' => 'We will email you, your order details and tracking information'
+            'title' => 'Auftrag erfolgreich erteilt',
+            'thanks' => 'Vielen Dank für Ihre Bestellung!',
+            'order-id-info' => 'Ihre Bestellnummer lautet #:order_id',
+            'info' => 'Wir senden Ihnen eine E-Mail mit den Details Ihrer Bestellung und Informationen zur Sendungsverfolgung'
         ]
     ],
 
