@@ -27,6 +27,7 @@
     <link rel="prefetch" href="https://use.typekit.net/yxr4ufi.css">
 </head>
 <div id="preload-homepage">
+    <span>
     <div class="intro">
         <svg class="tva-logo-preload"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.44 64.43">
             <path  d="M53.72,87.25V70.67H47.59V66.59h6.13V58.32H57v8.27h7.59v4.08H57v15.9c0,3.84,1.9,5.25,5.45,5.25a19.57,19.57,0,0,0,4.13-.29v4.23a19.29,19.29,0,0,1-4.13.48C57.41,96.24,53.72,93.33,53.72,87.25Z" transform="translate(-47.59 -57.77)"/>
@@ -41,6 +42,7 @@
         <h1 class="large"><em>Ceramics Handmade In Germany</em></h1>
         <h3 class="">2016-<?=date('Y')?></h1>
     </div>
+    </span>
   </div>
 <body class="animation">
       {{-- Nav --}}

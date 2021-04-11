@@ -1,13 +1,13 @@
 
 
 html{
-
+ background: var(--foreground-color);
 }
 
 
 body {
-  background: var(--background-color);
   color: var(--foreground-color);
+  background: var(--background-color);
   font-family: var(--sansFont), sans-serif;
   font-display: swap;
   font-size: var(--fontSize);
@@ -20,8 +20,13 @@ body {
   overflow-x: hidden;
   font-weight: 500;
 }
+
 body.animation {
+    background: var(--foreground-color);
     perspective: 40em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

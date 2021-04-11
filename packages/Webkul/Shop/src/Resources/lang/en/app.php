@@ -668,8 +668,8 @@ return [
 
             'subscription' => [
                 'subject' => 'E-Mail-Abonnement',
-                'greeting' => ' Willkommen bei ' . config('app.name') . ' - Email Subscription',
-                'unsubscribe' => 'Unsubscribe',
+                'greeting' => ' Willkommen bei ' . config('app.name') . ' - E-Mail-Abonnement',
+                'unsubscribe' => 'Abmelden',
                 'summary' => 'Danke, dass ich in Ihrem Posteingang gelandet bin. Es ist schon eine Weile her, dass Sie gelesen haben ' . config('app.name') . ' E-Mail, und wir möchten Ihren Posteingang nicht überfüllen. Wenn Sie immer noch keine Lust haben
                 die neuesten E-Mail-Marketing-Nachrichten erhalten möchten, dann klicken Sie auf jeden Fall auf die Schaltfläche unten.'
             ]

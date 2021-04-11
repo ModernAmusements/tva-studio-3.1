@@ -32,3 +32,5 @@ if (mix.inProduction()) {
     mix.version()
        .sourceMaps();
 }
+
+
