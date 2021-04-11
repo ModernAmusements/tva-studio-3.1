@@ -48,7 +48,7 @@
       {{-- Nav --}}
       @include('shop::layouts.header.index')
         {{-- Vue + Main App--}}
-    <div class="title-animation" id="app">
+    <div class="product-grid-animation" id="app">
         <flash-wrapper ref='flashes'>
         </flash-wrapper>
         {{-- Main App--}}
