@@ -4,7 +4,7 @@ $(function() {
       .remove();
   });
   if (!sessionStorage.getItem('homePagePreloader')) {
-    // sessionStorage.setItem('homePagePreloader', true);
+    sessionStorage.setItem('homePagePreloader', true);
     $('#preload-homepage').addClass('loaded').scrollTop(0);
      setTimeout(function() {
         $('#preload-homepage').addClass('fade-in');
@@ -26,13 +26,13 @@ $(function() {
         $('#app').addClass('fade-up');
         $('header').addClass('fade-up');
         $('#header-bottom').addClass('fade-up');
-        }, 3600);
+        }, 3525);
 
   } else {
     $('body').removeClass('animation');
     $('#preload-homepage').css('display', 'none');
-    $('header').removeClass('fade-up').removeClass('title-animation');
-    $('#app').removeClass('fade-up').removeClass('title-animation');
+    $('header').removeClass('fade-up').removeClass('nav-header-animation');
+    $('#app').removeClass('fade-up').removeClass('product-grid-animation');
     $('#header-bottom').removeClass('fade-up').removeClass('title-animation');
   }
 });
