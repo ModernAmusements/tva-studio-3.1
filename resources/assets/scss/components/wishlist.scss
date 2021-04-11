@@ -1,0 +1,13 @@
+.article-cart-subpage-now {
+    .add-to-wishlist::before {
+        content: "Wunschzettel";
+    }
+    .add-to-wishlist.already::before {
+        content: "Entfernen";
+    }
+
+    .add-to-wishlist.already {
+        background-color: var(--tva-dark-green);
+        color: var(--background-color);
+    }
+}
