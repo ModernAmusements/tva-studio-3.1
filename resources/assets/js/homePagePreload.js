@@ -4,7 +4,7 @@ $(function() {
       .remove();
   });
   if (!sessionStorage.getItem('homePagePreloader')) {
-    sessionStorage.setItem('homePagePreloader', true);
+    // sessionStorage.setItem('homePagePreloader', true);
     $('#preload-homepage').addClass('loaded').scrollTop(0);
      setTimeout(function() {
         $('#preload-homepage').addClass('fade-in');
@@ -12,13 +12,13 @@ $(function() {
 
     setTimeout(function() {
         $('#preload-homepage').css('display', 'none');
+        $('header').addClass('nav-header-animation');
         }, 3500);
 
     setTimeout(function() {
-        $('#app').css('display', 'block');
         $('header').css('display', 'grid');
+        $('#app').css('display', 'block');
         $('#header-bottom').css('display', 'grid');
-        $('body').removeClass('animation');
         $('body').removeClass('animation');
         }, 3500);
 
@@ -28,7 +28,8 @@ $(function() {
         $('#header-bottom').addClass('fade-up');
         }, 3525);
 
-  } else {
+  }
+  else {
     $('body').removeClass('animation');
     $('#preload-homepage').css('display', 'none');
     $('header').removeClass('fade-up').removeClass('nav-header-animation');
