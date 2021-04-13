@@ -21,6 +21,9 @@ const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
 const saveToStorage = () => storageType.setItem(consentPropertyName, true);
 
 window.onload = () => {
+    setTimeout(() => {
+        consentPopup.classList.add('hidden');
+    }, 5000);
 
   const acceptFn = event => {
       saveToStorage(storageType);
@@ -33,7 +36,7 @@ window.onload = () => {
   if (shouldShowPopup(storageType)) {
       setTimeout(() => {
           consentPopup.classList.remove('hidden');
-      }, 2000);
+      }, 5000);
   }
 
 };
