@@ -57,7 +57,7 @@
             }, 4000);
             setTimeout(function() {
                 currentlyAdded.style.display='none';
-            }, 5000);
+            }, 9000);
         @elseif ($warning = session('warning'))
             window.flashMessages = [{'type': 'alert-warning', 'message': "{{ $warning }}" }];
         @elseif ($error = session('error'))
