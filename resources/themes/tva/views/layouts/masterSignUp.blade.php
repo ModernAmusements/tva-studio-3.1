@@ -27,6 +27,7 @@
     <link rel="prefetch" href="https://use.typekit.net/yxr4ufi.css">
 </head>
 <body @if (core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif>
+    <span id="body-pageloader">
       {{-- Nav --}}
       @include('shop::layouts.header.indexSignUp')
         {{-- Vue + Main App--}}
@@ -66,6 +67,7 @@
     {{-- JSCRIPT --}}
     <script type="text/javascript" src="{{ tva_asset('js/shop.js') }}"></script>
     <script type="text/javascript" src="{{ tva_asset('js/ui.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('themes/tva/assets/js/pageLoader.js') }}"></script>
     <script type="text/javascript" src="{{ mix('themes/tva/assets/js/mainApp.js') }}"></script>
 
     @stack('scripts')
@@ -75,5 +77,14 @@
         <p class="small">Wir verwenden Cookies für Analyse- und Marketingzwecke. Bitte akzeptieren Sie <a href="@php echo route('shop.cms.page', 'about-us') @endphp">diese Bedingungen</a> , bevor Sie die Seite nutzen.</p>
         <a id="accept" href="#">Akzeptieren</a>
     </div>
+</span>
+<div id="page-loader">
+    <div class="tva-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+  </div>
 </body>
 </html>
