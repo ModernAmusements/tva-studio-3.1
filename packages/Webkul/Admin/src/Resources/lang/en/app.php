@@ -52,7 +52,7 @@ return [
         'invoices' => 'Invoices',
         'refunds' => 'Refunds',
         'catalog' => 'Catalog',
-        'products' => 'Products',
+        'products' => 'Produkte',
         'categories' => 'Categories',
         'attributes' => 'Attributes',
         'attribute-families' => 'Attribute Families',
@@ -85,7 +85,7 @@ return [
         'shipments' => 'Shipments',
         'invoices' => 'Invoices',
         'catalog' => 'Catalog',
-        'products' => 'Products',
+        'products' => 'Produkte',
         'categories' => 'Categories',
         'attributes' => 'Attributes',
         'attribute-families' => 'Attribute Families',
@@ -451,7 +451,7 @@ return [
 
     'catalog' => [
         'products' => [
-            'title' => 'Products',
+            'title' => 'Produkte',
             'add-product-btn-title' => 'Add Product',
             'add-title' => 'Add Product',
             'edit-title' => 'Edit Product',
@@ -1241,7 +1241,7 @@ return [
         ],
         'system' => [
             'catalog' => 'Catalog',
-            'products' => 'Products',
+            'products' => 'Produkte',
             'guest-checkout' => 'Guest Checkout',
             'allow-guest-checkout' => 'Allow Guest Checkout',
             'allow-guest-checkout-hint' => 'Hint: If turned on, this option can be configured for each product specifically.',
@@ -1270,9 +1270,9 @@ return [
             'rate' => 'Rate',
             'status' => 'Status',
             'type' => 'Type',
-            'payment-methods' => 'Payment Methods',
+            'payment-methods' => 'Zahlungsmethoden',
             'cash-on-delivery' => 'Cash On Delivery',
-            'money-transfer' => 'Money Transfer',
+            'money-transfer' => 'Geldüberweisung',
             'paypal-standard' => 'Paypal Standard',
             'business-account' => 'Business Account',
             'newsletter' => 'NewsLetter Subscription',

@@ -17,9 +17,9 @@
                             <span class="checkmark"></span>
                         </label>
                         <div class="method-summary">
-                            <h3 class="carrier-title" id="carrier-title">
+                            <h4 class="carrier-title" id="carrier-title">
                                 {{ $payment['method_title'] }}
-                            </h3>
+                            </h4>
                             <span class="medium">
                                 {{ __($payment['description']) }}
                             </span>

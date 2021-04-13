@@ -84,9 +84,7 @@ class SessionController extends Controller
 
         // Redirect Profilepage
 
-        // return redirect()->intended(route($this->_config['redirect']));
-
-        return redirect()->route('shop.home.index');
+        return redirect()->intended(route('shop.home.index'));
     }
 
     /**

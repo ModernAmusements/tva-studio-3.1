@@ -16,9 +16,9 @@
                                 <span class="checkmark"></span>
                             </label>
                             <div class="method-summary">
-                                <h3 class="carrier-title" id="carrier-title">
+                                <h4 class="carrier-title" id="carrier-title">
                                     {{ $rateGroup['carrier_title'] }}
-                                </h3>
+                                </h4>
                                 <span class="medium">
                                     <b>{{ $rate->method_title }}</b> - {{ __($rate->method_description) }}
                                 </span>

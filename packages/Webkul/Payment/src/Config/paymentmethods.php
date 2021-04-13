@@ -11,8 +11,8 @@ return [
 
     'moneytransfer'   => [
         'code'        => 'moneytransfer',
-        'title'       => 'Money Transfer',
-        'description' => 'Money Transfer',
+        'title'       => 'Geldüberweisung',
+        'description' => 'Geldüberweisung',
         'class'       => 'Webkul\Payment\Payment\MoneyTransfer',
         'active'      => true,
         'sort'        => 2,
@@ -25,7 +25,7 @@ return [
         'class'            => 'Webkul\Paypal\Payment\Standard',
         'sandbox'          => true,
         'active'           => true,
-        'business_account' => 'test@webkul.com',
+        'business_account' => 'test@tva.com',
         'sort'             => 3,
     ]
 ];

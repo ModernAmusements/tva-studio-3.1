@@ -74,17 +74,17 @@
                         <span class="medium">
                             Name:
                         </span>
-                       <h1 class="large">
+                       <h4>
                             {{ $item->product->name }}
-                        </h1>
+                        </h4>
                     </div>
                     <div class="item-price">
                         <span class="medium">
                             {{ __('shop::app.checkout.onepage.price') }}:
                         </span>
-                        <h1 class="large">
+                        <h4>
                             {{ core()->currency($item->base_price) }}
-                        </h1>
+                        </h4>
                     </div>
 
 
@@ -92,9 +92,9 @@
                         <span class="medium">
                             {{ __('shop::app.checkout.onepage.quantity') }}:
                         </span>
-                        <h1 class="large">
+                        <h4>
                             {{ $item->quantity }}
-                        </h1>
+                        </h4>
                     </div>
 
 
@@ -120,13 +120,12 @@
                 <div class="shipping">
 
                     <div class="form-header">
-                        <h1 class="large checkout-step-heading">
-                            Versand
-                        </h1>
+                        <h4 class="checkout-step-heading">
+                            Versand:
+                        </h4>
                     </div>
                     <div class="text medium">
                         {{ core()->currency($cart->selected_shipping_rate->base_price) }}
-
                         <div class="info">
                             {{ $cart->selected_shipping_rate->method_title }}
                         </div>
@@ -137,9 +136,9 @@
             <div class="payment">
 
                 <div class="form-header">
-                    <h1 class="large checkout-step-heading">
-                        ZahlungsartStadt
-                    </h1>
+                    <h4 class="checkout-step-heading">
+                        Zahlungsart:
+                    </h4>
                 </div>
 
                 <div class="text medium">
