@@ -22,11 +22,13 @@ body {
 }
 
 body.animation {
-    background: var(--foreground-color);
     perspective: 40em;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+body.dark-background {
+     background: var(--foreground-color);
 }
 
 
