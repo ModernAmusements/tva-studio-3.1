@@ -54,7 +54,7 @@
              currentlyAdded.style.left='0';
              setTimeout(function() {
                 currentlyAdded.style.opacity='0';
-            }, 4000);
+            }, 6000);
             setTimeout(function() {
                 currentlyAdded.style.display='none';
             }, 9000);

@@ -6,7 +6,7 @@ $(function() {
       setTimeout(function() {
           $('#page-loader').css('display', 'none');
           $('#body-pageloader').css('visibility', 'visible');
-          }, 2200);
+          }, 2000);
       setTimeout(function() {
         $('#page-loader').css('display', 'none');
         $('#body-pageloader').css('visibility', 'visible');
