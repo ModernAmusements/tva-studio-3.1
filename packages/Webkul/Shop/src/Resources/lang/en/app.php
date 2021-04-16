@@ -6,18 +6,18 @@ return [
     'nothing-to-delete' => 'Nothing to delete',
 
     'layouts' => [
-        'my-account' => 'My Account',
+        'my-account' => 'Mein Konto',
         'profile' => 'Profile',
-        'address' => 'Address',
-        'reviews' => 'Reviews',
+        'address' => 'Adresse',
+        'reviews' => 'Bewertungen',
         'wishlist' => 'Wishlist',
-        'orders' => 'Orders',
-        'downloadable-products' => 'Downloadable Products'
+        'orders' => 'Bestellungen',
+        'downloadable-products' => 'Produkte zum Herunterladen'
     ],
 
     'common' => [
-        'error' => 'Something went wrong, please try again later.',
-        'no-result-found' => 'We could not find any records.'
+        'error' => 'Etwas ist schief gelaufen, bitte versuchen Sie es später noch einmal.',
+        'no-result-found' => 'Wir konnten keine Aufzeichnungen finden.'
     ],
 
     'home' => [
@@ -93,7 +93,7 @@ return [
     'customer' => [
         'signup-text' => [
             'account_exists' => 'Sie haben bereits ein Konto',
-            'title' => 'Anmelden'
+            'title' => 'Anmelden - Tva Studio'
         ],
 
         'signup-form' => [
@@ -131,11 +131,11 @@ return [
 
         'login-text' => [
             'no_account' => 'Sie haben kein Konto?',
-            'title' => 'Hier anmelden!',
+            'title' => 'Hier registrieren!',
         ],
 
         'login-form' => [
-            'page-title' => 'Kunden-Login',
+            'page-title' => 'Kunden-Login - Tva Studio',
             'title' => 'Anmelden',
             'email' => 'Email',
             'password' => 'Passwort',
@@ -177,7 +177,7 @@ return [
 
             'profile' => [
                 'index' => [
-                    'page-title' => 'Konto',
+                    'page-title' => 'Konto - Tva Studio',
                     'title' => 'Profilformular',
                     'edit' => 'Bearbeiten',
                 ],
@@ -193,7 +193,7 @@ return [
                 'male' => 'Männlich',
                 'female' => 'Weiblich',
                 'dob' => 'Geburtsdatum',
-                'phone' => 'Phone',
+                'phone' => 'Telefonnummer',
                 'email' => 'Telefon',
                 'opassword' => 'Altes Passwort',
                 'password' => 'Passwort',
@@ -208,75 +208,75 @@ return [
 
             'address' => [
                 'index' => [
-                    'page-title' => 'Address',
-                    'title' => 'Address',
-                    'add' => 'Add Address',
-                    'edit' => 'Edit',
-                    'empty' => 'You do not have any saved addresses here, please try to create it by clicking the link below',
-                    'create' => 'Create Address',
-                    'delete' => 'Delete',
-                    'make-default' => 'Make Default',
-                    'default' => 'Default',
-                    'contact' => 'Contact',
-                    'confirm-delete' =>  'Do you really want to delete this address?',
-                    'default-delete' => 'Default address cannot be changed.',
-                    'enter-password' => 'Enter Your Password.',
+                    'page-title' => 'Adresse - Tva Studio',
+                    'title' => 'Anschrift',
+                    'add' => 'Anschrift hinzufügen',
+                    'edit' => 'Bearbeiten',
+                    'empty' => 'Sie haben hier keine gespeicherten Adressen, bitte versuchen Sie, diese über den unten stehenden Link anzulegen',
+                    'create' => 'Adresse anlegen',
+                    'delete' => 'Löschen',
+                    'make-default' => 'Als Standard festlegen',
+                    'default' => 'Standard',
+                    'contact' => 'Kontakt',
+                    'confirm-delete' =>  'Möchten Sie diese Adresse wirklich löschen?',
+                    'default-delete' => 'Die Standardadresse kann nicht geändert werden.',
+                    'enter-password' => 'Geben Sie Ihr Passwort ein',
                 ],
 
                 'create' => [
-                    'page-title' => 'Add Address Form',
-                    'company_name' => 'Company name',
-                    'first_name' => 'First name',
-                    'last_name' => 'Last name',
-                    'vat_id' => 'Vat id',
+                    'page-title' => 'Anschrift hinzufügen - Tva Studio',
+                    'company_name' => 'Firmenname',
+                    'first_name' => 'Vorname',
+                    'last_name' => 'Nachname',
+                    'vat_id' => 'Umsatzsteuer-Identifikationsnummer',
                     'vat_help_note' => '[Note: Use Country Code with VAT Id. Eg. INV01234567891]',
-                    'title' => 'Add Address',
-                    'street-address' => 'Street Address',
-                    'country' => 'Country',
-                    'state' => 'State',
-                    'select-state' => 'Select a region, state or province',
+                    'title' => 'Adresse hinzufügen',
+                    'street-address' => 'Straße und Hausnummer',
+                    'country' => 'Land',
+                    'state' => 'Bundesland',
+                    'select-state' => 'Wählen Sie eine Region, ein Bundesland oder eine Provinz',
                     'city' => 'City',
-                    'postcode' => 'Postal Code',
-                    'phone' => 'Phone',
-                    'submit' => 'Save Address',
+                    'postcode' => 'Postleitzahl',
+                    'phone' => 'Telefonnummer',
+                    'submit' => 'Adresse speichern',
                     'success' => 'Address have been successfully added.',
                     'error' => 'Address cannot be added.'
                 ],
 
                 'edit' => [
                     'page-title' => 'Edit Address',
-                    'company_name' => 'Company name',
-                    'first_name' => 'First name',
-                    'last_name' => 'Last name',
-                    'vat_id' => 'Vat id',
+                    'company_name' => 'Firmenname',
+                    'first_name' => 'Vorname',
+                    'last_name' => 'Nachname',
+                    'vat_id' => 'Umsatzsteuer-Identifikationsnummer',
                     'title' => 'Edit Address',
-                    'street-address' => 'Street Address',
-                    'submit' => 'Save Address',
-                    'success' => 'Address updated successfully.',
+                    'street-address' => 'Straße und Hausnummer',
+                    'submit' => 'Adresse speichern',
+                    'success' => 'Adresse erfolgreich aktualisiert.',
                 ],
                 'delete' => [
-                    'success' => 'Address successfully deleted',
-                    'failure' => 'Address cannot be deleted',
-                    'wrong-password' => 'Wrong Password !'
+                    'success' => 'Adresse erfolgreich gelöscht',
+                    'failure' => 'Adresse kann nicht gelöscht werden',
+                    'wrong-password' => 'Falsches Passwort!'
                 ]
             ],
 
             'order' => [
                 'index' => [
-                    'page-title' => 'Orders',
-                    'title' => 'Orders',
-                    'order_id' => 'Order ID',
-                    'date' => 'Date',
+                    'page-title' => 'Bestellungen - Tva Studio ',
+                    'title' => 'Bestellungen',
+                    'order_id' => 'Auftrags-ID',
+                    'date' => 'Datum',
                     'status' => 'Status',
-                    'total' => 'Total',
-                    'order_number' => 'Order Number',
-                    'processing' => 'Processing',
-                    'completed' => 'Completed',
-                    'canceled' => 'Canceled',
-                    'closed' => 'Closed',
-                    'pending' => 'Pending',
-                    'pending-payment' => 'Pending Payment',
-                    'fraud' => 'Fraud'
+                    'total' => 'Insgesamt',
+                    'order_number' => 'Bestellnummer',
+                    'processing' => 'Verarbeitung',
+                    'completed' => 'Abgeschlossen',
+                    'canceled' => 'Storniert',
+                    'closed' => 'Abgeschlossen',
+                    'pending' => 'Ausstehend',
+                    'pending-payment' => 'Ausstehende Zahlung',
+                    'fraud' => 'Betrug'
                 ],
 
                 'view' => [
@@ -295,23 +295,23 @@ return [
                     'item-shipped' => 'shipped (:qty_shipped)',
                     'item-canceled' => 'Canceled (:qty_canceled)',
                     'item-refunded' => 'Refunded (:qty_refunded)',
-                    'price' => 'Price',
+                    'price' => 'Preis',
                     'total' => 'Total',
-                    'subtotal' => 'Subtotal',
-                    'shipping-handling' => 'Shipping & Handling',
-                    'tax' => 'Tax',
-                    'discount' => 'Discount',
+                    'subtotal' => 'Zwischensumme',
+                    'shipping-handling' => 'Versand & Bearbeitung',
+                    'tax' => 'Steuer',
+                    'discount' => 'Rabatt',
                     'tax-percent' => 'Tax Percent',
                     'tax-amount' => 'Tax Amount',
                     'discount-amount' => 'Discount Amount',
-                    'grand-total' => 'Grand Total',
+                    'grand-total' => 'Gesamtsumme',
                     'total-paid' => 'Total Paid',
                     'total-refunded' => 'Total Refunded',
                     'total-due' => 'Total Due',
                     'shipping-address' => 'Lieferadresse',
                     'billing-address' => 'Rechnungsadresse',
-                    'shipping-method' => 'Shipping Method',
-                    'payment-method' => 'Payment Method',
+                    'shipping-method' => 'Versandart',
+                    'payment-method' => 'Zahlungsmethode',
                     'individual-invoice' => 'Invoice #:invoice_id',
                     'individual-shipment' => 'Shipment #:shipment_id',
                     'print' => 'Print',
@@ -320,7 +320,7 @@ return [
                     'order-date' => 'Order Date',
                     'bill-to' => 'Bill to',
                     'ship-to' => 'Ship to',
-                    'contact' => 'Contact',
+                    'contact' => 'Kontakt',
                     'refunds' => 'Refunds',
                     'individual-refund' => 'Refund #:refund_id',
                     'adjustment-refund' => 'Adjustment Refund',
@@ -330,24 +330,24 @@ return [
             ],
 
             'wishlist' => [
-                'page-title' => 'Wishlist',
-                'title' => 'Wishlist',
-                'deleteall' => 'Delete All',
-                'moveall' => 'Move All Products To Cart',
-                'move-to-cart' => 'Move To Cart',
-                'error' => 'Cannot add product to wishlist due to unknown problems, please checkback later',
-                'add' => 'Item successfully added to wishlist',
+                'page-title' => 'Wunschzettel',
+                'title' => 'Wunschzettel',
+                'deleteall' => 'Alle löschen',
+                'moveall' => 'Alle Produkte in den Warenkorb legen',
+                'move-to-cart' => 'In den Warenkorb legen',
+                'error' => 'Produkt kann wegen unbekannter Probleme nicht zur Wunschliste hinzugefügt werden, bitte später wiederkommen',
+                'add' => 'Artikel erfolgreich zum Wunschzettel hinzugefügt',
                 'remove' => 'Item successfully removed from wishlist',
-                'moved' => 'Item successfully moved To cart',
+                'moved' => 'Artikel erfolgreich in den Warenkorb verschoben',
                 'option-missing' => 'Product options are missing, so item can not be moved to the wishlist.',
-                'move-error' => 'Item cannot be moved to wishlist, Please try again later',
-                'success' => 'Item successfully added to wishlist',
-                'failure' => 'Item cannot be added to wishlist, Please try again later',
-                'already' => 'Item already present in your wishlist',
-                'removed' => 'Item successfully removed from wishlist',
-                'remove-fail' => 'Item cannot Be removed from wishlist, Please try again later',
-                'empty' => 'You do not have any items in your wishlist',
-                'remove-all-success' => 'All the items from your wishlist have been removed',
+                'move-error' => 'Artikel kann nicht in den Wunschzettel verschoben werden, bitte versuchen Sie es später noch einmal',
+                'success' => 'Artikel erfolgreich zum Wunschzettel hinzugefügt',
+                'failure' => 'Artikel kann nicht zur Wunschliste hinzugefügt werden, bitte versuchen Sie es später erneut',
+                'already' => 'Artikel bereits in Ihrer Wunschliste vorhanden',
+                'removed' => 'Artikel erfolgreich vom Wunschzettel entfernt',
+                'remove-fail' => 'Artikel kann nicht vom Wunschzettel entfernt werden, bitte versuchen Sie es später erneut',
+                'empty' => 'Sie haben keine Artikel in Ihrem Wunschzettel',
+                'remove-all-success' => 'Alle Artikel aus Ihrer Wunschliste wurden entfernt',
             ],
 
             'downloadable_products' => [
@@ -445,8 +445,8 @@ return [
                 'qty_impossible' => 'Cannot add more than one of these products to cart.'
             ],
             'create-error' => 'Encountered some issue while making cart instance.',
-            'title' => 'Shopping Cart',
-            'empty' => 'Your shopping cart is empty',
+            'title' => 'Einkaufswagen',
+            'empty' => 'Ihr Einkaufswagen ist leer',
             'update-cart' => 'Warenkorb aktualisieren',
             'continue-shopping' => 'Weiter einkaufen',
             'proceed-to-checkout' => 'Zur Kasse gehen',
@@ -458,25 +458,25 @@ return [
             'add-config-warning' => 'Please select option before adding to cart.',
             'quantity' => [
                 'quantity' => 'Menge',
-                'success' => 'Cart Item(s) successfully updated.',
-                'illegal' => 'Quantity cannot be lesser than one.',
-                'inventory_warning' => 'The requested quantity is not available, please try again later.',
-                'error' => 'Cannot update the item(s) at the moment, please try again later.'
+                'success' => 'Warenkorb Artikel erfolgreich aktualisiert.',
+                'illegal' => 'Die Anzahl kann nicht kleiner als eins sein.',
+                'inventory_warning' => 'Die gewünschte Menge ist nicht verfügbar, bitte versuchen Sie es später noch einmal.',
+                'error' => 'Kann den/die Artikel im Moment nicht aktualisieren, bitte versuchen Sie es später noch einmal.'
             ],
 
             'item' => [
-                'error_remove' => 'No items to remove from the cart.',
-                'success' => 'Item was successfully added to cart.',
-                'success-remove' => 'Item was removed successfully from the cart.',
-                'error-add' => 'Item cannot be added to cart, please try again later.',
+                'error_remove' => 'Keine Artikel zum Entfernen aus dem Warenkorb.',
+                'success' => 'Artikel wurde erfolgreich in den Warenkorb gelegt.',
+                'success-remove' => 'Artikel wurde erfolgreich aus dem Warenkorb entfernt.',
+                'error-add' => 'Artikel kann nicht in den Warenkorb gelegt werden, bitte versuchen Sie es später noch einmal.',
             ],
-            'quantity-error' => 'Requested quantity is not available.',
+            'quantity-error' => 'Angeforderte Menge ist nicht verfügbar.',
             'cart-subtotal' => 'Warenkorb Zwischensumme',
-            'cart-remove-action' => 'Do you really want to do this ?',
-            'partial-cart-update' => 'Only some of the product(s) were updated',
+            'cart-remove-action' => 'Wollen Sie das wirklich tun?',
+            'partial-cart-update' => 'Nur ein Teil des/der Produkte(s) wurde aktualisiert',
             'link-missing' => '',
             'event' => [
-                'expired' => 'This event has been expired.'
+                'expired' => 'Dieses Ereignis ist abgelaufen.'
             ]
         ],
 
@@ -518,15 +518,15 @@ return [
             'apply-coupon' => 'Coupon anwenden',
             'amt-payable' => 'Zu zahlender Betrag',
             'got' => 'Erhalten',
-            'free' => 'Free',
+            'free' => 'Gratis',
             'coupon-used' => 'Coupon verwendet',
             'applied' => 'Angewandt',
             'back' => 'Zurück',
             'cash-desc' => 'Nachnahme',
             'money-desc' => 'Geldüberweisung',
             'paypal-desc' => 'Paypal Standard',
-            'free-desc' => 'This is a free shipping',
-            'flat-desc' => 'This is a flat rate',
+            'free-desc' => 'Dies ist ein kostenloser Versand',
+            'flat-desc' => 'Dies ist ein Pauschalbetrag',
             'password' => 'Passwort',
             'login-exist-message' => 'Sie haben bereits ein Konto bei uns, melden Sie sich an oder fahren Sie als Gast fort.',
             'enter-coupon-code' => 'Gutscheincode eingeben'
@@ -552,74 +552,74 @@ return [
         ],
 
         'success' => [
-            'title' => 'Order successfully placed',
-            'thanks' => 'Thank you for your order!',
-            'order-id-info' => 'Your order id is #:order_id',
-            'info' => 'We will email you, your order details and tracking information'
+            'title' => 'Auftrag erfolgreich erteilt',
+            'thanks' => 'Vielen Dank für Ihre Bestellung!',
+            'order-id-info' => 'Ihre Bestellnummer lautet #:order_id',
+            'info' => 'Wir senden Ihnen eine E-Mail mit den Details Ihrer Bestellung und Informationen zur Sendungsverfolgung'
         ]
     ],
 
     'mail' => [
         'order' => [
-            'subject' => 'New Order Confirmation',
-            'heading' => 'Order Confirmation!',
-            'dear' => 'Dear :customer_name',
-            'dear-admin' => 'Dear :admin_name',
-            'greeting' => 'Thanks for your Order :order_id placed on :created_at',
-            'greeting-admin' => 'Order Id :order_id placed on :created_at',
-            'summary' => 'Summary of Order',
+            'subject' => 'Neue Bestellbestätigung',
+            'heading' => 'Auftragsbestätigung',
+            'dear' => 'Hallo :customer_name',
+            'dear-admin' => 'Hallo :admin_name',
+            'greeting' => 'Danke für Ihre Bestellung :order_id aufgesetzt am :created_at',
+            'greeting-admin' => 'Bestellnummer :order_id placed aufgesetzt am :created_at',
+            'summary' => 'Zusammenfassung der Bestellung',
             'shipping-address' => 'Lieferadresse',
             'billing-address' => 'Rechnungsadresse',
-            'contact' => 'Contact',
-            'shipping' => 'Shipping Method',
-            'payment' => 'Payment Method',
-            'price' => 'Price',
+            'contact' => 'Kontakt',
+            'shipping' => 'Versandart',
+            'payment' => 'Zahlungsmethode',
+            'price' => 'Preis',
             'quantity' => 'Menge',
-            'subtotal' => 'Subtotal',
-            'shipping-handling' => 'Shipping & Handling',
-            'tax' => 'Tax',
-            'discount' => 'Discount',
-            'grand-total' => 'Grand Total',
-            'final-summary' => 'Thanks for showing your interest in our store we will send you tracking number once it shipped',
-            'help' => 'If you need any kind of help please contact us at :support_email',
-            'thanks' => 'Thanks!',
+            'subtotal' => 'Zwischensumme',
+            'shipping-handling' => 'Versand & Bearbeitung',
+            'tax' => 'Steuer',
+            'discount' => 'Rabatt',
+            'grand-total' => 'Gesamtsumme',
+            'final-summary' => 'Vielen Dank für Ihr Interesse an unserem Shop, wir werden Ihnen eine Tracking-Nummer senden, sobald die Ware versandt wurde',
+            'help' => 'Wenn Sie Hilfe benötigen, kontaktieren Sie uns bitte unter :support_email',
+            'thanks' => 'Danke!',
             'cancel' => [
-                'subject' => 'Order Cancel Confirmation',
-                'heading' => 'Order Cancelled',
-                'dear' => 'Dear :customer_name',
-                'greeting' => 'You Order with order id #:order_id placed on :created_at has been cancelled',
+                'subject' => 'Auftrags stornierungs Bestätigung',
+                'heading' => 'Auftrag storniert',
+                'dear' => 'Hallo :customer_name',
+                'greeting' => 'Ihre Bestellung id #:order_id aufgesetzt am :created_at wurde storniert',
                 'summary' => 'Summary of Order',
                 'shipping-address' => 'Lieferadresse',
                 'billing-address' => 'Rechnungsadresse',
-                'contact' => 'Contact',
-                'shipping' => 'Shipping Method',
-                'payment' => 'Payment Method',
-                'subtotal' => 'Subtotal',
-                'shipping-handling' => 'Shipping & Handling',
-                'tax' => 'Tax',
-                'discount' => 'Discount',
-                'grand-total' => 'Grand Total',
-                'final-summary' => 'Thanks for showing your interest in our store',
-                'help' => 'If you need any kind of help please contact us at :support_email',
-                'thanks' => 'Thanks!',
+                'contact' => 'Kontakt',
+                'shipping' => 'Versandart',
+                'payment' => 'Zahlungsmethode',
+                'subtotal' => 'Zwischensumme',
+                'shipping-handling' => 'Versand & Bearbeitung',
+                'tax' => 'Steuer',
+                'discount' => 'Rabatt',
+                'grand-total' => 'Gesamtsumme',
+                'final-summary' => 'Vielen Dank für Ihr Interesse an unserem Shop',
+                'help' => 'Wenn Sie Hilfe benötigen, kontaktieren Sie uns bitte unter :support_email',
+                'thanks' => 'Danke',
             ]
         ],
 
         'invoice' => [
-            'heading' => 'Your invoice #:invoice_id for Order #:order_id',
-            'subject' => 'Invoice for your order #:order_id',
-            'summary' => 'Summary of Invoice',
+            'heading' => 'Ihre Rechnung #:invoice_id für Bestellung #:order_id',
+            'subject' => 'Rechnung zu Ihrer Bestellung #:order_id',
+            'summary' => 'Zusammenfassung der Rechnung',
         ],
 
         'shipment' => [
-            'heading' => 'Shipment #:shipment_id  has been generated for Order #:order_id',
+            'heading' => 'Versand #:shipment_id wurde für den Auftrag #:order_id erzeugt',
             'inventory-heading' => 'New shipment #:shipment_id had been generated for Order #:order_id',
-            'subject' => 'Shipment for your order #:order_id',
-            'inventory-subject' => 'New shipment had been generated for Order #:order_id',
-            'summary' => 'Summary of Shipment',
-            'carrier' => 'Carrier',
-            'tracking-number' => 'Tracking Number',
-            'greeting' => 'An order :order_id has been placed on :created_at',
+            'subject' => 'Versand für Ihre Bestellung #:order_id',
+            'inventory-subject' => 'Neue Sendung wurde für Auftrag #:order_id erzeugt',
+            'summary' => 'Zusammenfassung des Versands',
+            'carrier' => 'Transporteur',
+            'tracking-number' => 'Verfolgungsnummer',
+            'greeting' => 'Eine Bestellung :order_id würde am :created_at aufgegeben',
         ],
 
         'refund' => [
@@ -631,54 +631,53 @@ return [
         ],
 
         'forget-password' => [
-            'subject' => 'Customer Reset Password',
-            'dear' => 'Dear :name',
-            'info' => 'You are receiving this email because we received a password reset request for your account',
-            'reset-password' => 'Reset Password',
-            'final-summary' => 'If you did not request a password reset, no further action is required',
-            'thanks' => 'Thanks!'
+            'subject' => 'Kunde Passwort zurücksetzen',
+            'dear' => 'Hallo :name',
+            'info' => 'Sie erhalten diese E-Mail, weil wir eine Anfrage zum Zurücksetzen des Passworts für Ihr Konto erhalten haben',
+            'reset-password' => 'Passwort zurücksetzen',
+            'final-summary' => 'Wenn Sie kein Zurücksetzen des Kennworts angefordert haben, sind keine weiteren Maßnahmen erforderlich',
+            'thanks' => 'Dammle!'
         ],
 
         'customer' => [
             'new' => [
-                'dear' => 'Dear :customer_name',
+                'dear' => 'Hallo :customer_name',
                 'username-email' => 'UserName/Email',
-                'subject' => 'New Customer Registration',
+                'subject' => 'Registrierung von Neukunden',
                 'password' => 'Passwort',
-                'summary' => 'Your account has been created.
-                Your account details are below: ',
-                'thanks' => 'Thanks!',
+                'summary' => 'Ihr Konto wurde erstellt. Ihre Kontodaten finden Sie unten: ',
+                'thanks' => 'Danke!',
             ],
 
             'registration' => [
-                'subject' => 'New Customer Registration',
-                'customer-registration' => 'Customer Registered Successfully',
-                'dear' => 'Dear :customer_name',
-                'greeting' => 'Welcome and thank you for registering with us!',
-                'summary' => 'Your account has now been created successfully and you can login using your email address and password credentials. Upon logging in, you will be able to access other services including reviewing past orders, wishlists and editing your account information.',
-                'thanks' => 'Thanks!',
+                'subject' => 'Registrierung von Neukunden',
+                'customer-registration' => 'Kunde erfolgreich registriert',
+                'dear' => 'Hallo :customer_name',
+                'greeting' => 'Herzlich willkommen und danke, dass Sie sich bei uns registriert haben!',
+                'summary' => 'Ihr Konto wurde nun erfolgreich erstellt und Sie können sich mit Ihrer E-Mail-Adresse und Ihrem Passwort anmelden. Nach dem Einloggen können Sie auf weitere Dienste zugreifen, wie z. B. die Überprüfung vergangener Bestellungen, Wunschlisten und die Bearbeitung Ihrer Kontoinformationen.',
+                'thanks' => 'Danke!',
             ],
 
             'verification' => [
-                'heading' => config('app.name') . ' - Email Verification',
-                'subject' => 'Verification Mail',
-                'verify' => 'Verify Your Account',
-                'summary' => 'This is the mail to verify that the email address you entered is yours.
-                Kindly click the Verify Your Account button below to verify your account.'
+                'heading' => config('app.name') . ' - Email Verifizierung',
+                'subject' => 'Verifizierungs Mail',
+                'verify' => 'Überprüfen Sie Ihr Konto',
+                'summary' => 'Dies ist die E-Mail, mit der Sie bestätigen, dass die eingegebene E-Mail-Adresse die Ihre ist.
+                Bitte klicken Sie auf die Schaltfläche "Verify Your Account" unten, um Ihr Konto zu verifizieren.'
             ],
 
             'subscription' => [
-                'subject' => 'Subscription Email',
-                'greeting' => ' Welcome to ' . config('app.name') . ' - Email Subscription',
-                'unsubscribe' => 'Unsubscribe',
-                'summary' => 'Thanks for putting me into your inbox. It’s been a while since you’ve read ' . config('app.name') . ' email, and we don’t want to overwhelm your inbox. If you still do not want to receive
-                the latest email marketing news then for sure click the button below.'
+                'subject' => 'E-Mail-Abonnement',
+                'greeting' => ' Willkommen bei ' . config('app.name') . ' - E-Mail-Abonnement',
+                'unsubscribe' => 'Abmelden',
+                'summary' => 'Danke, dass ich in Ihrem Posteingang gelandet bin. Es ist schon eine Weile her, dass Sie gelesen haben ' . config('app.name') . ' E-Mail, und wir möchten Ihren Posteingang nicht überfüllen. Wenn Sie immer noch keine Lust haben
+                die neuesten E-Mail-Marketing-Nachrichten erhalten möchten, dann klicken Sie auf jeden Fall auf die Schaltfläche unten.'
             ]
         ]
     ],
 
     'webkul' => [
-        'copy-right' => '© Copyright :year Webkul Software, All rights reserved',
+        'copy-right' => '©2020 alle Rechte vorbehalten',
     ],
 
     'response' => [
