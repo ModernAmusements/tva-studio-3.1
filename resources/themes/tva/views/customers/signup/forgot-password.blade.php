@@ -42,7 +42,7 @@
 
             {!! view_render_event('bagisto.shop.customers.forget_password_form_controls.before') !!}
 
-            <div class="btn-grid border-t btn-grid-primary">
+            <div class="btn-grid border-t btn-grid-black">
                 <button type="submit" class="btn-hover">
                     <span class="text">{{ __('shop::app.customer.forgot-password.submit') }}</span>
                 </button>
@@ -51,7 +51,7 @@
 
             <div class="control-group btn-grid border-t btn-grid-secondary">
                 <button type="submit" class="btn-hover">
-                <a href="{{ route('customer.session.index') }}">
+                <a class="text" href="{{ route('customer.session.index') }}">
                     {{ __('shop::app.customer.reset-password.back-link-title') }}
                 </a>
             </button>

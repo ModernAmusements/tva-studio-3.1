@@ -10,6 +10,7 @@ footer {
     left: 0;
     a:not(.btn-hover),
     p {
+        text-align: center;
         padding: 11px 18px;
         margin: 0;
     }
@@ -89,9 +90,19 @@ footer {
             flex-direction: column;
         }
         .footer-newsletter-panel.is-open {
-            bottom: 180px;
+            bottom: 181px;
         }
     }
 
 }
+
+@media (max-height: 812px) {
+    footer {
+        .footer-newsletter-panel.is-open {
+            bottom: 202px;
+        }
+    }
+
+}
+
 

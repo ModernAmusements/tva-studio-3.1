@@ -180,7 +180,7 @@
             <label for="billing[state]" class="required">
                 {{ __('shop::app.checkout.onepage.state') }}
             </label>
-            <input type="text" v-validate="'required'" class="control form-control subscribe-field form-sub" id="billing[state]" name="billing[state]" v-model="address.billing.state" v-if="!haveStates('billing')" data-vv-as="&quot;{{ __('shop::app.checkout.onepage.state') }}&quot;"/>
+            <input type="text" v-validate="'required'" class="c-form control form-control subscribe-field form-sub" id="billing[state]" name="billing[state]" v-model="address.billing.state" v-if="!haveStates('billing')" data-vv-as="&quot;{{ __('shop::app.checkout.onepage.state') }}&quot;"/>
             <select v-validate="'required'" class="c-form control" id="billing[state]" name="billing[state]" v-model="address.billing.state" v-if="haveStates('billing')" data-vv-as="&quot;{{ __('shop::app.checkout.onepage.state') }}&quot;">
                 <option value="">{{ __('shop::app.checkout.onepage.select-state') }}</option>
                 <option v-for='(state, index) in countryStates[address.billing.country]' :value="state.code">

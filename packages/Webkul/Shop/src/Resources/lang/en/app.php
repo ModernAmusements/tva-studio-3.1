@@ -158,7 +158,7 @@ return [
         'forgot-password' => [
             'title' => 'Passwort wiederherstellen',
             'email' => 'Email',
-            'submit' => 'E-Mail zum Zurücksetzen des Passworts senden',
+            'submit' => 'Passwort jetzt zurücksetzen',
             'page_title' => 'Haben Sie Ihr Passwort vergessen?'
         ],
 
@@ -631,12 +631,12 @@ return [
         ],
 
         'forget-password' => [
-            'subject' => 'Kunde Passwort zurücksetzen',
+            'subject' => 'Kunden Passwort zurücksetzen',
             'dear' => 'Hallo :name',
             'info' => 'Sie erhalten diese E-Mail, weil wir eine Anfrage zum Zurücksetzen des Passworts für Ihr Konto erhalten haben',
             'reset-password' => 'Passwort zurücksetzen',
             'final-summary' => 'Wenn Sie kein Zurücksetzen des Kennworts angefordert haben, sind keine weiteren Maßnahmen erforderlich',
-            'thanks' => 'Dammle!'
+            'thanks' => 'Danke!'
         ],
 
         'customer' => [

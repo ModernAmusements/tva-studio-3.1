@@ -8,13 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="content-language" content="de">
+
     <link rel="stylesheet prefetch" href="{{ mix('themes/tva/assets/css/index.css') }}">
 
-    @if ($favicon = core()->getCurrentChannel()->favicon_url)
-        <link rel="icon" sizes="16x16" href="{{ $favicon }}" />
-    @else
-        <link rel="icon" sizes="16x16" href="{{ tva_asset('images/favicon.ico') }}" />
-    @endif
+    @include('shop::layouts.header.favicon')
+
     @yield('head')
     {{-- SEO --}}
     @section('seo')

@@ -81,6 +81,15 @@ input.form-sub {
     padding: 14px;
 }
 
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    background-color: transparent;
+    color: var(--foreground-color);
+}
+
+
 input.input-xl {
     padding: 10px 16px;
     height: 45px;
