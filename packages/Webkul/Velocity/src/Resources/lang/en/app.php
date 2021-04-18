@@ -159,7 +159,7 @@ return [
         'title'             => 'Account',
         'account'           => 'Account',
         'profile'           => 'Profile',
-        'wishlist'          => 'Wishlist',
+        'wishlist'          => 'Wunschzettel',
         'all-categories'    => 'All Categories',
         'search-text'       => 'Search products here',
         'welcome-message'   => 'Welcome, :customer_name',
@@ -192,12 +192,12 @@ return [
 
     'customer'      => [
         'compare'           => [
-            'text'                  => 'Compare',
-            'compare_similar_items' => 'Compare Similar Items',
+            'text'                  => 'Vergleichen Sie',
+            'compare_similar_items' => 'Ähnliche Artikel vergleichen',
             'added'                 => 'Item successfully added to compare list',
             'already_added'         => 'Item already added to compare list',
             'removed'               => 'Item successfully removed from compare list',
-            'empty-text'            => "You don't have any items in your compare list",
+            'empty-text'            => 'Sie haben keine Artikel in Ihrer Vergleichsliste',
         ],
         'login-form'        => [
             'sign-up'               => 'Sign up',

@@ -42,13 +42,13 @@ Breadcrumbs::for('profileReviews', function ($trail) {
 
 Breadcrumbs::for('profileWishlist', function ($trail) {
     $trail->parent('profileIndex');
-    $trail->push('Wishlist', route('customer.wishlist.index'));
+    $trail->push('Wunschzettel', route('customer.wishlist.index'));
 });
 
 
 Breadcrumbs::for('profileCompare', function ($trail) {
     $trail->parent('profileIndex');
-    $trail->push('Compare Products', route('velocity.product.compare'));
+    $trail->push('Artikel vergleichen', route('velocity.product.compare'));
 });
 
 Breadcrumbs::for('profileOrders', function ($trail) {
@@ -59,7 +59,7 @@ Breadcrumbs::for('profileOrders', function ($trail) {
 
 Breadcrumbs::for('profileDownload', function ($trail) {
     $trail->parent('profileIndex');
-    $trail->push('Downloadable Products', route('customer.downloadable_products.index'));
+    $trail->push('Produkte zum Herunterladen', route('customer.downloadable_products.index'));
 });
 
 
@@ -86,7 +86,7 @@ Breadcrumbs::for('checkout', function ($trail) {
 
 Breadcrumbs::for('orderSuccess', function ($trail) {
     $trail->parent('checkout');
-    $trail->push('Erfolg', route('shop.checkout.success'));
+    $trail->push('Erfolgreich', route('shop.checkout.success'));
 });
 
 

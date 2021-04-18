@@ -12,7 +12,7 @@ return [
         'remove-all-success' => 'All The Items From Your Wishlist Have Been Removed',
     ],
     'reviews' => [
-        'empty' => 'You have not reviewed any of product yet'
+        'empty' => 'Sie haben noch kein Produkt bewertet'
     ],
     'forget_password' => [
         'reset_link_sent' => 'We have e-mailed your reset password link.'

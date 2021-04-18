@@ -91,7 +91,7 @@
     <body
     class=""
     style="
-      background: #1b2c13;
+      background: #e9e9e1;
       font-family: sans-serif;
       -webkit-font-smoothing: antialiased;
       text-size-adjust: 100%;
@@ -241,19 +241,6 @@
                       >Angaben gemäß § 5 TMG<br />
                       ©två studio vertreten von Sina Folwaczny
                     </span>
-                    <br />
-                    <br />
-                    Mögen Sie diese E-Mails nicht?
-                    <a
-                      href="http://i.imgur.com/CScmqnj.gif"
-                      style="
-                        text-decoration: underline;
-                        color: #7d7d73;
-                        font-size: 12px;
-                        text-align: center;
-                      "
-                      >Abmelden</a
-                    >.
                   </td>
                 </tr>
               </table>

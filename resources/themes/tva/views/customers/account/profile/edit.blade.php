@@ -20,14 +20,14 @@
                     @csrf
 
                     <div class="control-group" :class="[errors.has('first_name') ? 'has-error' : '']">
-                        <label for="fname" class="required">First Name</label>
+                        <label for="fname" class="required">Vorname</label>
                         <input type="text" placeholder="{{ __('shop::app.customer.account.profile.fname') }}" class="control form-control subscribe-field form-sub" name="first_name" value="{{ old('first_name') ?? $customer->first_name }}" v-validate="'required'" data-vv-as="&quot;{{ __('shop::app.customer.account.profile.fname') }}&quot;">
                         <span class="control-error" v-if="errors.has('first_name')">@{{ errors.first('first_name') }}</span>
                     </div>
 
 
                     <div class="control-group" :class="[errors.has('last_name') ? 'has-error' : '']">
-                        <label for="lname" class="required">Last Name</label>
+                        <label for="lname" class="required">Nachname</label>
                         <input type="text" placeholder="{{ __('shop::app.customer.account.profile.lname') }}" class="control form-control subscribe-field form-sub" name="last_name" value="{{ old('last_name') ?? $customer->last_name }}" v-validate="'required'" data-vv-as="&quot;{{ __('shop::app.customer.account.profile.lname') }}&quot;">
                         <span class="control-error" v-if="errors.has('last_name')">@{{ errors.first('last_name') }}</span>
                     </div>
@@ -35,7 +35,7 @@
 
                     <div class="control-group" :class="[errors.has('gender') ? 'has-error' : '']">
                         <label for="email" class="required">{{ __('shop::app.customer.account.profile.gender') }}</label>
-                        <select name="gender" class="c-form control" v-validate="'required'" data-vv-as="&quot;{{ __('shop::app.customer.account.profile.gender') }}&quot;">
+                        <select name="gender" class="c-form control"  data-vv-as="&quot;{{ __('shop::app.customer.account.profile.gender') }}&quot;">
                             <option value=""  @if ($customer->gender == "") selected @endif></option>
                             <option value="Other"  @if ($customer->gender == "Other") selected @endif>{{ __('shop::app.customer.account.profile.other') }}</option>
                             <option value="Male"  @if ($customer->gender == "Male") selected @endif>{{ __('shop::app.customer.account.profile.male') }}</option>

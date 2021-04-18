@@ -7,10 +7,10 @@ return [
 
     'layouts' => [
         'my-account' => 'Mein Konto',
-        'profile' => 'Profile',
+        'profile' => 'Profil',
         'address' => 'Adresse',
         'reviews' => 'Bewertungen',
-        'wishlist' => 'Wishlist',
+        'wishlist' => 'Wunschzettel',
         'orders' => 'Bestellungen',
         'downloadable-products' => 'Produkte zum Herunterladen'
     ],
@@ -35,17 +35,17 @@ return [
         'sign-up' => 'Registrieren',
         'account' => 'Account',
         'cart' => 'Warenkorb',
-        'profile' => 'Profile',
-        'wishlist' => 'Wishlist',
-        'cart' => 'Cart',
+        'profile' => 'Profil',
+        'wishlist' => 'Wunschzettel',
+        'cart' => 'Warenkorb',
         'logout' => 'Abmelden',
-        'search-text' => 'Search products here'
+        'search-text' => 'Produkte hier suchen'
     ],
 
     'minicart' => [
         'view-cart' => 'Warenkorb anzeigen',
         'checkout' => 'Kasse',
-        'cart' => 'Cart',
+        'cart' => 'Warenkorb',
         'zero' => '0'
     ],
 
@@ -80,10 +80,10 @@ return [
         'write-review' => 'Write a review',
         'review-title' => 'Give your review a title',
         'product-review-page-title' => 'Product Review',
-        'rating-reviews' => 'Rating & Reviews',
+        'rating-reviews' => 'Rating & Bewertungen',
         'submit' => 'SUBMIT',
-        'delete-all' => 'All Reviews has deleted Succesfully',
-        'ratingreviews' => ':rating Ratings & :review Reviews',
+        'delete-all' => 'All Bewertungen has deleted Succesfully',
+        'ratingreviews' => ':rating Ratings & :review Bewertungen',
         'star' => 'Star',
         'percentage' => ':percentage %',
         'id-star' => 'star',
@@ -351,7 +351,7 @@ return [
             ],
 
             'downloadable_products' => [
-                'title' => 'Downloadable Products',
+                'title' => 'Produkte zum Herunterladen',
                 'order-id' => 'Order Id',
                 'date' => 'Date',
                 'name' => 'Title',
@@ -366,8 +366,8 @@ return [
 
             'review' => [
                 'index' => [
-                    'title' => 'Reviews',
-                    'page-title' => 'Reviews'
+                    'title' => 'Bewertungen',
+                    'page-title' => 'Bewertungen'
                 ],
 
                 'view' => [
@@ -392,13 +392,13 @@ return [
         'pager-info' => 'Showing :showing of :total Items',
         'description' => 'Description',
         'specification' => 'Specification',
-        'total-reviews' => ':total Reviews',
-        'total-rating' => ':total_rating Ratings & :total_reviews Reviews',
+        'total-reviews' => ':total Bewertungen',
+        'total-rating' => ':total_rating Ratings & :total_reviews Bewertungen',
         'by' => 'By :name',
         'up-sell-title' => 'We found other products you might like!',
         'related-product-title' => 'Related Products',
         'cross-sell-title' => 'More choices',
-        'reviews-title' => 'Ratings & Reviews',
+        'reviews-title' => 'Ratings & Bewertungen',
         'write-review-btn' => 'Write Review',
         'choose-option' => 'Choose an option',
         'sale' => 'Sale',

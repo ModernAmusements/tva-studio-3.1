@@ -58,7 +58,7 @@ return [
         'attribute-families' => 'Attribute Families',
         'customers' => 'Customers',
         'groups' => 'Groups',
-        'reviews' => 'Reviews',
+        'reviews' => 'Bewertungen',
         'newsletter-subscriptions' => 'Newsletter Subscriptions',
         'configure' => 'Configure',
         'settings' => 'Settings',
@@ -91,7 +91,7 @@ return [
         'attribute-families' => 'Attribute Families',
         'customers' => 'Customers',
         'groups' => 'Groups',
-        'reviews' => 'Reviews',
+        'reviews' => 'Bewertungen',
         'newsletter-subscriptions' => 'Newsletter Subscriptions',
         'configure' => 'Configure',
         'settings' => 'Settings',
@@ -954,7 +954,7 @@ return [
         ],
 
         'reviews' => [
-            'title' => 'Reviews',
+            'title' => 'Bewertungen',
             'edit-title' => 'Edit Review',
             'rating' => 'Rating',
             'status' => 'Status',

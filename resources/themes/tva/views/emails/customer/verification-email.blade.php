@@ -9,7 +9,7 @@
 <div style="padding: 30px;">
 
     <div style="font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 34px;">
-        <p style="font-size: 16px;color: #1b2c13;line-height: 24px;">
+        <p style="padding: 5px; font-size: 22px;color: #1b2c13;line-height: 24px; text-transform:uppercase; border-top: solid 1px #1b2c13; border-bottom: solid 1px #1b2c13; text-align: center;  ">
             {!! __('shop::app.mail.customer.verification.heading') !!}
         </p>
 
