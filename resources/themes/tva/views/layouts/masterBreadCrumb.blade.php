@@ -12,7 +12,6 @@
     <link rel="stylesheet prefetch" href="{{ mix('themes/tva/assets/css/index.css') }}">
 
 
-
     @include('shop::layouts.header.favicon')
 
     @yield('head')
