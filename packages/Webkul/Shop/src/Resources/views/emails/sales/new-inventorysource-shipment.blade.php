@@ -4,7 +4,7 @@
             @if (core()->getConfigData('general.design.admin_logo.logo_image'))
                 <img src="{{ \Illuminate\Support\Facades\Storage::url(core()->getConfigData('general.design.admin_logo.logo_image')) }}" alt="{{ config('app.name') }}" style="height: 40px; width: 110px;"/>
             @else
-                <img src="{{ asset('vendor/webkul/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
+                <img src="{{ asset('vendor/backend/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
             @endif
         </a>
     </div>
@@ -14,17 +14,20 @@
 
     <div style="padding: 30px;">
         <div style="font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 34px;">
-            <span style="font-weight: bold;">
-                {{ __('shop::app.mail.shipment.inventory-heading', ['order_id' => $order->increment_id, 'shipment_id' => $shipment->id]) }}
-            </span> <br>
+            <div style="color: #242424; font-weight: bold; text-transform:uppercase; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920; text-align: center; line-height: 30px;margin-bottom: 20px !important;">
 
-            <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
+                {{ __('shop::app.mail.shipment.inventory-heading', ['order_id' => $order->increment_id, 'shipment_id' => $shipment->id]) }}
+            </div>
+
+            <br>
+
+            <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {{ __('shop::app.mail.order.dear', ['customer_name' => $inventory->name]) }},
             </p>
 
-            <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
+            <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {!! __('shop::app.mail.shipment.greeting', [
-                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #0041FF; font-weight: bold;">#' . $order->increment_id . '</a>',
+                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #1b2c13; font-weight: bold;">#' . $order->increment_id . '</a>',
                     'created_at' => $order->created_at
                     ])
                 !!}
@@ -114,7 +117,7 @@
                 <table style="overflow-x: auto; border-collapse: collapse;
                 border-spacing: 0;width: 100%">
                     <thead>
-                        <tr style="background-color: #f2f2f2">
+                        <tr style="border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920; text-align: center;">
                             <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.SKU') }}</th>
                             <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.product-name') }}</th>
                             <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.price') }}</th>
@@ -151,11 +154,11 @@
             </div>
         </div>
 
-        {{-- <div style="margin-top: 20px;font-size: 16px;color: #5E5E5E;line-height: 24px;display: inline-block;width: 100%">
-            <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
+        {{-- <div style="margin-top: 20px;font-size: 16px;color: #242424;line-height: 24px;display: inline-block;width: 100%">
+            <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {!!
                     __('shop::app.mail.order.help', [
-                        'support_email' => '<a style="color:#0041FF" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
+                        'support_email' => '<a style="color:#1b2c13" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
                         ])
                 !!}
             </p>

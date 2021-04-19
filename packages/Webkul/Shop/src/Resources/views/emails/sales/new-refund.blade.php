@@ -1,32 +1,37 @@
 @component('shop::emails.layouts.master')
-    <div style="text-align: center;">
-        <a href="{{ config('app.url') }}">
-            @include ('shop::emails.layouts.logo')
-        </a>
-    </div>
+<div style="text-align: center;">
+    <a href="{{ config('app.url') }}">
+        @include ('shop::emails.layouts.logo')
+    </a>
+</div>
 
     <?php $order = $refund->order; ?>
 
     <div style="padding: 30px;">
-        <div style="font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 34px;">
-            <span style="font-weight: bold;">
-                {{ __('shop::app.mail.refund.heading', ['order_id' => $order->increment_id, 'refund_id' => $refund->id]) }}
-            </span> <br>
 
-            <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
+        <div style="font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 34px;">
+
+            <div style="color: #242424; font-weight: bold; text-transform:uppercase; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920; text-align: center; line-height: 30px;margin-bottom: 20px !important;">
+
+                {{ __('shop::app.mail.refund.heading', ['order_id' => $order->increment_id, 'refund_id' => $refund->id]) }}
+            </div>
+
+            <br>
+
+            <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {{ __('shop::app.mail.order.dear', ['customer_name' => $order->customer_full_name]) }},
             </p>
 
-            <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
+            <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {!! __('shop::app.mail.order.greeting', [
-                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #0041FF; font-weight: bold;">#' . $order->increment_id . '</a>',
+                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #1b2c13; font-weight: bold;">#' . $order->increment_id . '</a>',
                     'created_at' => $order->created_at
                     ])
                 !!}
             </p>
         </div>
 
-        <div style="font-weight: bold;font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 20px !important;">
+        <div style="color: #242424; font-weight: bold; text-transform:uppercase; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920; text-align: center; line-height: 30px;margin-bottom: 20px !important;">
             {{ __('shop::app.mail.refund.summary') }}
         </div>
 
@@ -103,7 +108,7 @@
                 <table style="overflow-x: auto; border-collapse: collapse;
                 border-spacing: 0;width: 100%">
                     <thead>
-                        <tr style="background-color: #f2f2f2">
+                        <tr style="border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920; text-align: center;">
                             <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.product-name') }}</th>
                             <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.price') }}</th>
                             <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.qty') }}</th>
@@ -142,8 +147,8 @@
             </div>
         </div>
 
-        <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 40%;margin-top: 20px;">
-            <div>
+        <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 100%;margin-top: 20px;">
+            <div style="border-top: solid 1px #2A2920;">
                 <span>{{ __('shop::app.mail.order.subtotal') }}</span>
                 <span style="float: right;">
                     {{ core()->formatPrice($refund->sub_total, $refund->order_currency_code) }}
@@ -197,7 +202,7 @@
                 </div>
             @endif
 
-            <div style="font-weight: bold">
+            <div style="font-weight: bold ; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920;">
                 <span>{{ __('shop::app.mail.order.grand-total') }}</span>
                 <span style="float: right;">
                     {{ core()->formatPrice($refund->grand_total, $refund->order_currency_code) }}
@@ -205,16 +210,16 @@
             </div>
         </div>
 
-        <div style="margin-top: 65px;font-size: 16px;color: #5E5E5E;line-height: 24px;display: inline-block;width: 100%">
-            <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
+        <div style="margin-top: 65px;font-size: 16px;color: #242424;line-height: 24px;display: inline-block;width: 100%">
+            <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {!!
                     __('shop::app.mail.order.help', [
-                        'support_email' => '<a style="color:#0041FF" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
+                        'support_email' => '<a style="color:#1b2c13" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
                         ])
                 !!}
             </p>
 
-            <p style="font-size: 16px;color: #5E5E5E;line-height: 24px;">
+            <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {{ __('shop::app.mail.order.thanks') }}
             </p>
         </div>

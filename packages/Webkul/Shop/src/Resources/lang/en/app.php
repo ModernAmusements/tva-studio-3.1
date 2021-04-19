@@ -613,7 +613,7 @@ return [
 
         'shipment' => [
             'heading' => 'Versand #:shipment_id wurde für den Auftrag #:order_id erzeugt',
-            'inventory-heading' => 'New shipment #:shipment_id had been generated for Order #:order_id',
+            'inventory-heading' => 'Neue Sendung #:shipment_id wurde für Auftrag #:order_id erzeugt',
             'subject' => 'Versand für Ihre Bestellung #:order_id',
             'inventory-subject' => 'Neue Sendung wurde für Auftrag #:order_id erzeugt',
             'summary' => 'Zusammenfassung des Versands',
@@ -623,11 +623,11 @@ return [
         ],
 
         'refund' => [
-            'heading' => 'Your Refund #:refund_id for Order #:order_id',
-            'subject' => 'Refund for your order #:order_id',
-            'summary' => 'Summary of Refund',
-            'adjustment-refund' => 'Adjustment Refund',
-            'adjustment-fee' => 'Adjustment Fee'
+            'heading' => 'Ihre Rückerstattung #:refund_id für Bestellung #:order_id',
+            'subject' => 'Rückerstattung für Ihre Bestellung #:order_id',
+            'summary' => 'Zusammenfassung der Rückerstattung',
+            'adjustment-refund' => 'Anpassung Rückerstattung',
+            'adjustment-fee' => 'Abgleichgebühr'
         ],
 
         'forget-password' => [
