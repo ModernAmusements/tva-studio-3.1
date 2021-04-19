@@ -37,26 +37,26 @@
 
 
         <div style="display: flex;flex-direction: row;margin-top: 20px;justify-content: space-between;margin-bottom: 40px;">
-            <div style="line-height: 25px;">
+            <div style="line-height: 25px; margin-right: 25px;">
                 <div style="font-weight: bold;font-size: 16px;color: #242424;">
                     {{ __('shop::app.mail.order.shipping-address') }}
                 </div>
 
-                <div>
+                <div style="font-size: 16px;color: #242424;">
                     {{ $order->shipping_address->name }}
                 </div>
 
-                <div>
+                <div style="font-size: 16px;color: #242424;">
                     {{ $order->shipping_address->address1 }}, {{ $order->shipping_address->state }}
                 </div>
 
-                <div>
+                <div style="font-size: 16px;color: #242424;">
                     {{ core()->country_name($order->shipping_address->country) }} {{ $order->shipping_address->postcode }}
                 </div>
 
                 <div>---</div>
 
-                <div style="margin-bottom: 40px;">
+                <div style="margin-bottom: 40px; color: #242424;">
                     {{ __('shop::app.mail.order.contact') }} : {{ $order->shipping_address->phone }}
                 </div>
 
@@ -84,21 +84,22 @@
                     {{ __('shop::app.mail.order.billing-address') }}
                 </div>
 
-                <div>
+                <div style="font-size: 16px;color: #242424;">
                     {{ $order->billing_address->name }}
                 </div>
 
-                <div>
+                <div style="font-size: 16px;color: #242424;">
                     {{ $order->billing_address->address1 }}, {{ $order->billing_address->state }}
                 </div>
 
-                <div>
+                <div style="font-size: 16px;color: #242424;">
                     {{ core()->country_name($order->billing_address->country) }} {{ $order->billing_address->postcode }}
                 </div>
 
-                <div>---</div>
+                <div style="font-size: 16px;color: #242424;">
+                    ---</div>
 
-                <div style="margin-bottom: 40px;">
+                <div style="margin-bottom: 40px; color: #242424;">
                     {{ __('shop::app.mail.order.contact') }} : {{ $order->billing_address->phone }}
                 </div>
 

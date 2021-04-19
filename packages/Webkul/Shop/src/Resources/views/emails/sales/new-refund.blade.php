@@ -37,26 +37,27 @@
 
         <div style="display: flex;flex-direction: row;margin-top: 20px;justify-content: space-between;margin-bottom: 40px;">
             @if ($order->shipping_address)
-                <div style="line-height: 25px;">
+                <div style="line-height: 25px; margin-right: 25px;">
                     <div style="font-weight: bold;font-size: 16px;color: #242424;">
                         {{ __('shop::app.mail.order.shipping-address') }}
                     </div>
 
-                    <div>
+                    <div style="font-size: 16px;color: #242424;">
                         {{ $order->shipping_address->name }}
                     </div>
 
-                    <div>
+                    <div style="font-size: 16px;color: #242424;">
                         {{ $order->shipping_address->address1 }}, {{ $order->shipping_address->state }}
                     </div>
 
-                    <div>
+                    <div style="font-size: 16px;color: #242424;">
                         {{ core()->country_name($order->shipping_address->country) }} {{ $order->shipping_address->postcode }}
                     </div>
 
-                    <div>---</div>
+                    <div style="font-size: 16px;color: #242424;">
+                        ---</div>
 
-                    <div style="margin-bottom: 40px;">
+                    <div style="margin-bottom: 40px; color: #242424;">
                         {{ __('shop::app.mail.order.contact') }} : {{ $order->shipping_address->phone }}
                     </div>
 
@@ -75,21 +76,22 @@
                     {{ __('shop::app.mail.order.billing-address') }}
                 </div>
 
-                <div>
+                <div style="font-size: 16px;color: #242424;">
                     {{ $order->billing_address->name }}
                 </div>
 
-                <div>
+                <div style="font-size: 16px;color: #242424;">
                     {{ $order->billing_address->address1 }}, {{ $order->billing_address->state }}
                 </div>
 
-                <div>
+                <div style="font-size: 16px;color: #242424;">
                     {{ core()->country_name($order->billing_address->country) }} {{ $order->billing_address->postcode }}
                 </div>
 
-                <div>---</div>
+                <div style="font-size: 16px;color: #242424;">
+                    ---</div>
 
-                <div style="margin-bottom: 40px;">
+                <div style="margin-bottom: 40px; color: #242424; ">
                     {{ __('shop::app.mail.order.contact') }} : {{ $order->billing_address->phone }}
                 </div>
 
@@ -156,7 +158,7 @@
             </div>
 
             @if ($order->shipping_address)
-                <div>
+            <div style="font-size: 16px; color: #242424;">
                     <span>{{ __('shop::app.mail.order.shipping-handling') }}</span>
                     <span style="float: right;">
                         {{ core()->formatPrice($refund->shipping_amount, $refund->order_currency_code) }}
@@ -166,7 +168,7 @@
 
             @if ($refund->tax_amount > 0)
                 @foreach (Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($refund, false) as $taxRate => $taxAmount)
-                <div>
+                <div style="font-size: 16px; color: #242424;">
                     <span>{{ __('shop::app.mail.order.tax') }}</span>
                     <span style="float: right;">
                         {{ core()->formatPrice($refund->tax_amount, $refund->order_currency_code) }}
@@ -176,7 +178,7 @@
             @endif
 
             @if ($refund->discount_amount > 0)
-                <div>
+            <div style="font-size: 16px; color: #242424;">
                     <span>{{ __('shop::app.mail.order.discount') }}</span>
                     <span style="float: right;">
                         {{ core()->formatPrice($refund->discount_amount, $refund->order_currency_code) }}
@@ -185,7 +187,7 @@
             @endif
 
             @if ($refund->adjustment_refund > 0)
-                <div>
+            <div style="font-size: 16px; color: #242424;">
                     <span>{{ __('shop::app.mail.refund.adjustment-refund') }}</span>
                     <span style="float: right;">
                         {{ core()->formatPrice($refund->adjustment_refund, $refund->order_currency_code) }}
@@ -194,7 +196,7 @@
             @endif
 
             @if ($refund->adjustment_fee > 0)
-                <div>
+            <div style="font-size: 16px; color: #242424;">
                     <span>{{ __('shop::app.mail.refund.adjustment-fee') }}</span>
                     <span style="float: right;">
                         {{ core()->formatPrice($refund->adjustment_fee, $refund->order_currency_code) }}

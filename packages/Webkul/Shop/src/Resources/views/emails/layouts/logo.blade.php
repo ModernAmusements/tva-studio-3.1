@@ -1,1 +1,1 @@
-<img src="{{ asset('vendor/webkul/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
+<img src="{{ asset('vendor/webkul/ui/assets/images/tva_logo.png') }}" alt="Logo" title="Logo" style="display:block margin: auto;" width="200" height="40">

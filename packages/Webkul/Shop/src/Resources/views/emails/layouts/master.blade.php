@@ -84,6 +84,13 @@
                 border-color: #1b2c13 !important;
                 color: #1b2c13 !important;
               }
+
+            }
+            .im {
+                    color: #242424;
+                }
+            span.im{
+                color: #242424;
             }
           </style>
     </head>
