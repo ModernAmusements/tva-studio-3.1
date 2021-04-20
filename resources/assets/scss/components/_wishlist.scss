@@ -1,0 +1,30 @@
+.article-cart-subpage-now {
+    .add-to-wishlist::before {
+        content: "Wunschzettel";
+    }
+    .add-to-wishlist.already::before {
+        content: "Entfernen";
+    }
+
+    .add-to-wishlist.already {
+
+    }
+}
+
+
+.account-item-card {
+    .media-info {
+        border-bottom: var(--border);
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        .media{
+        border-right: var(--border);
+        }
+        .item-title {
+            padding: 14px;
+            h1 {
+                margin: 0;
+            }
+        }
+    }
+}

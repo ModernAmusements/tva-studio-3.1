@@ -10,6 +10,8 @@
 <div class="bread-crumbs">
     {{ Breadcrumbs::render('profileWishlist') }}
 </div>
+
+
     <div class="account-content">
 
         @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
@@ -38,7 +40,7 @@
 
                 @if ($items->count())
                     @foreach ($items as $item)
-                        <div class="account-item-card mt-15 mb-15">
+                        <div class="account-item-card">
                             <div class="media-info">
                                 @php
                                     $image = $item->product->getTypeInstance()->getBaseImage($item);
@@ -47,8 +49,10 @@
                                 <img class="media" alt="{{ config('app.name') }}" src="{{ $image['small_image_url'] }}" />
 
                                 <div class="info">
-                                    <div class="product-name">
+                                    <div class="item-title">
+                                       <h1 class="large">
                                         {{ $item->product->name }}
+                                        </h1>
 
                                         @if (isset($item->additional['attributes']))
                                             <div class="item-options">
@@ -69,18 +73,23 @@
                                 </div>
                             </div>
 
-                            <div class="operations">
-                                <a class="mb-50" href="{{ route('customer.wishlist.remove', $item->id) }}">
-                                    <span class="icon trash-icon"></span>
-                                </a>
+                            <div class="row-cta">
 
-                                <a href="{{ route('customer.wishlist.move', $item->id) }}" class="btn btn-primary btn-md">
+                                <div class="btn-grid border-b border-r btn-grid-neutral">
+                                <a class="btn-hover" href="{{ route('customer.wishlist.remove', $item->id) }}">
+                                    Löschen
+                                </a>
+                            </div>
+                                <div class="btn-grid border-b btn-grid-black">
+                                <a class="btn-hover" href="{{ route('customer.wishlist.move', $item->id) }}" class="btn btn-primary btn-md">
                                     {{ __('shop::app.customer.account.wishlist.move-to-cart') }}
                                 </a>
                             </div>
+
+
+                            </div>
                         </div>
 
-                        <div class="horizontal-rule mb-10 mt-10"></div>
                     @endforeach
 
                     <div class="bottom-toolbar">

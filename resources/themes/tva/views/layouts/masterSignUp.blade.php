@@ -29,6 +29,14 @@
     <link rel="prefetch" href="https://use.typekit.net/yxr4ufi.css">
 </head>
 <body @if (core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif>
+    <div id="page-loader">
+        <div class="tva-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      </div>
       {{-- Nav --}}
       @include('shop::layouts.header.indexSignUp')
         {{-- Vue + Main App--}}

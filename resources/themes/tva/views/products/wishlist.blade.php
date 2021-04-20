@@ -1,15 +1,18 @@
 @inject ('wishListHelper', 'Webkul\Customer\Helpers\Wishlist')
 
 @auth('customer')
+<div class="article-cart article-cart-subpage-now border-l btn-grid btn-grid-primary">
     <a
         @if ($wishListHelper->getWishlistProduct($product))
-            class="add-to-wishlist already"
+            class="add-to-wishlist already btn-hover"
         @else
-            class="add-to-wishlist"
+            class="add-to-wishlist btn-hover"
         @endif
+
         id="wishlist-changer"
-        style="margin-right: 15px;"
         href="{{ route('customer.wishlist.add', $product->product_id) }}">
-        <span class="icon wishlist-icon"></span>
+
     </a>
+</div>
 @endauth
+

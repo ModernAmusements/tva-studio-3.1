@@ -170,21 +170,21 @@ h6,
 h1.xlarge,
 .h1.xlarge {
   --h1-size: 3.5rem;
-  line-height: calc(var(--lineHeight) * 4);
+  line-height: calc(var(--lineHeight) * 2);
   font-weight: 400;
 }
 
 h1.xxlarge,
 .h1.xxlarge {
   --h1-size: 7.5rem;
-  line-height: calc(var(--lineHeight) * 5);
+  line-height: calc(var(--lineHeight) * 4);
   font-weight: 500;
 }
 
 h1.xxxlarge,
 .h1.xxxlarge {
   --h1-size: 10.5rem;
-  line-height: calc(var(--lineHeight) * 7);
+  line-height: calc(var(--lineHeight) * 5);
   font-weight: 500;
 }
 

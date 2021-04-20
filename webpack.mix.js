@@ -23,6 +23,8 @@ mix.js([
     'resources/assets/js/application-min.js',
     'resources/assets/js/homePagePreload.js',
     ], 'public/themes/tva/assets/js/mainApp.js');
+
+
 // Admin
 mix.sass("resources/assets/admin/sass/app.scss", "public/vendor/backend/admin/assets/css/admin-test.css");
 mix.sass("resources/assets/ui/sass/app.scss", "public/vendor/backend/ui/assets/css/ui-test.css");

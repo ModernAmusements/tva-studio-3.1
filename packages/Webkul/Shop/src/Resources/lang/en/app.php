@@ -334,7 +334,7 @@ return [
                 'title' => 'Wunschzettel',
                 'deleteall' => 'Alle löschen',
                 'moveall' => 'Alle Produkte in den Warenkorb legen',
-                'move-to-cart' => 'In den Warenkorb legen',
+                'move-to-cart' => 'In den Warenkorb',
                 'error' => 'Produkt kann wegen unbekannter Probleme nicht zur Wunschliste hinzugefügt werden, bitte später wiederkommen',
                 'add' => 'Artikel erfolgreich zum Wunschzettel hinzugefügt',
                 'remove' => 'Item successfully removed from wishlist',

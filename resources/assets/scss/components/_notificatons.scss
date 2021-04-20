@@ -1,7 +1,6 @@
 
 .alert-wrapper {
     width: 100%;
-    top: 46px;
     display: flex;
     right: 0;
     position: fixed;
@@ -13,8 +12,9 @@
         padding: 15px;
         display: inline-block;
         position: absolute;
-        animation: all 9s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+        animation: all 13s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
         border-left: none;
+        border-top: var(--border);
         border-bottom: var(--border);
         p {
             margin: 0;

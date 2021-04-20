@@ -8,16 +8,27 @@
     overflow: auto;
     overflow-y: scroll;
     justify-content: center;
-    transition: background var(--duration) ease;
-    background-color: var(--background-color);
+    background-color: var(--tva-dark-green);
     opacity: 0;
-    transition: opacity 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .intro {
+        width: 50%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transform: translate3d(0%, 100%, 100px);
+        transition: transform 1.3s cubic-bezier(0.86, 0, 0.07, 1);
+        background-color: var(--background-color);
         text-align: center;
+        border-radius: 99em 99em 0 0;
         padding: 10em;
         svg {
-            width: 30vw;
-            height: auto;
+            transform: translateY(1200px) scale(0.7);
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+            transition-duration: 1.3s;
+            transition-delay: 0.5s;
             path,
             circle {
                 fill: var(--foreground-color);
@@ -27,6 +38,114 @@
 }
 
 #preload-homepage.loaded {
-    display: grid;
     opacity: 1;
+    .intro {
+        transform: translate3d(0%, 1%, 0px);
+        svg {
+            transform: translateY(0) scale(0.7);
+        }
+    }
+}
+
+#preload-homepage.out-fade {
+    opacity: 1;
+    .intro {
+        transform: scale(3);
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: 0.9s;
+        svg {
+            transition-property: opacity;
+            transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+            transform: scale(0.7);
+            opacity: 0;
+            transition-delay: 0s;
+        }
+    }
+}
+
+
+
+@media (max-width: 1080px) {
+    #preload-homepage {
+        .intro {
+            transform-style: preserve-3d;
+            transform: translate3d(0%, 100%, 100px);
+            transition: transform 1.3s cubic-bezier(0.86, 0, 0.07, 1);
+            background-color: var(--background-color);
+            padding: 1em;
+            svg {
+                padding-top: 5em;
+                transform: translateY(1200px) scale(0.7);
+            }
+        }
+    }
+
+    #preload-homepage.loaded {
+        .intro {
+            transform: translate3d(0%, 20%, 0px);
+            svg {
+              transform: scale(0.7);
+            }
+        }
+    }
+
+    #preload-homepage.out-fade {
+        .intro {
+            transform: scale(3);
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+            transition-delay: 0.9s;
+            svg {
+                transition-property: opacity;
+                transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+                transform: scale(0.7);
+                opacity: 0;
+                transition-delay: 0s;
+            }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    #preload-homepage {
+        .intro {
+            width: 80%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transform: translate3d(0%, 100%, 100px);
+            transition: transform 1.3s cubic-bezier(0.86, 0, 0.07, 1);
+            background-color: var(--background-color);
+            padding: 1em;
+            svg {
+                padding-top: 5em;
+                transform: translateY(1200px) scale(0.7);
+            }
+        }
+    }
+
+    #preload-homepage.loaded {
+        .intro {
+            transform: translate3d(0%, 20%, 0px);
+            svg {
+              transform: scale(0.7);
+            }
+        }
+    }
+
+    #preload-homepage.out-fade {
+        .intro {
+            transform: scale(3);
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+            transition-delay: 0.9s;
+            svg {
+                transition-property: opacity;
+                transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+                transform: scale(0.7);
+                opacity: 0;
+                transition-delay: 0s;
+            }
+        }
+    }
 }

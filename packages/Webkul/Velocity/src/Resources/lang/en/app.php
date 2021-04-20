@@ -250,9 +250,9 @@ return [
 
     'shop'          => [
         'gender'    => [
-            'male'   => 'Male',
-            'other'  => 'Other',
-            'female' => 'Female',
+            'male'   => 'Männlich',
+            'other'  => 'Divers',
+            'female' => 'Weiblich',
         ],
         'general'   => [
             'no'                     => 'No',

@@ -1,1 +1,1 @@
-@include('shop::layouts.header.nav-header.header')
+@include('shop::layouts.header.nav-header.headerShop')

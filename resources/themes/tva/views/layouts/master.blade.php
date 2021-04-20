@@ -24,7 +24,7 @@
     {{-- STYLE --}}
     <link rel="prefetch" href="https://use.typekit.net/yxr4ufi.css">
 </head>
-<body class="animation">
+<body>
     <div id="preload-homepage">
         <div class="intro">
             <svg class="tva-logo-preload"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.44 64.43">
@@ -37,14 +37,12 @@
                 <path  d="M130,114.71a7.56,7.56,0,1,1-7.56-7.52A7.44,7.44,0,0,1,130,114.71Zm-1,0a6.55,6.55,0,1,0-6.55,6.61A6.46,6.46,0,0,0,129,114.71Z" transform="translate(-47.59 -57.77)"/>
                 <circle  cx="69.32" cy="3.22" r="3.22"/>
             </svg>
-            <h1 class="large"><em>Ceramics Handmade In Germany</em></h1>
-            <h3 class="">2016-<?=date('Y')?></h1>
         </div>
       </div>
       {{-- Nav --}}
       @include('shop::layouts.header.index')
         {{-- Vue + Main App--}}
-    <div class="title-animation" id="app">
+    <div class="body-animation" id="app">
         <flash-wrapper ref='flashes'>
         </flash-wrapper>
         {{-- Main App--}}
@@ -70,7 +68,7 @@
             }, 4000);
             setTimeout(function() {
                 currentlyAdded.style.display='none';
-            }, 5000);
+            }, 9000);
         @elseif ($warning = session('warning'))
             window.flashMessages = [{'type': 'alert-warning', 'message': "{{ $warning }}" }];
         @elseif ($error = session('error'))
