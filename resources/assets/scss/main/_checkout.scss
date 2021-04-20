@@ -193,6 +193,12 @@
     flex-direction: column;
     padding: 3em 7em;
     text-align: center;
+    .succes-svg {
+        display: flex;
+        width:409px;
+        height:auto;
+
+    }
 }
 
 @media only screen and (max-width: 1060px) {

@@ -88,7 +88,7 @@
     {{-- MODAL --}}
     <div class="modal-overlay"></div>
     <div id="consent-popup" class="hidden">
-        <p class="small">Wir verwenden Cookies für Analyse- und Marketingzwecke. Bitte akzeptieren Sie <a href="@php echo route('shop.cms.page', 'about-us') @endphp">diese Bedingungen</a> , bevor Sie die Seite nutzen.</p>
+        <p>Wir verwenden Cookies für Analyse- und Marketingzwecke. Bitte akzeptieren Sie <a href="@php echo route('shop.cms.page', 'about-us') @endphp">diese Bedingungen</a> , bevor Sie die Seite nutzen.</p>
         <a id="accept" href="#">Akzeptieren</a>
     </div>
 </body>

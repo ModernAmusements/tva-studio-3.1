@@ -382,3 +382,9 @@ added to header
 
 main branch bug: status ?
 master branch: clear
+
+
+You can view the new private and public key by running the following:
+[local]$ ls -1 ~/.ssh/
+id_rsa
+id_rsa.pub

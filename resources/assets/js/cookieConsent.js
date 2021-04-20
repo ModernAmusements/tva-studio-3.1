@@ -20,20 +20,24 @@ const consentPropertyName = 'tva_studio_consent';
 const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
 const saveToStorage = () => storageType.setItem(consentPropertyName, true);
 
-window.onload = () => {
+setTimeout(() => {
+    window.onload = () => {
 
-  const acceptFn = event => {
-      saveToStorage(storageType);
-      consentPopup.classList.add('hidden');
-  }
-  const consentPopup = document.getElementById('consent-popup');
-  const acceptBtn = document.getElementById('accept');
-  acceptBtn.addEventListener('click', acceptFn);
+        const acceptFn = event => {
+            saveToStorage(storageType);
+            consentPopup.classList.add('hidden');
+        }
+        const consentPopup = document.getElementById('consent-popup');
+        const acceptBtn = document.getElementById('accept');
+        acceptBtn.addEventListener('click', acceptFn);
 
-  if (shouldShowPopup(storageType)) {
-      setTimeout(() => {
-          consentPopup.classList.remove('hidden');
-      }, 2000);
-  }
+        if (shouldShowPopup(storageType)) {
+            setTimeout(() => {
+                consentPopup.classList.remove('hidden');
+            }, 2000);
+        }
 
-};
+      };
+}, 9000);
+
+
