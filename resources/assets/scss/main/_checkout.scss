@@ -193,11 +193,15 @@
     flex-direction: column;
     padding: 3em 7em;
     text-align: center;
-    .succes-svg {
+    align-items: center;
+    .success-svg  {
+        padding: 1em;
         display: flex;
-        width:409px;
-        height:auto;
-
+        height: 100%;
+        svg.success {
+            height: 100%;
+            width: 100%;
+        }
     }
 }
 

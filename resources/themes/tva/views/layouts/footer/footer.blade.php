@@ -12,7 +12,7 @@
     @if(core()->getConfigData('customer.settings.newsletter.subscription'))
     <div class="footer-newsletter-panel">
             <div class="newsletter-heading">
-                <h2>Registrieren Sie sich für unseren Newsletter</h2>
+                <h1>Registrieren Sie sich für unseren Newsletter</h1>
                 <p class="medium">
                     Haben Sie Interesse, mitzumachen? Lassen Sie uns in Kontakt
                     bleiben Große Dinge sind in Arbeit. Bleiben Sie in Verbindung,
@@ -41,9 +41,9 @@
                     <span class="control-error" v-if="errors.has('email')">@{{ errors.first('email') }}</span>
                 </div>
                 <div class="newsletter-info">
-                    <h4>
-                        Sind Sie ein Clayroom-Mitglied?
-                    </h4>
+                    <p class="medium">
+                        Ich habe die <a class="left" href="@php echo route('shop.cms.page', 'about-us') @endphp">Datenschutzbestimmungen</a> sowie die <a class="left" href="@php echo route('shop.cms.page', 'about-us') @endphp">Widerrufsbelehrung</a> gelesen und stimme hiermit zu.
+                    </p>
                     <div class="control-group-radio">
                         <input type="checkbox" id="clayroom" value="clayroom">
                         <label for="clayroom" class="checkbox-view"></label>

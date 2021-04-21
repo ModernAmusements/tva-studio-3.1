@@ -69,7 +69,7 @@ return [
 
     'search' => [
         'no-results' => 'Keine Ergebnisse gefunden',
-        'page-title' => config('app.name') . ' - Search',
+        'page-title' => 'Suche',
         'found-results' => 'Suchergebnisse gefunden',
         'found-result' => 'Suchergebnis gefunden'
     ],

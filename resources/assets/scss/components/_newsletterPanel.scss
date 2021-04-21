@@ -39,6 +39,9 @@
 .newsletter-info {
     padding: 1em;
     text-align: center;
+    a {
+        padding: 0!important;
+    }
 }
 
 @media (max-width: 1120px) {

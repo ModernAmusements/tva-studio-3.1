@@ -114,6 +114,7 @@
         right: -100%;
         background: var(--background-color);
         transition: all 0.9s;
+        margin-bottom: 100px;
         .popup-content {
             /* Accordion styles */
             .tabs {
@@ -174,6 +175,10 @@
             padding: 14px;
             border-top: var(--border);
             font-size: 18px;
+            p {
+                margin-bottom: 10px;
+            }
+
         }
         .singe-line {
             padding: 14px;
@@ -189,6 +194,7 @@
     .popup-visible {
         opacity: 1;
         right: 0;
+        z-index: 250;
     }
     .popup-visible.popup-visible {
         right: 0;

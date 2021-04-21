@@ -6,6 +6,17 @@
         align-items: center;
         justify-content: center;
         padding: 1em;
-
     }
+
+    .search-svg  {
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg.search {
+            height: 25%;
+            width: 25%;
+        }
+    }
+
 }
