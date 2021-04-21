@@ -1,0 +1,27 @@
+.error-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .error-box{
+        display: flex;
+        flex-direction: column;
+        .error-title,
+        .error-messgae,
+        .error-description {
+            text-align: center;
+        }
+        .error-description{
+            padding: 1em 0;
+        }
+    }
+    .error-graphic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            width: 200px;
+            height: auto;
+        }
+    }
+}

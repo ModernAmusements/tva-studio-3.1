@@ -1113,15 +1113,15 @@ return [
     ],
 
     'error' => [
-        'go-to-home' => 'GO TO HOME',
-        'in-maitainace' => 'In Maintenance',
-        'right-back' => 'Be Right Back',
+        'go-to-home' => 'ZURÜCK',
+        'in-maitainace' => 'In der Instandhaltung',
+        'right-back' => 'Bin gleich zurück',
 
         '404' => [
-            'page-title' => '404 Page not found',
+            'page-title' => 'Seite nicht gefunden',
             'name' => '404',
-            'title' => 'Page Not found',
-            'message' => 'The Page you are looking for does not exist or have been moved. Navigate using sidemenu.'
+            'title' => 'Seite nicht gefunden',
+            'message' => 'Die von Ihnen gesuchte Seite existiert nicht oder wurde verschoben. Navigieren Sie über das Menü'
         ],
         '403' => [
             'page-title' => '403 forbidden Error',

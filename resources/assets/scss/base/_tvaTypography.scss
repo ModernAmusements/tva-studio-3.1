@@ -1,14 +1,13 @@
-
 b,
 strong,
 .bold {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 i,
 em,
 .italic {
-  font-style: italic;
+    font-style: italic;
 }
 
 /* preformatted text */
@@ -17,10 +16,10 @@ code,
 tt,
 .code,
 .monospace {
-  font-family: var(--monoFont), Inconsolata, Menlo, monospace;
-  font-weight: 430;
-  word-wrap: break-word;
-  white-space: pre-wrap;
+    font-family: var(--monoFont), Inconsolata, Menlo, monospace;
+    font-weight: 430;
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 pre b,
@@ -28,15 +27,15 @@ code b,
 tt b,
 .code b,
 .monospace b {
-  font-weight: 600;
-  font-weight: 580;
+    font-weight: 600;
+    font-weight: 580;
 }
 
 pre {
-  white-space: pre;
-  word-wrap: normal;
-  overflow-x: auto;
-  display: block;
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: auto;
+    display: block;
 }
 
 b pre,
@@ -44,13 +43,13 @@ b code,
 b tt,
 b .code,
 b .monospace {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 pre code,
 pre tt {
-  white-space: pre;
-  word-wrap: normal;
+    white-space: pre;
+    word-wrap: normal;
 }
 
 // p {
@@ -58,91 +57,91 @@ pre tt {
 // }
 
 .paragraph {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 h1,
 .h1 {
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  font-size: var(--h1-size);
-  line-height: calc(var(--lineHeight) * 2);
-  margin-left: calc(var(--h1-size) / -22);
-  margin-top: calc(var(--lineHeight) * 2);
-  margin-bottom: var(--lineHeight);
-  word-break: break-word;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    font-size: var(--h1-size);
+    line-height: calc(var(--lineHeight) * 2);
+    margin-left: calc(var(--h1-size) / -22);
+    margin-top: calc(var(--lineHeight) * 2);
+    margin-bottom: var(--lineHeight);
+    word-break: break-word;
 }
 
 h1.single-line {
-  margin-top: var(--lineHeight);
-  padding-top: calc(var(--lineHeight) * 0.5);
-  padding-bottom: calc(var(--lineHeight) * 0.5);
+    margin-top: var(--lineHeight);
+    padding-top: calc(var(--lineHeight) * 0.5);
+    padding-bottom: calc(var(--lineHeight) * 0.5);
 }
 
 h3 + h1,
 h4 + h1,
 h3 + h1.single-line,
 h4 + h1.single-line {
-  margin-top: calc(var(--baseline) * 3);
+    margin-top: calc(var(--baseline) * 3);
 }
 
 h1.single-line:first-child {
-  margin-top: 0;
-  padding-bottom: calc(var(--lineHeight) * 0.5);
+    margin-top: 0;
+    padding-bottom: calc(var(--lineHeight) * 0.5);
 }
 
 h2,
 .h2 {
-  font-weight: 400;
-  letter-spacing: -0.03em;
-  font-size: var(--h2-size);
-  line-height: calc(var(--lineHeight) * 1.5);
-  margin-left: calc(var(--h2-size) / -26);
-  margin-bottom: var(--lineHeight);
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    font-size: var(--h2-size);
+    line-height: calc(var(--lineHeight) * 1.5);
+    margin-left: calc(var(--h2-size) / -26);
+    margin-bottom: var(--lineHeight);
 }
 
 h2.single-line {
-  margin-top: var(--lineHeight);
-  padding-top: calc(var(--lineHeight) * 0.5);
-  padding-bottom: calc(var(--lineHeight) * 0.5);
-  margin-bottom: 0;
+    margin-top: var(--lineHeight);
+    padding-top: calc(var(--lineHeight) * 0.5);
+    padding-bottom: calc(var(--lineHeight) * 0.5);
+    margin-bottom: 0;
 }
 
 h3 + h2,
 h4 + h2,
 h3 + h2.single-line,
 h4 + h2.single-line {
-  margin-top: var(--baseline);
+    margin-top: var(--baseline);
 }
 
 h2.single-line:first-child {
-  margin-top: unset;
+    margin-top: unset;
 }
 
 h3,
 .h3 {
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  font-size: var(--h3-size);
-  margin-bottom: calc(var(--lineHeight) * 0.5);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    font-size: var(--h3-size);
+    margin-bottom: calc(var(--lineHeight) * 0.5);
 }
 
 h4,
 .h4 {
-  font-weight: 400;
-  letter-spacing: -0.012em;
-  font-size: var(--h4-size);
+    font-weight: 400;
+    letter-spacing: -0.012em;
+    font-size: var(--h4-size);
 }
 
 .thin {
-  font-weight: 300!important;
+    font-weight: 300 !important;
 }
 
 h3.single-line,
 h4.single-line {
-  padding-bottom: calc(var(--baseline) * 1.25);
-  padding-top: calc(var(--baseline) * 1.25);
-  margin-bottom: 0;
+    padding-bottom: calc(var(--baseline) * 1.25);
+    padding-top: calc(var(--baseline) * 1.25);
+    margin-bottom: 0;
 }
 
 h3.single-line + h1.single-line,
@@ -153,82 +152,80 @@ h3.single-line + h2.single-line,
 h4.single-line + h2.single-line,
 h3.single-line + h2,
 h4.single-line + h2 {
-  margin-top: var(--lineHeight);
+    margin-top: var(--lineHeight);
 }
 
 h5,
 h6,
 .h5,
 .h6 {
-  font-weight: 400;
-  letter-spacing: -0.015em;
-  margin-bottom: 0;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    margin-bottom: 0;
 }
 
 /* large headers */
 
 h1.xlarge,
 .h1.xlarge {
-  --h1-size: 3.5rem;
-  line-height: calc(var(--lineHeight) * 2);
-  font-weight: 400;
+    --h1-size: 3.5rem;
+    line-height: calc(var(--lineHeight) * 2);
+    font-weight: 400;
 }
 
 h1.xxlarge,
 .h1.xxlarge {
-  --h1-size: 7.5rem;
-  line-height: calc(var(--lineHeight) * 4);
-  font-weight: 500;
+    --h1-size: 7.5rem;
+    line-height: calc(var(--lineHeight) * 4);
+    font-weight: 500;
 }
 
 h1.xxxlarge,
 .h1.xxxlarge {
-  --h1-size: 10.5rem;
-  line-height: calc(var(--lineHeight) * 5);
-  font-weight: 500;
+    --h1-size: 10.5rem;
+    line-height: calc(var(--lineHeight) * 5);
+    font-weight: 500;
 }
-
 
 /* small text */
 
 .small {
-  font-size: 0.85rem;
-  line-height: var(--lineHeight);
+    font-size: 0.85rem;
+    line-height: var(--lineHeight);
 }
 
-
 .large {
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: var(--lineHeight);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: var(--lineHeight);
 }
 
 .medium {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: var(--lineHeight);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: var(--lineHeight);
 }
 
 .medium.single-line {
-  margin-top: var(--lineHeight);
+    margin-top: var(--lineHeight);
 }
 
 .xsmall {
-  font-size: 0.8em;
-  line-height: calc(var(--lineHeight) * 0.75);
-  padding-top: calc(var(--lineHeight) * 0.25);
+    font-size: 0.8em;
+    line-height: calc(var(--lineHeight) * 0.75);
+    padding-top: calc(var(--lineHeight) * 0.25);
 }
 
 .xxsmall {
-  font-size: 0.65em;
-  line-height: calc(var(--lineHeight) * 0.7);
-  padding-top: calc(var(--lineHeight) * 0.3);
+    font-size: 0.65em;
+    line-height: calc(var(--lineHeight) * 0.7);
+    padding-top: calc(var(--lineHeight) * 0.3);
 }
 
 .xxxsmall {
-  font-size: 0.5em;
-  line-height: calc(var(--lineHeight) * 0.5);
-  padding-bottom: calc(var(--lineHeight) * 0.25);
+    font-size: 0.5em;
+    line-height: calc(var(--lineHeight) * 0.5);
+    padding-bottom: calc(var(--lineHeight) * 0.25);
 }
 
 h1 > a,
@@ -243,7 +240,7 @@ h6 > a,
 .h4 > a,
 .h5 > a,
 .h6 > a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h1 > a:hover,
@@ -258,41 +255,48 @@ h6 > a:hover,
 .h4 > a:hover,
 .h5 > a:hover,
 .h6 > a:hover {
-  text-decoration: underline rgba(0, 0, 0, 0.3);
-  color: inherit;
+    text-decoration: underline rgba(0, 0, 0, 0.3);
+    color: inherit;
 }
 
-
 @media (max-width: 1280px) {
-
     h1.xxxlarge,
     .h1.xxxlarge {
-      --h1-size: 8rem;
+        --h1-size: 8rem;
     }
 
     h1.xlarge,
     .h1.xlarge {
-    --h1-size: 3rem;
+        --h1-size: 3rem;
     }
 
     .large {
         font-size: 1.3rem;
     }
-
- }
-
+}
 
 @media (max-width: 560px) {
+    h1,
+    .h1 {
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        font-size: 2.3em;
+        line-height: calc(var(--lineHeight) * 2);
+        margin-left: calc(var(--h1-size) / -22);
+        margin-top: calc(var(--lineHeight) * 2);
+        margin-bottom: var(--lineHeight);
+        word-break: break-word;
+    }
 
     h1.xxxlarge,
     .h1.xxxlarge {
-      --h1-size: 5rem;
-      line-height: calc(var(--lineHeight) * 4);
+        --h1-size: 5rem;
+        line-height: calc(var(--lineHeight) * 4);
     }
 
     h1.xlarge,
     .h1.xlarge {
-    --h1-size: 2.5rem;
+        --h1-size: 2.5rem;
     }
     .medium {
         font-size: 1rem;
@@ -301,6 +305,4 @@ h6 > a:hover,
     .large {
         font-size: 1.4rem;
     }
-
-
- }
+}

@@ -74,7 +74,7 @@
                         <span class="medium">
                             Name:
                         </span>
-                       <h1 class="large">
+                       <h1 class="medium">
                             {{ $item->product->name }}
                         </h1>
                     </div>
@@ -82,7 +82,7 @@
                         <span class="medium">
                             {{ __('shop::app.checkout.onepage.price') }}:
                         </span>
-                        <h1 class="large">
+                        <h1 class="medium">
                             {{ core()->currency($item->base_price) }}
                         </h1>
                     </div>
@@ -92,7 +92,7 @@
                         <span class="medium">
                             {{ __('shop::app.checkout.onepage.quantity') }}:
                         </span>
-                        <h1 class="large">
+                        <h1 class="medium">
                             {{ $item->quantity }}
                         </h1>
                     </div>
