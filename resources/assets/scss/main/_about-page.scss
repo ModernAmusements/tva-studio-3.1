@@ -31,7 +31,7 @@
             display: flex;
             flex-direction: column;
             h3 {
-                margin:0;
+                margin: 0;
             }
         }
         .box {
@@ -60,7 +60,7 @@
             justify-content: center;
             flex-direction: column;
             width: 100%;
-            .about-heading{
+            .about-heading {
                 padding: 14px;
             }
         }
@@ -95,7 +95,7 @@
         transition: all 0.2s;
         border: none;
         text-indent: -99999px;
-        background: url('../icons/closeTva.svg');
+        background: url("../icons/closeTva.svg");
         cursor: pointer;
     }
     .btn-close:hover {
@@ -178,7 +178,6 @@
             p {
                 margin-bottom: 10px;
             }
-
         }
         .singe-line {
             padding: 14px;
@@ -212,55 +211,54 @@
 
 @media (max-width: 900px) {
     .container-fluid {
-        flex-direction: column-reverse;
-    .col-left,
-    .col-right,
-    .popup {
-        width: 100%;
-    }
+        margin-top: 45px;
+        flex-direction: column;
+        .col-left,
+        .col-right,
+        .popup {
+            width: 100%;
+        }
 
-    .popup {
-        // top: 89px;
-        bottom: -100%;
-    }
+        .popup {
+            top: -1px;
+            bottom: -100%;
+            z-index: 500;
+        }
 
-    .popup-visible {
-        opacity: 1;
-        bottom: 0;
-    }
-    .popup-visible.popup-visible {
-        bottom: 0;
-    }
-    .col-left {
-        position: static;
-        height: auto;
-        border-right: none;
-        margin-bottom: 95px;
-    }
-    .col-right {
-        .main-about {
-            align-items: center;
+        .popup-visible {
+            opacity: 1;
+            bottom: 0;
+
+        }
+
+        .col-left {
+            border-right: none;
+        }
+        .col-right {
+            height: 100%;
+            .main-about {
+                display: none;
+            }
+        }
+        .col-left {
+            display: block;
+            height: 100%;
+            top: 0;
+            .about-intro .box {
+                margin-top: 0;
+            }
+            .box {
+                height: auto;
+            }
         }
     }
-    .col-left .box {
-        height: auto;
+    .noscroll {
+        overflow: scroll;
     }
-
 }
-}
-
-
-
-
-
 
 @media (max-width: 400px) {
-
     .container-fluid {
-
         height: 100%;
-
-        }
-
-
+    }
 }
