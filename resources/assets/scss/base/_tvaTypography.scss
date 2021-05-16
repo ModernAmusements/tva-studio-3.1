@@ -124,6 +124,7 @@ h3,
     letter-spacing: -0.02em;
     font-size: var(--h3-size);
     margin-bottom: calc(var(--lineHeight) * 0.5);
+    line-height: 30px;
 }
 
 h4,
@@ -304,5 +305,22 @@ h6 > a:hover,
 
     .large {
         font-size: 1.4rem;
+    }
+
+    h2,
+    .h2 {
+        --h2-size: 1.7rem;
+    }
+
+    h2.single-line {
+        margin-top: var(--lineHeight);
+        padding-top: calc(var(--lineHeight) * 0.5);
+        padding-bottom: calc(var(--lineHeight) * 0.5);
+        margin-bottom: 0;
+    }
+
+    h3,
+    .h3 {
+        --h3-size: 1.5rem;
     }
 }

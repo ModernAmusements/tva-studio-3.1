@@ -4,6 +4,10 @@ $(document).ready(function() {
     $(".btn-toggle").on("click", function() {
         var currentPopup = $(this).data("toggle");
 
+        $('html,body').animate({
+            scrollTop: $(".main-container-wrapper").offset().top - 50},
+            'slow');
+
         if ($(".popup-50").hasClass("popup-visible")) {
             $(".popup").removeClass("popup-visible"),
                 $("body").removeClass("noscroll"),
@@ -19,7 +23,6 @@ $(document).ready(function() {
                 $(".master-close").hide();
         }),
         function($) {
-            "use strict";
             $("a[href^='#']").on("click", function(s) {
                 s.preventDefault();
                 var o = this.hash;

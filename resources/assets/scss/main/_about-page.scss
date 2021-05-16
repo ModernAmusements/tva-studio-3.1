@@ -220,19 +220,23 @@
         }
 
         .popup {
+            display: none;
             top: -1px;
             bottom: -100%;
             z-index: 500;
+            margin-bottom: 200px;
         }
 
         .popup-visible {
             opacity: 1;
             bottom: 0;
+            display: block
 
         }
 
         .col-left {
             border-right: none;
+            margin-bottom: 40px;
         }
         .col-right {
             height: 100%;

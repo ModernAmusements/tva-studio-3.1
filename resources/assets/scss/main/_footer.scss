@@ -79,7 +79,10 @@ footer {
             flex-direction: column;
             place-items: center;
         }
-
+        .philo {
+            border-top: var(--border);
+            width: 100%
+        }
     }
 
 }

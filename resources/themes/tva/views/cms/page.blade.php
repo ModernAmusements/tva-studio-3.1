@@ -18,8 +18,8 @@
 <div class="container-fluid">
     <div class="col-left">
     <div class="about-intro box">
-    <p class="medium">Hallo, wir sind tv&aring; studio</p>
-    <h2>ein multidisziplin&auml;res Keramik Design Duo aus M&uuml;nster. tv&aring; studio ist eine neue Plattform f&uuml;r handgefertigte und einzigartige Keramik mit Fokus auf Respekt f&uuml;r die Sch&ouml;nheit im Unvollkommenen.</h2>
+    <h2>Hallo, wir sind tv&aring; studio</h2>
+    <p class="medium">ein multidisziplin&auml;res Keramik Design Duo aus M&uuml;nster. tv&aring; studio ist eine neue Plattform f&uuml;r handgefertigte und einzigartige Keramik mit Fokus auf Respekt f&uuml;r die Sch&ouml;nheit im Unvollkommenen.</p>
     </div>
     <div class="about-nav box">
     <div class="btn-toggle" data-toggle="#refundPolicy">
