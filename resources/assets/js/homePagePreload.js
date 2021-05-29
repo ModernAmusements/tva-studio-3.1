@@ -1,6 +1,6 @@
 $(function() {
     if (!sessionStorage.getItem("homePagePreloader")) {
-        //  sessionStorage.setItem('homePagePreloader', true);
+         sessionStorage.setItem('homePagePreloader', true);
         $("body").addClass("animation");
         $("#preload-homepage")
             .addClass("loaded")

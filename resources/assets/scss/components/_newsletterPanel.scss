@@ -21,17 +21,22 @@
         }
     }
 }
+.newsletter-svg  {
+    padding: 1em;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    svg.newsletter {
+        width: 50%;
+    }
+}
 .control-group-radio {
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
-.newsletter-heading {
-    margin-top: 150px;
-    p {
-        padding: 0;
-    }
-}
+
 .newsletter-subheading {
 }
 .newsletter-heading,
@@ -41,6 +46,19 @@
     text-align: center;
     a {
         padding: 0!important;
+    }
+}
+
+.newsletter-heading {
+    padding-top: 0;
+    h1 {
+        margin: 0;
+        padding-bottom: .3em;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    p {
+        padding: 0;
     }
 }
 
