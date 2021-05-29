@@ -113,7 +113,7 @@
         </div>
 
         <div class="btn-grid btn-grid-neutral">
-            <a class="btn-hover" href="@php echo route('shop.cms.page', 'about-us') @endphp">
+            <a class="btn-hover" target="_blank" href="https://www.instagram.com/tva.studio/?hl=de">
                 <span class="text">Instagram</span>
             </a>
         </div>

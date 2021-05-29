@@ -108,12 +108,7 @@ a.left {
         height: 100%;
     }
 
-
-
-    @media (max-width: 400px) {
-
-
-
-
-    }
-
+.disabled {
+    cursor: not-allowed;
+    opacity: .1!important;
+}

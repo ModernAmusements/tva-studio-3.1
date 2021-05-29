@@ -265,32 +265,29 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .twa-login-panel.is-open {
-        .login-panel-heading {
-            .menu-heading {
-            }
-        }
-        ul.paragraph {
-        }
-        p.paragraph {
-        }
         .login-heading {
             border-left: none;
         }
         .login-content {
             border-left: none;
         }
-        .login-heading-registered,
-        .login-heading-sign-up {
-        }
         .login-heading-sign-up {
             border-left: none;
         }
         .register-area  {
             border-top: none;
+            position: relative;
+            bottom: 300px;
         }
-        .nav-menu {
+    }
+}
+
+@media (max-width: 370px) {
+    .twa-login-panel.is-open {
+        .register-area  {
+            bottom: 200px;
         }
     }
 }

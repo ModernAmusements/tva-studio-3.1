@@ -91,10 +91,6 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
             </li>
 
             <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                <a href="/page/about-us">Philosophie</a>
-            </li>
-
-            <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
                 <a href="/page/about-us">Über uns</a>
             </li>
 
@@ -106,9 +102,6 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
                 <a href="/page/about-us">Impressum</a>
             </li>
 
-            <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                <a href="/page/about-us">Soziale Medien</a>
-            </li>
         </ul>
        </div>
     <div class="register-area">
@@ -174,11 +167,7 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
                 </li>
 
                 <li class="{{ Request::is('archive') ? ' active' : '' }}" >
-                    <a class="disabled" href="">Archiv</a>
-                </li>
-
-                <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                    <a href="/page/about-us">Philosophie</a>
+                    <a class="disabled" href="/">Archiv</a>
                 </li>
 
                 <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
@@ -191,10 +180,6 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
 
                 <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
                     <a href="/page/about-us">Impressum</a>
-                </li>
-
-                <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
-                    <a href="/page/about-us">Soziale Medien</a>
                 </li>
             </ul>
         </div>
