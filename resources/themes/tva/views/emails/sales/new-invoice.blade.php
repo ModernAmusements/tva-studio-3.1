@@ -11,25 +11,27 @@
     <div style="padding: 30px;">
 
         <div style="font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 34px;">
-
             <div style="color: #242424; font-weight: bold; text-transform:uppercase; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920; text-align: center; line-height: 30px;margin-bottom: 20px !important;">
                 {{ __('shop::app.mail.invoice.heading', ['order_id' => $order->increment_id, 'invoice_id' => $invoice->id]) }}
             </div>
-
             <br>
-
             <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {{ __('shop::app.mail.order.dear', ['customer_name' => $order->customer_full_name]) }},
             </p>
-
-            <p style="font-size: 16px;color: #242424;line-height: 24px;">
+            {{-- <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {!! __('shop::app.mail.order.greeting', [
                     'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #1b2c13; font-weight: bold;">#' . $order->increment_id . '</a>',
                     'created_at' => $order->created_at
                     ])
                 !!}
+            </p> --}}
+            <p style="font-size: 16px;color: #242424;line-height: 24px;">
+                bitte begleichen Sie diese Rechnung innerhalb von 7 Tagen nach erhalt dieser Email.<br/>
+                Leistungsdatum = Datum dieser Email.<br/>
+                Zahlungsziel: 7 Tage.<br/>
             </p>
         </div>
+
 
         <div style="font-weight: bold; text-transform:uppercase; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920; text-align: center; line-height: 30px;margin-bottom: 20px !important;">
             {{ __('shop::app.mail.invoice.summary') }}
@@ -153,7 +155,8 @@
             <div style="border-top: solid 1px #2A2920;">
                 <span>{{ __('shop::app.mail.order.subtotal') }}</span>
                 <span style="float: right;">
-                    {{ core()->formatPrice($invoice->sub_total, $invoice->order_currency_code) }}
+                    {{-- Gesamtsumme --}}
+                    {{ core()->formatPrice($invoice->grand_total, $invoice->order_currency_code) }}
                 </span>
             </div>
 
@@ -185,21 +188,16 @@
             <div style="font-weight: bold ; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920; ">
                 <span>{{ __('shop::app.mail.order.grand-total') }}</span>
                 <span style="float: right;">
-                    {{ core()->formatPrice($invoice->grand_total, $invoice->order_currency_code) }}
+                    {{-- Gesamtsumme --}}
+                    {{ core()->formatPrice($invoice->sub_total, $invoice->order_currency_code) }}
                 </span>
             </div>
         </div>
 
-        <div
-            style="margin-top: 65px;font-size: 16px;color: #242424;line-height: 24px;display: inline-block;width: 100%">
+        <div style="margin-top: 65px;font-size: 16px;color: #242424;line-height: 24px;display: inline-block;width: 100%">
             <p style="font-size: 16px;color: #242424;line-height: 24px;">
-                {!!
-                    __('shop::app.mail.order.help', [
-                        'support_email' => '<a style="color:#1b2c13" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
-                        ])
-                !!}
+                {!!__('shop::app.mail.order.help', ['support_email' => '<a style="color:#1b2c13" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'])!!}
             </p>
-
             <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {{ __('shop::app.mail.order.thanks') }}
             </p>

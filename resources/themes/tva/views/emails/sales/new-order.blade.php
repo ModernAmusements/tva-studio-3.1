@@ -194,11 +194,7 @@
             </p>
 
             <p style="font-size: 16px;color: #2A2920;line-height: 24px;">
-                {!!
-                    __('shop::app.mail.order.help', [
-                        'support_email' => '<a style="color:#1b2c13" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>'
-                        ])
-                !!}
+                {!!__('shop::app.mail.order.help', [ 'support_email' => '<a style="color:#1b2c13" href="mailto:' . config('mail.from.address') . '">' . config('mail.from.address'). '</a>']) !!}
             </p>
 
             <p style="font-size: 16px;color: #2A2920;line-height: 24px;">

@@ -565,7 +565,7 @@ return [
             'heading' => 'Auftragsbestätigung',
             'dear' => 'Hallo :customer_name',
             'dear-admin' => 'Hallo :admin_name',
-            'greeting' => 'Danke für Ihre Bestellung :order_id aufgesetzt am :created_at',
+            'greeting' => 'Vielen Dank für deine Bestellung bei två studio! :order_id am :created_at',
             'greeting-admin' => 'Bestellnummer :order_id placed aufgesetzt am :created_at',
             'summary' => 'Zusammenfassung der Bestellung',
             'shipping-address' => 'Lieferadresse',
@@ -580,8 +580,8 @@ return [
             'tax' => 'Steuer',
             'discount' => 'Rabatt',
             'grand-total' => 'Gesamtsumme',
-            'final-summary' => 'Vielen Dank für Ihr Interesse an unserem Shop, wir werden Ihnen eine Tracking-Nummer senden, sobald die Ware versandt wurde',
-            'help' => 'Wenn Sie Hilfe benötigen, kontaktieren Sie uns bitte unter :support_email',
+            'final-summary' => 'Wir werden dein två Objekt nun versandfertig machen. Du erhältst danach eine weitere Mail mit Sendungsinformationen von uns.',
+            'help' => 'Für Rückfragen stehen wir Dir jederzeit gerne zur Verfügung via :support_email',
             'thanks' => 'Danke!',
             'cancel' => [
                 'subject' => 'Auftrags stornierungs Bestätigung',
@@ -609,6 +609,7 @@ return [
             'heading' => 'Ihre Rechnung #:invoice_id für Bestellung #:order_id',
             'subject' => 'Rechnung zu Ihrer Bestellung #:order_id',
             'summary' => 'Zusammenfassung der Rechnung',
+            'invoice' => 'Bitte begleichen Sie den Rechnungsbetrag innerhalb von 7 Tagen.',
         ],
 
         'shipment' => [

@@ -84,7 +84,6 @@
                 border-color: #1b2c13 !important;
                 color: #1b2c13 !important;
               }
-
             }
             .im {
                     color: #242424;
@@ -234,8 +233,42 @@
                         font-size: 12px;
                         text-align: center;
                       "
-                      >två studio, Diepenbrockstraße 11-13, 48145 Münster
+                      ><strong>två studio</strong><br />
+                      Diepenbrockstraße 11-13, 48145 Münster
                       Germany
+                    </span>
+                    <br />
+                    <span
+                    class="apple-link"
+                    style="
+                      color: #7d7d73;
+                      font-size: 12px;
+                      text-align: center;
+                    "
+                    ><strong>Paypal:</strong> två studio<br />
+                    hello@tva-studio.de
+                    </span>
+                    <br />
+                    <span
+                    class="apple-link"
+                    style="
+                        color: #7d7d73;
+                        font-size: 12px;
+                        text-align: center;
+                    "
+                    ><strong>Bankverbindung:</strong><br />
+                    IBAN: DE55 1001 7997 3397 2553 29 BIC: HOLVDEB1
+                    </span>
+                    <br />
+                    <span
+                    class="apple-link"
+                    style="
+                        color: #7d7d73;
+                        font-size: 12px;
+                        text-align: center;
+                    "
+                    ><strong>Steuernummer:</strong><br />
+                    337/5072/2856 Finanzamt Münster
                     </span>
                     <br />
                     <span
@@ -245,7 +278,7 @@
                         font-size: 12px;
                         text-align: center;
                       "
-                      >Angaben gemäß § 5 TMG<br />
+                      ><strong>Angaben gemäß § 5 TMG</strong><br />
                       ©två studio vertreten von Sina Folwaczny
                     </span>
                   </td>
