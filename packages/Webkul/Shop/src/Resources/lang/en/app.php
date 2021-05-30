@@ -93,7 +93,7 @@ return [
     'customer' => [
         'signup-text' => [
             'account_exists' => 'Sie haben bereits ein Konto',
-            'title' => 'Anmelden - Tva Studio'
+            'title' => 'Anmelden - två studio'
         ],
 
         'signup-form' => [
@@ -135,7 +135,7 @@ return [
         ],
 
         'login-form' => [
-            'page-title' => 'Kunden-Login - Tva Studio',
+            'page-title' => 'Kunden-Login - två studio',
             'title' => 'Anmelden',
             'email' => 'Email',
             'password' => 'Passwort',
@@ -177,7 +177,7 @@ return [
 
             'profile' => [
                 'index' => [
-                    'page-title' => 'Konto - Tva Studio',
+                    'page-title' => 'Konto - två studio',
                     'title' => 'Profilformular',
                     'edit' => 'Bearbeiten',
                 ],
@@ -208,7 +208,7 @@ return [
 
             'address' => [
                 'index' => [
-                    'page-title' => 'Adresse - Tva Studio',
+                    'page-title' => 'Adresse - två studio',
                     'title' => 'Anschrift',
                     'add' => 'Anschrift hinzufügen',
                     'edit' => 'Bearbeiten',
@@ -224,7 +224,7 @@ return [
                 ],
 
                 'create' => [
-                    'page-title' => 'Anschrift hinzufügen - Tva Studio',
+                    'page-title' => 'Anschrift hinzufügen - två studio',
                     'company_name' => 'Firmenname',
                     'first_name' => 'Vorname',
                     'last_name' => 'Nachname',
@@ -263,7 +263,7 @@ return [
 
             'order' => [
                 'index' => [
-                    'page-title' => 'Bestellungen - Tva Studio ',
+                    'page-title' => 'Bestellungen - två studio ',
                     'title' => 'Bestellungen',
                     'order_id' => 'Auftrags-ID',
                     'date' => 'Datum',
@@ -295,7 +295,7 @@ return [
                     'item-shipped' => 'shipped (:qty_shipped)',
                     'item-canceled' => 'Canceled (:qty_canceled)',
                     'item-refunded' => 'Refunded (:qty_refunded)',
-                    'price' => 'Preis',
+                    'price' => 'Gesamtpreis',
                     'total' => 'Total',
                     'subtotal' => 'Zwischensumme',
                     'shipping-handling' => 'Versand & Bearbeitung',
@@ -507,7 +507,7 @@ return [
             'payment-methods' => 'Zahlungsmethode auswählen',
             'payment-method' => 'Zahlungsmethode',
             'summary' => 'Zusammenfassung der Bestellung',
-            'price' => 'Preis',
+            'price' => 'Gesamtpreis',
             'quantity' => 'Menge',
             'billing-address' => 'Rechnungsadresse',
             'shipping-address' => 'Lieferadresse',
@@ -535,11 +535,11 @@ return [
         'total' => [
             'order-summary' => 'Zusammenfassung der Bestellung',
             'sub-total' => 'Artikel',
-            'grand-total' => 'Gesamtbetrag',
+            'grand-total' => 'Nettobetrag',
             'delivery-charges' => 'Kosten der Lieferung',
             'tax' => 'Steuern',
             'discount' => 'Rabatt',
-            'price' => 'Preis',
+            'price' => 'Gesamtpreis',
             'disc-amount' => 'Ermäßigter Betrag',
             'new-grand-total' => 'Neue Gesamtsumme',
             'coupon' => 'Gutschein',
@@ -573,9 +573,9 @@ return [
             'contact' => 'Kontakt',
             'shipping' => 'Versandart',
             'payment' => 'Zahlungsmethode',
-            'price' => 'Preis',
+            'price' => 'Gesamtpreis',
             'quantity' => 'Menge',
-            'subtotal' => 'Zwischensumme',
+            'subtotal' => 'Nettobetrag',
             'shipping-handling' => 'Versand & Bearbeitung',
             'tax' => 'Steuer',
             'discount' => 'Rabatt',

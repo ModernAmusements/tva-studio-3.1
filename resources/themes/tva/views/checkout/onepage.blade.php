@@ -97,9 +97,11 @@
             </div>
 
             <div class="right-side" v-show="current_step != 4">
-                <summary-section :key="summeryComponentKey"></summary-section>
-            </div>
+                <summary-section :key="summeryComponentKey">
 
+                </summary-section>
+
+            </div>
         </div>
         </div>
     </script>

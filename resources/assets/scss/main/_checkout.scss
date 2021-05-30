@@ -13,7 +13,6 @@
             width: 33%;
             display: inline-block !important;
             margin-left: 10px;
-            border-left: var(--border);
             .order-summary {
                 border-top: var(--border);
                 border-right: var(--border);
@@ -23,10 +22,12 @@
                 border-bottom: var(--border);
                 height: 50px;
                 padding: 14px;
+                border-left: var(--border);
             }
             .item-detail,
             #grand-total-detail {
                 display: flex;
+                border-left: var(--border);
                 width: 100%;
                 flex-direction: row;
                 justify-content: space-between;
@@ -36,6 +37,9 @@
             }
             .item-detail {
                 border-bottom: var(--border);
+            }
+            .small {
+                padding: 14px;
             }
         }
     }

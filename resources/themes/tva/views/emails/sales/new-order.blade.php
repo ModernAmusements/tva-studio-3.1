@@ -147,7 +147,8 @@
             <div style="border-top: solid 1px #2A2920;">
                 <span>{{ __('shop::app.mail.order.subtotal') }}</span>
                 <span style="float: right;">
-                    {{ core()->formatPrice($order->sub_total, $order->order_currency_code) }}
+                    {{-- Zwischen Summe --}}
+                    {{ core()->formatPrice($order->grand_total, $order->order_currency_code) }}
                 </span>
             </div>
 
@@ -181,7 +182,8 @@
             <div style="font-weight: bold ; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920;">
                 <span>{{ __('shop::app.mail.order.grand-total') }}</span>
                 <span style="float: right;">
-                    {{ core()->formatPrice($order->grand_total, $order->order_currency_code) }}
+                    {{-- Gesamtsumme --}}
+                    {{ core()->formatPrice($order->sub_total, $order->order_currency_code) }}
                 </span>
             </div>
         </div>

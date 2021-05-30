@@ -233,7 +233,7 @@
                         font-size: 12px;
                         text-align: center;
                       "
-                      >Tva Studio, Diepenbrockstraße 11-13, 48145 Münster
+                      >två studio, Diepenbrockstraße 11-13, 48145 Münster
                       Germany
                     </span>
                     <br />

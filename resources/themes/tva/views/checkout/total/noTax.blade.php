@@ -2,12 +2,13 @@
     <div class="summary-titel">
         <p>{{ __('shop::app.checkout.total.order-summary') }}</p>
     </div>
-    {{-- Netto new --}}
     <div class="item-detail">
-        <label>{{ __('shop::app.checkout.total.grand-total') }}</label>
-        <label class="right" id="grand-total-amount-detail">
-            {{ core()->currency($cart->base_grand_total) }}
+        <label>
+            {{ intval($cart->items_qty) }}
+            {{ __('shop::app.checkout.total.sub-total') }}
+            {{ __('shop::app.checkout.total.price') }}
         </label>
+        <label class="right">{{ core()->currency($cart->base_sub_total) }}</label>
     </div>
 
     @if ($cart->selected_shipping_rate)
@@ -17,14 +18,14 @@
         </div>
     @endif
 
-    @if ($cart->base_tax_total)
+    {{-- @if ($cart->base_tax_total)
         @foreach (Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($cart, true) as $taxRate => $baseTaxAmount )
         <div class="item-detail">
-            <label id="taxrate-{{ core()->taxRateAsIdentifier($taxRate) }}">{{ __('shop::app.checkout.total.tax') }} 19 %</label>
+            <label id="taxrate-{{ core()->taxRateAsIdentifier($taxRate) }}">{{ __('shop::app.checkout.total.tax') }} {{ $taxRate }} %</label>
             <label class="right" id="basetaxamount-{{ core()->taxRateAsIdentifier($taxRate) }}">{{ core()->currency($baseTaxAmount) }}</label>
         </div>
         @endforeach
-    @endif
+    @endif --}}
 
     <div class="item-detail" id="discount-detail" @if ($cart->base_discount_amount && $cart->base_discount_amount > 0) style="display: block;" @else style="display: none;" @endif>
         <label>
@@ -35,13 +36,11 @@
         </label>
     </div>
 
-    {{-- Netto new --}}
+
     <div class="payable-amount" id="grand-total-detail">
-        <label>
-            {{ intval($cart->items_qty) }}
-            {{ __('shop::app.checkout.total.sub-total') }}
-            {{ __('shop::app.checkout.total.price') }}
+        <label>{{ __('shop::app.checkout.total.grand-total') }}</label>
+        <label class="right" id="grand-total-amount-detail">
+            {{ core()->currency($cart->base_grand_total) }}
         </label>
-        <label class="right">{{ core()->currency($cart->base_sub_total) }}</label>
     </div>
 </div>

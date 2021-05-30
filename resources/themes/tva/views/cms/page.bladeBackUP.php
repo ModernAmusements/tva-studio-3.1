@@ -296,7 +296,7 @@
             </p>
             <br />
             <p>
-                Tva Studio<br />
+                två studio<br />
                 Diepenbrockstraße 11-13<br />
                 48145 Münster Germany<br />
                 T: +41 61 377 00 00<br />

@@ -589,12 +589,12 @@ class Cart
         $cart->tax_total = Tax::getTaxTotal($cart, false);
         $cart->base_tax_total = Tax::getTaxTotal($cart, true);
 
-        $cart->grand_total = $cart->sub_total - $cart->tax_total - $cart->discount_amount;
-        $cart->base_grand_total = $cart->base_sub_total - $cart->base_tax_total - $cart->base_discount_amount;
+        $cart->grand_total = $cart->sub_total + $cart->tax_total - $cart->discount_amount;
+        $cart->base_grand_total = $cart->base_sub_total + $cart->base_tax_total - $cart->base_discount_amount;
 
         if ($shipping = $cart->selected_shipping_rate) {
-            $cart->sub_total = (float)$cart->sub_total + $shipping->price - $shipping->discount_amount;
-            $cart->base_sub_total = (float)$cart->base_sub_total + $shipping->base_price - $shipping->base_discount_amount;
+            $cart->grand_total = (float)$cart->grand_total + $shipping->price - $shipping->discount_amount;
+            $cart->base_grand_total = (float)$cart->base_grand_total + $shipping->base_price - $shipping->base_discount_amount;
 
             $cart->discount_amount += $shipping->discount_amount;
             $cart->base_discount_amount += $shipping->base_discount_amount;
@@ -704,7 +704,21 @@ class Cart
 
             if ($taxRates->count()) {
                 foreach ($taxRates as $rate) {
-                    $haveTaxRate = true;
+                    $haveTaxRate = false;
+
+                    if ($rate->state != '' && $rate->state != $address->state) {
+                        continue;
+                    }
+
+                    if (! $rate->is_zip) {
+                        if ($rate->zip_code == '*' || $rate->zip_code == $address->postcode) {
+                            $haveTaxRate = true;
+                        }
+                    } else {
+                        if ($address->postcode >= $rate->zip_from && $address->postcode <= $rate->zip_to) {
+                            $haveTaxRate = true;
+                        }
+                    }
 
                     if ($haveTaxRate) {
                         $item->tax_percent = $rate->tax_rate;
