@@ -708,8 +708,12 @@ class Cart
 
                     if ($haveTaxRate) {
                         $item->tax_percent = $rate->tax_rate;
-                        $item->tax_amount = ($item->total * $rate->tax_rate) / 100;
-                        $item->base_tax_amount = ($item->base_total * $rate->tax_rate) / 100;
+                        // ? INTERNALTIONAL VAT CAL
+                        // $item->tax_amount = ($item->total * $rate->tax_rate) / 100;
+                        // $item->base_tax_amount = ($item->base_total * $rate->tax_rate) / 100;
+                        // ?? GERMAN MWST CAL BASED ON GRANDTOTAL
+                        $item->tax_amount = ($item->total * 100) / (100 * $rate->tax_rate);
+                        $item->base_tax_amount = ($item->base_total * 100) / (100 * $rate->tax_rate);
 
                         break;
                     }

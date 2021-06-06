@@ -2,14 +2,14 @@
     <div class="summary-titel">
         <p>{{ __('shop::app.checkout.total.order-summary') }}</p>
     </div>
-    {{-- Netto new --}}
+    {{-- Netto GERMAN --}}
     <div class="item-detail">
         <label>{{ __('shop::app.checkout.total.grand-total') }}</label>
         <label class="right" id="grand-total-amount-detail">
             {{ core()->currency($cart->base_grand_total) }}
         </label>
     </div>
-
+    {{-- SHIPPING --}}
     @if ($cart->selected_shipping_rate)
         <div class="item-detail">
             <label>{{ __('shop::app.checkout.total.delivery-charges') }}</label>
@@ -20,7 +20,8 @@
     @if ($cart->base_tax_total)
         @foreach (Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($cart, true) as $taxRate => $baseTaxAmount )
         <div class="item-detail">
-            <label id="taxrate-{{ core()->taxRateAsIdentifier($taxRate) }}">{{ __('shop::app.checkout.total.tax') }} 19 %</label>
+            {{-- <label id="taxrate-{{ core()->taxRateAsIdentifier($taxRate) }}">{{ __('shop::app.checkout.total.tax') }} 19 %</label> --}}
+            <label id="taxrate-{{ core()->taxRateAsIdentifier($taxRate) }}">Nettobetrag</label>
             <label class="right" id="basetaxamount-{{ core()->taxRateAsIdentifier($taxRate) }}">{{ core()->currency($baseTaxAmount) }}</label>
         </div>
         @endforeach

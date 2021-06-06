@@ -535,7 +535,7 @@ return [
         'total' => [
             'order-summary' => 'Zusammenfassung der Bestellung',
             'sub-total' => 'Artikel',
-            'grand-total' => 'Nettobetrag',
+            'grand-total' => 'Steuern 19 %',
             'delivery-charges' => 'Kosten der Lieferung',
             'tax' => 'Steuern',
             'discount' => 'Rabatt',
@@ -575,7 +575,7 @@ return [
             'payment' => 'Zahlungsmethode',
             'price' => 'Gesamtpreis',
             'quantity' => 'Menge',
-            'subtotal' => 'Nettobetrag',
+            'subtotal' => 'Steuern 19 %',
             'shipping-handling' => 'Versand & Bearbeitung',
             'tax' => 'Steuer',
             'discount' => 'Rabatt',
