@@ -370,7 +370,7 @@ added to header
 - .product remove view_render_event
 
 
-            'invalid-coupon' => 'Dieser Gutschein-Code ist nicht gültig',
+'invalid-coupon' => 'Dieser Gutschein-Code ist nicht gültig',
 
 
 

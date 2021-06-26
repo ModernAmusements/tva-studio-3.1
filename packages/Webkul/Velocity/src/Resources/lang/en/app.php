@@ -7,8 +7,8 @@ return [
                 'general'  => 'General',
                 'category'  => 'Category',
                 'settings'  => 'Settings',
-                'extension_name' => 'Velocity Theme',
-                'error-module-inactive' => 'Warning: Velocity theme status is inactive',
+                'extension_name' => 'Homepage Theme',
+                'error-module-inactive' => 'Warning: Homepage theme status is inactive',
             ],
 
             'settings' => [
@@ -40,7 +40,7 @@ return [
             ]
         ],
         'layouts'   => [
-            'velocity' => 'Velocity',
+            'velocity' => 'Homepage',
             'cms-pages' => 'CMS Pages',
             'meta-data' => 'Meta Data',
             'category-menu' => 'Category Menu',
@@ -91,7 +91,7 @@ return [
         ],
         'meta-data' => [
             'footer' => 'Footer',
-            'title' => 'Velocity meta data',
+            'title' => 'Homepage meta data',
             'activate-slider' => 'Activate Slider',
             'home-page-content' => 'Home Page Content',
             'footer-left-content' => 'Footer Left Content',
