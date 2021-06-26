@@ -388,3 +388,16 @@ You can view the new private and public key by running the following:
 [local]$ ls -1 ~/.ssh/
 id_rsa
 id_rsa.pub
+
+
+
+CALC german VAT
+ADMIN Setting Rate 
+taxe_rate = 1.1900
+
+// ?? GERMAN MWST CAL BASED ON GRANDTOTAL
+$item->tax_amount = ($item->total * 100) / (100 * $rate->tax_rate);
+$item->base_tax_amount = ($item->base_total * 100) / (100 * $rate->tax_rate);
+
+
+

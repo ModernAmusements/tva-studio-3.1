@@ -39,7 +39,7 @@ class Tax
     }
 
     /**
-     * Returns the totall tax amount
+     * Returns the total tax amount
      * @param  object  $that
      * @param  bool  $asBase
      * @return float
