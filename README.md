@@ -401,3 +401,27 @@ $item->base_tax_amount = ($item->base_total * 100) / (100 * $rate->tax_rate);
 
 
 
+php artisan storage:link
+dh_qs66q5@tva-studio.de
+
+ #             ""#      m""
+ # mm    mmm     #    mm#mm m     m  mmm   m   m
+ #"  #  "   #    #      #   "m m m" "   #  "m m"
+ #   #  m"""#    #      #    #m#m#  m"""#   #m#
+ #   #  "mm"#    "mm    #     # #   "mm"#   "#
+                                            m"
+                                           ""
+[halfway]$ ls
+Maildir  index.css  index.css.map  logs  tva-studio.de	tva_studio_working.zip
+[halfway]$ cd tva-studio.de
+[halfway]$ ls
+ Cart.php	 codeception.yml       package-lock.json   server.php
+ README.md	 composer.json	       package.json	   storage
+ app		 composer.lock	       packages		   tests
+ artisan	 config		       phpunit.xml	   vendor
+ bin		 database	       public		   webpack.mix.js
+ bootstrap	'migration guide.md'   resources
+ cms-code.html	 node_modules	       routes
+[halfway]$ php artisan storage:link
+The [public/storage] directory has been linked.
+[halfway]$

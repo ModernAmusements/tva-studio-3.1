@@ -1,45 +1,55 @@
 @extends('shop::layouts.master')
 
 @php
-$channel = core()->getCurrentChannel();
+    $channel = core()->getCurrentChannel();
 
-$homeSEO = $channel->home_seo;
+    $homeSEO = $channel->home_seo;
 
-if (isset($homeSEO)) {
-$homeSEO = json_decode($channel->home_seo);
+    if (isset($homeSEO)) {
+        $homeSEO = json_decode($channel->home_seo);
 
-$metaTitle = $homeSEO->meta_title;
+        $metaTitle = $homeSEO->meta_title;
 
-$metaDescription = $homeSEO->meta_description;
+        $metaDescription = $homeSEO->meta_description;
 
-$metaKeywords = $homeSEO->meta_keywords;
-}
+        $metaKeywords = $homeSEO->meta_keywords;
+    }
 @endphp
 
 @section('page_title')
-{{ isset($metaTitle) ? $metaTitle : "" }}
+    {{ isset($metaTitle) ? $metaTitle : "" }}
 @endsection
 
 @section('head')
 
-@if (isset($homeSEO))
-@isset($metaTitle)
-<meta name="title" content="{{ $metaTitle }}" />
-@endisset
+    @if (isset($homeSEO))
+        @isset($metaTitle)
+            <meta name="title" content="{{ $metaTitle }}" />
+        @endisset
 
-@isset($metaDescription)
-<meta name="description" content="{{ $metaDescription }}" />
-@endisset
+        @isset($metaDescription)
+            <meta name="description" content="{{ $metaDescription }}" />
+        @endisset
 
-@isset($metaKeywords)
-<meta name="keywords" content="{{ $metaKeywords }}" />
-@endisset
-@endif
+        @isset($metaKeywords)
+            <meta name="keywords" content="{{ $metaKeywords }}" />
+        @endisset
+    @endif
 @endsection
 
 @section('content-wrapper')
 
-{!! DbView::make($channel)->field('home_page_content')->with(['sliderData' => $sliderData])->render() !!}
+    @if ($velocityMetaData)
+        {!! DbView::make($velocityMetaData)->field('home_page_content')->render() !!}
+        @include('shop::home.advertisements.advertisement-two')
+    @else
+        @include('shop::home.advertisements.advertisement-four')
+        @include('shop::home.advertisements.advertisement-three')
+        @include('shop::home.advertisements.advertisement-two')
+        @include('shop::home.product-policy')
+        @include('shop::home.featured-products')
+        @include('shop::home.new-products')
+    @endif
 
 
 @endsection
