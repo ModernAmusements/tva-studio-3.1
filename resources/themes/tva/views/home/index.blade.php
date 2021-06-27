@@ -40,7 +40,9 @@
 @section('content-wrapper')
 
     @if ($velocityMetaData)
-        {!! DbView::make($velocityMetaData)->field('home_page_content')->render() !!}
+        <section class="homepage-cms">
+            {!! DbView::make($velocityMetaData)->field('home_page_content')->render() !!}
+        </section>
         @include('shop::home.advertisements.advertisement-two')
     @else
         @include('shop::home.advertisements.advertisement-four')

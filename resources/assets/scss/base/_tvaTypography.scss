@@ -98,6 +98,7 @@ h2,
     line-height: calc(var(--lineHeight) * 1.5);
     margin-left: calc(var(--h2-size) / -26);
     margin-bottom: var(--lineHeight);
+    margin-top: var(--lineHeight)
 }
 
 h2.single-line {
