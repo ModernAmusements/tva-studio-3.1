@@ -143,11 +143,21 @@
             </div>
         </div>
 
-        <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 100%;margin-top: 20px;">
-            <div style="border-top: solid 1px #2A2920;">
+        {{-- <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 100%;margin-top: 20px;">
+
+            @foreach (Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($order, false) as $taxRate => $taxAmount )
+            <div style="border-top: solid 1px #2A2920; font-size: 16px;color: #242424;">
+                <span id="">Nettobetrag</span>
+                <span id="taxamount-{{ core()->taxRateAsIdentifier($taxRate) }}" style="float: right;">
+                    {{ core()->formatPrice($taxAmount, $order->order_currency_code) }}
+                </span>
+            </div>
+            @endforeach
+
+            <div style="font-size: 16px;color: #242424;">
                 <span>{{ __('shop::app.mail.order.subtotal') }}</span>
                 <span style="float: right;">
-                    {{-- Zwischen Summe --}}
+
                     {{ core()->formatPrice($order->grand_total, $order->order_currency_code) }}
                 </span>
             </div>
@@ -161,14 +171,6 @@
                 </div>
             @endif
 
-            @foreach (Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($order, false) as $taxRate => $taxAmount )
-            <div>
-                <span id="taxrate-{{ core()->taxRateAsIdentifier($taxRate) }}">{{ __('shop::app.mail.order.tax') }} {{ $taxRate }} %</span>
-                <span id="taxamount-{{ core()->taxRateAsIdentifier($taxRate) }}" style="float: right;">
-                    {{ core()->formatPrice($taxAmount, $order->order_currency_code) }}
-                </span>
-            </div>
-            @endforeach
 
             @if ($order->discount_amount > 0)
                 <div>
@@ -182,11 +184,11 @@
             <div style="font-weight: bold ; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920;">
                 <span>{{ __('shop::app.mail.order.grand-total') }}</span>
                 <span style="float: right;">
-                    {{-- Gesamtsumme --}}
+
                     {{ core()->formatPrice($order->sub_total, $order->order_currency_code) }}
                 </span>
             </div>
-        </div>
+        </div> --}}
 
         <div style="margin-top: 65px;font-size: 16px;color: #2A2920;line-height: 24px;display: inline-block">
             <p style="font-size: 16px;color: #2A2920;line-height: 24px;">

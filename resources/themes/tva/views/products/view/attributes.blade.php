@@ -4,7 +4,7 @@
 
 @if ($customAttributeValues = $productViewHelper->getAdditionalData($product))
 
-            <div class="full-specifications medium">
+            {{-- <div class="full-specifications medium">
 
                 @foreach ($customAttributeValues as $attribute)
 
@@ -31,7 +31,7 @@
 
                 @endforeach
 
-            </div>
+            </div> --}}
 
 @endif
 

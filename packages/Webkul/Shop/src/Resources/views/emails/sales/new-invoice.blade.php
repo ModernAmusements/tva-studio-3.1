@@ -155,45 +155,53 @@
             </div>
         </div>
 
+
         <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 100%;margin-top: 20px;">
-            <div style="border-top: solid 1px #2A2920;">
+
+            @foreach (Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($order, false) as $taxRate => $taxAmount )
+            <div style="border-top: solid 1px #2A2920; font-size: 16px;color: #242424;">
+                <span id="">Nettobetrag</span>
+                <span id="taxamount-{{ core()->taxRateAsIdentifier($taxRate) }}" style="float: right;">
+                    {{ core()->formatPrice($taxAmount, $order->order_currency_code) }}
+                </span>
+            </div>
+            @endforeach
+
+            <div style="font-size: 16px;color: #242424;">
                 <span>{{ __('shop::app.mail.order.subtotal') }}</span>
                 <span style="float: right;">
-                    {{ core()->formatPrice($invoice->sub_total, $invoice->order_currency_code) }}
+                    {{-- Zwischen Summe --}}
+                    {{ core()->formatPrice($order->grand_total, $order->order_currency_code) }}
                 </span>
             </div>
 
             @if ($order->shipping_address)
-            <div style="font-size: 16px;color: #242424;">
+                <div>
                     <span>{{ __('shop::app.mail.order.shipping-handling') }}</span>
                     <span style="float: right;">
-                        {{ core()->formatPrice($invoice->shipping_amount, $invoice->order_currency_code) }}
+                        {{ core()->formatPrice($order->shipping_amount, $order->order_currency_code) }}
                     </span>
                 </div>
             @endif
 
-            <div style="font-size: 16px;color: #242424;">
-                <span>{{ __('shop::app.mail.order.tax') }}</span>
-                <span id="taxamount" style="float: right;">
-                    {{ core()->formatPrice($invoice->tax_amount, $order->order_currency_code) }}
-                </span>
-            </div>
 
-            @if ($invoice->discount_amount > 0)
-            <div style="font-size: 16px;color: #242424;">
+            @if ($order->discount_amount > 0)
+                <div>
                     <span>{{ __('shop::app.mail.order.discount') }}</span>
                     <span style="float: right;">
-                        {{ core()->formatPrice($invoice->discount_amount, $invoice->order_currency_code) }}
+                        {{ core()->formatPrice($order->discount_amount, $order->order_currency_code) }}
                     </span>
                 </div>
             @endif
 
-            <div style="font-weight: bold ; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920; ">
+            <div style="font-weight: bold ; border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920;">
                 <span>{{ __('shop::app.mail.order.grand-total') }}</span>
                 <span style="float: right;">
-                    {{ core()->formatPrice($invoice->grand_total, $invoice->order_currency_code) }}
+                    {{-- Gesamtsumme --}}
+                    {{ core()->formatPrice($order->sub_total, $order->order_currency_code) }}
                 </span>
             </div>
         </div>
+
     </div>
 @endcomponent
