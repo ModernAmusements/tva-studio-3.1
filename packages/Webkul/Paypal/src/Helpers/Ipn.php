@@ -99,7 +99,7 @@ class Ipn
     protected function processOrder()
     {
         if ($this->post['payment_status'] == 'Completed') {
-            if ($this->post['mc_gross'] != $this->order->grand_total) {
+            if ($this->post['mc_gross'] != $this->order->base_sub_total) {
 
             } else {
                 $this->orderRepository->update(['status' => 'processing'], $this->order->id);

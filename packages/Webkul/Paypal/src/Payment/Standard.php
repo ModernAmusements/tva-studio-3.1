@@ -69,9 +69,9 @@ class Standard extends Paypal
             if ($cart->selected_shipping_rate)
                 $this->addShippingAsLineItems($fields, $cart->items()->count() + 1);
 
-            if (isset($fields['tax'])) {
-                $fields['tax_cart'] = $fields['tax'];
-            }
+            // if (isset($fields['tax'])) {
+            //     $fields['tax_cart'] = $fields['tax'];
+            // }
 
             if (isset($fields['discount_amount'])) {
                 $fields['discount_amount_cart'] = $fields['discount_amount'];
