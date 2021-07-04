@@ -53,7 +53,7 @@ class Standard extends Paypal
             'charset'         => 'utf-8',
             'item_name'       => core()->getCurrentChannel()->name,
             'amount'          => $cart->sub_total,
-            'tax'             => $cart->tax_total,
+            // 'tax'             => $cart->tax_total,
             'shipping'        => $cart->selected_shipping_rate ? $cart->selected_shipping_rate->price : 0,
             'discount_amount' => $cart->discount_amount,
         ];
