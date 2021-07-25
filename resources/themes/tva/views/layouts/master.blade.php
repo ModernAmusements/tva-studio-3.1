@@ -87,15 +87,8 @@
         @endif
     </script>
     {{-- JSCRIPT --}}
-    <script type="text/javascript" src="{{ tva_asset('js/shop.js') }}"></script>
-    <script type="text/javascript" src="{{ tva_asset('js/ui.js') }}"></script>
-    <script type="text/javascript" src="{{ mix('themes/tva/assets/js/mainApp.js') }}"></script>
+    @include('shop::layouts.footer.javascript')
     @stack('scripts')
-    {{-- MODAL --}}
-    <div class="modal-overlay"></div>
-    <div id="consent-popup" class="hidden">
-        <p>Wir verwenden Cookies für Analyse- und Marketingzwecke. Bitte akzeptieren Sie <a href="@php echo route('shop.cms.page', 'about-us') @endphp">diese Bedingungen</a> , bevor Sie die Seite nutzen.</p>
-        <a id="accept" href="#">Akzeptieren</a>
-    </div>
+
 </body>
 </html>

@@ -18,7 +18,6 @@ let mix = require("laravel-mix");
 // Shop
 mix.sass("resources/assets/scss/index.scss", "public/themes/tva/assets/css");
 mix.js([
-    'resources/assets/js/cookieConsent.js',
     'resources/assets/js/homePageToggles.js',
     'resources/assets/js/application-min.js',
     'resources/assets/js/homePagePreload.js',
