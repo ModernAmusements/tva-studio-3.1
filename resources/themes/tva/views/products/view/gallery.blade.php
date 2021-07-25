@@ -21,7 +21,7 @@
     <script type="text/x-template" id="product-gallery-template">
         <div class="hero-section">
             <div class="article-image-subpage" id="product-hero-image">
-                <img :src="currentLargeImageUrl" class="tva-image-subpage" id="pro-img" :data-image="currentOriginalImageUrl"/>
+                <img :src="currentOriginalImageUrl" class="tva-image-subpage" id="pro-img" :data-image="currentOriginalImageUrl"/>
 
                 @auth('customer')
                     <a @if ($wishListHelper->getWishlistProduct($product)) class="add-to-wishlist already" @else class="add-to-wishlist" @endif href="{{ route('customer.wishlist.add', $product->product_id) }}">
@@ -29,7 +29,7 @@
                 @endauth
             </div>
             <ul class="thumb-list">
-                <li class="thumb-frame" v-for='(thumb, index) in thumbs' @mouseover="changeImage(thumb)" :class="[thumb.large_image_url == currentLargeImageUrl ? 'active' : '']" id="thumb-frame">
+                <li class="thumb-frame" v-for='(thumb, index) in thumbs' @mouseover="changeImage(thumb)" :class="[thumb.large_image_url == currentOriginalImageUrl ? 'active' : '']" id="thumb-frame">
                     <img class="tva-image-subpage-thumb" :src="thumb.small_image_url"/>
                 </li>
             </ul>
@@ -50,7 +50,7 @@
 
                     thumbs: [],
 
-                    currentLargeImageUrl: '',
+                    currentOriginalImageUrl: '',
 
                     currentOriginalImageUrl: '',
 
@@ -92,7 +92,7 @@
                 },
 
                 changeImage: function(image) {
-                    this.currentLargeImageUrl = image.large_image_url;
+                    this.currentOriginalImageUrl = image.large_image_url;
 
                     this.currentOriginalImageUrl = image.original_image_url;
                 },
