@@ -194,6 +194,7 @@
         opacity: 1;
         right: 0;
         z-index: 250;
+        max-height: calc(100vh - 120px) !important;
     }
     .popup-visible.popup-visible {
         right: 0;
@@ -206,7 +207,9 @@
     }
 }
 .noscroll {
+    position: fixed;
     overflow: hidden;
+    width: 100%;
 }
 
 @media (max-width: 900px) {
@@ -237,6 +240,12 @@
         .col-left {
             border-right: none;
             margin-bottom: 40px;
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
         }
         .col-right {
             height: 100%;
@@ -255,9 +264,6 @@
                 height: auto;
             }
         }
-    }
-    .noscroll {
-        overflow: scroll;
     }
 }
 

@@ -84,7 +84,23 @@ cc.run({
                         value: 'necessary',
                         enabled: true,
                         readonly: true //cookie categories with readonly=true are all treated as "necessary cookies"
-                    }
+                    },
+                    cookie_table: [{
+                        col1: 'tva-session',
+                        col2: 'www.tva-studio.de',
+                        col3: getSession(),
+                    },
+                    {
+                        col1: 'XSRF-TOKEN',
+                        col2: 'www.tva-studio.de',
+                        col3: gettva_session(),
+                    },
+                    {
+                        col1: 'cc_cookie',
+                        col2: 'www.tva-studio.de',
+                        col3: gettva_session(),
+                    },
+                ]
                 }, {
                     title: "Analyse- und Leistungscookies",
                     description: analytics(),
@@ -95,30 +111,19 @@ cc.run({
                     },
                     cookie_table: [{
                             col1: '_ga',
-                            col2: 'yourdomain.com',
-                            col3: getLoremIpsum(),
+                            col2: '.google.com',
+                            col3: gettva_session(),
                         },
                         {
-                            col1: '_gat',
-                            col2: 'yourdomain.com',
-                            col3: getLoremIpsum(),
+                            col1: 'NIA',
+                            col2: '.google.com',
+                            col3: gettva_session(),
                         },
                         {
-                            col1: '_gat_UA-46747204-9',
-                            col2: 'yourdomain.com',
-                            col3: getLoremIpsum(),
+                            col1: '_ga_MCQYE5C15',
+                            col2: '.google.com',
+                            col3: gettva_session(),
                         },
-                        {
-                            col1: '_gid',
-                            col2: 'yourdomain.com',
-                            col3: 'description ...',
-                        },
-                        {
-                            col1: '_my_cookie',
-                            col2: 'yourdomain.com',
-                            col3: 'test cookie with custom path ...',
-                            path: '/demo' // needed for autoclear cookies
-                        }
                     ]
                 }, {
                     title: "Weitere Informationen",
@@ -140,3 +145,12 @@ function necessaryCookies() {
 function analytics() {
     return 'Diese Cookies helfen uns, unsere Website zu verbessern, indem sie Informationen über Ihre Nutzung unserer Website sammeln.';
 }
+
+function gettva_session() {
+    return '1 Jahr';
+}
+
+function getSession() {
+    return 'Session';
+}
+
