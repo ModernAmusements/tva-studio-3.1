@@ -21,6 +21,8 @@ mix.js([
     'resources/assets/js/homePageToggles.js',
     'resources/assets/js/application-min.js',
     'resources/assets/js/homePagePreload.js',
+    'resources/assets/js/cookieconsent.js',
+    'resources/assets/js/cookieSettings.js',
     ], 'public/themes/tva/assets/js/mainApp.js');
 
 

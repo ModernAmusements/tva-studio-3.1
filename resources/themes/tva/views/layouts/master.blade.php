@@ -8,11 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="content-language" content="de">
-
+    {{-- STYLE --}}
     <link rel="stylesheet prefetch" href="{{ mix('themes/tva/assets/css/index.css') }}">
-
+    {{-- Favicon --}}
     @include('shop::layouts.header.favicon')
-
+    {{-- G-Tag --}}
+    @include('shop::layouts.header.gTag')
+    {{-- Head --}}
     @yield('head')
     {{-- SEO --}}
     @section('seo')
@@ -21,7 +23,7 @@
         @endif
     @show
     @stack('css')
-    {{-- STYLE --}}
+    {{-- Fonts --}}
     <link rel="prefetch" href="https://use.typekit.net/yxr4ufi.css">
 </head>
 <body>
