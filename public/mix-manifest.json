@@ -1,10 +1,6 @@
 {
-    "/themes/tva/assets/js/mainApp.js": "/themes/tva/assets/js/mainApp.js?id=3f92fb2edde7a2d33bae",
-    "/themes/tva/assets/css/index.css": "/themes/tva/assets/css/index.css?id=73620c8bdbf13584283b",
-    "/vendor/backend/admin/assets/css/admin-test.css": "/vendor/backend/admin/assets/css/admin-test.css?id=507968e76127346b1f8e",
-    "/vendor/backend/ui/assets/css/ui-test.css": "/vendor/backend/ui/assets/css/ui-test.css?id=8fa493cf2b59256eeec5",
-    "/themes/tva/assets/js/mainApp.js.map": "/themes/tva/assets/js/mainApp.js.map?id=073ee77e641f0b9d8e0b",
-    "/themes/tva/assets/css/index.css.map": "/themes/tva/assets/css/index.css.map?id=0af033f010dc6fb85a15",
-    "/vendor/backend/admin/assets/css/admin-test.css.map": "/vendor/backend/admin/assets/css/admin-test.css.map?id=dc77aa2c0e7dc75b58f6",
-    "/vendor/backend/ui/assets/css/ui-test.css.map": "/vendor/backend/ui/assets/css/ui-test.css.map?id=7251731f83ba1992ddbf"
+    "/themes/tva/assets/js/mainApp.js": "/themes/tva/assets/js/mainApp.js",
+    "/themes/tva/assets/css/index.css": "/themes/tva/assets/css/index.css",
+    "/vendor/backend/admin/assets/css/admin-test.css": "/vendor/backend/admin/assets/css/admin-test.css",
+    "/vendor/backend/ui/assets/css/ui-test.css": "/vendor/backend/ui/assets/css/ui-test.css"
 }

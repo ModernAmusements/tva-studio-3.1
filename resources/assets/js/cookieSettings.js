@@ -41,13 +41,23 @@ cc.run({
 
     /* End new options added in v2.4 */
 
-    onAccept: function(cookie) {
-        console.log("onAccept fired ...");
-    },
+    onAccept: function() {
+        // if analytics category has been accepted
+        if (cc.allowedCategory('analytics')) {
+            cc.loadScript('https://www.googletagmanager.com/gtag/js?id=G-5482042Z22', function() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-    onChange: function(cookie) {
-        console.log("onChange fired ...");
-        // do something ...
+                gtag('config', 'G-MCQYE5C158');
+            });
+        }
+
+
+    },
+    onChange: function() {
+        window['ga-disable-UA-XXXXX-Y'] = true;
+
     },
 
     languages: {
@@ -96,7 +106,7 @@ cc.run({
                         col3: gettva_session(),
                     },
                     {
-                        col1: 'cc_cookie',
+                        col1: 'tva_cookie_consent',
                         col2: 'www.tva-studio.de',
                         col3: gettva_session(),
                     },
@@ -106,7 +116,7 @@ cc.run({
                     description: analytics(),
                     toggle: {
                         value: 'analytics',
-                        enabled: false,
+                        enabled: true,
                         readonly: false
                     },
                     cookie_table: [{
@@ -147,7 +157,7 @@ function analytics() {
 }
 
 function gettva_session() {
-    return '1 Jahr';
+    return '6 Monate';
 }
 
 function getSession() {

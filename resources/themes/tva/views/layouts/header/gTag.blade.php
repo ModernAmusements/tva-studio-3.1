@@ -1,9 +1,2 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MCQYE5C158"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-MCQYE5C158');
-</script>
+<script type="text/plain" data-src="https://www.googletagmanager.com/gtag/js?id=G-MCQYE5C158" data-cookiecategory="analytics" defer></script>
