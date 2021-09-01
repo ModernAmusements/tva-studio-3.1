@@ -4,7 +4,7 @@
     display: flex;
     right: 0;
     position: fixed;
-    z-index: 100;
+    z-index: 999;
     text-align: center;
     .alert {
         background: var(--background-color);
@@ -16,6 +16,7 @@
         border-left: none;
         border-top: var(--border);
         border-bottom: var(--border);
+        z-index: 999;
         p {
             margin: 0;
             padding: 0;
@@ -31,7 +32,6 @@
         top: 46px;
         right: 0;
         position: fixed;
-        z-index: 100;
         text-align: center;
     }
     .alert-wrapper .alert {
@@ -67,4 +67,5 @@
     display: flex;
     justify-content: flex-end;
     padding: 5px;
+    z-index: 999;
 }

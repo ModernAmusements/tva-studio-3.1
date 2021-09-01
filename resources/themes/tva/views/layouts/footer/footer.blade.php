@@ -57,7 +57,7 @@
             </div>
             <div class="form-group">
             <form action="{{ route('shop.subscribe') }}">
-                <div class="newsletter-subheading">
+                {{-- <div class="newsletter-subheading">
                     <h4>Wie lautet Ihr Name?
                     </h4>
                 </div>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="control-group" >
                     <input type="name" class="form-control subscribe-field form-sub" name="LastName" placeholder="{{ __('shop::app.customer.signup-form.lastname') }}">
-                </div>
+                </div> --}}
                 <div class="newsletter-subheading">
                     <h4>
                         Wie lautet Ihre E-Mail?
