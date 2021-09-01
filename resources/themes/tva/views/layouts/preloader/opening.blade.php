@@ -6,7 +6,7 @@
             </svg>
         </div>
         <h1>Getting Ready to Bloom For You<br/>två studio - opening soon</h1>
-        <p class="subheading">The store will soon open its doors for you! To make sure you don't miss anything, follows us on instagram!</p>
+        <p class="subheading">The store will soon open its doors for you! To make sure you don't miss anything, follows us on instagram and facebook!</p>
         <div class="social-media-links">
             <a class="" href="https://www.instagram.com/tva.studio/" target="_blank">
                 <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

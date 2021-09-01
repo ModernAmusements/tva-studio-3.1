@@ -50,6 +50,7 @@
         {{-- FOOTER --}}
         @include('shop::layouts.footer.footer')
     </div>
+    @include('shop::layouts.preloader.opening')
  {{-- flashMessages --}}
     <script type="text/javascript">
         window.flashMessages = [];
