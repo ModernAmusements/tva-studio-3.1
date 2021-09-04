@@ -6,8 +6,9 @@
             </svg>
         </div>
         <h1>getting ready to bloom for you<br/>två studio - opening soon</h1>
-        <p class="subheading">två wird bald seine Pforten für euch öffnen! Damit ihr nichts verpasst,
-            folgt uns auf Instagram und Facebook! Für <strong>kostenlosen Versand</strong> einfach den Newsletter abonnieren und die neuesten Infos über unsere Kollektion erhalten</p>
+        <p class="subheading">Unser online shop öffnet bald und das solltest du nicht verpassen.<br/><br/>
+            Wenn du dich zu unserem Newsletter anmeldest, bekommst du
+            zur online shop Eröffnung von uns <strong>kostenlosen Versand.</strong>
         @if(core()->getConfigData('customer.settings.newsletter.subscription'))
                 <div class="form-group">
                 <form action="{{ route('shop.subscribe') }}">

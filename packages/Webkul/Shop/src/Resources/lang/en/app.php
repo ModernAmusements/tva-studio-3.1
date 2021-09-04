@@ -59,11 +59,11 @@ return [
     'subscription' => [
         'unsubscribe' => 'Abbestellen',
         'subscribe' => 'Abonnieren',
-        'subscribed' => 'Sie sind nun für Abonnement-E-Mails angemeldet.',
-        'not-subscribed' => 'Sie können keine Abonnement-E-Mails erhalten, bitte versuchen Sie es später noch einmal.',
-        'already' => 'Sie sind bereits in unserer Abonnentenliste eingetragen.',
-        'unsubscribed' => 'Sie sind von den Abo-Mails abgemeldet.',
-        'already-unsub' => 'Sie sind bereits abgemeldet.',
+        'subscribed' => 'Du bist nun für Abonnement-E-Mails angemeldet.',
+        'not-subscribed' => 'Du kannst keine Abonnement-E-Mails erhalten, bitte versuchen Sie es später noch einmal.',
+        'already' => 'Du bist bereits in unserer Abonnentenliste eingetragen.',
+        'unsubscribed' => 'Du bist von den Abo-Mails abgemeldet.',
+        'already-unsub' => 'Du bist bereits abgemeldet.',
         'not-subscribed' => 'Fehler! Mail kann derzeit nicht gesendet werden, bitte versuchen Sie es später noch einmal.'
     ],
 
@@ -669,10 +669,9 @@ return [
 
             'subscription' => [
                 'subject' => 'E-Mail-Abonnement',
-                'greeting' => ' Willkommen bei ' . config('app.name') . ' - E-Mail-Abonnement',
+                'greeting' => 'Willkommen zu unserem '.config('app.name').' Newsletter!',
                 'unsubscribe' => 'Abmelden',
-                'summary' => 'Danke, dass ich in Ihrem Posteingang gelandet bin. Es ist schon eine Weile her, dass Sie gelesen haben ' . config('app.name') . ' E-Mail, und wir möchten Ihren Posteingang nicht überfüllen. Wenn Sie immer noch keine Lust haben
-                die neuesten E-Mail-Marketing-Nachrichten erhalten möchten, dann klicken Sie auf jeden Fall auf die Schaltfläche unten.'
+                'summary' => 'Wie schön, dass wir dich in unserem Newsletter aufnehmen dürfen. Dein Gutscheincode für den kostenlosen Versand lautet "ROLLERCOSTER".<br> Wir werden dich zukünftig über den Start unserer neuen Kollektionen informieren und da es diese nur 4x im Jahr gibt, wird dein Postfach von uns bestimmt nicht überlaufen. Du kannst den Newsletter natürlich auch jederzeit wieder abmelden.'
             ]
         ]
     ],

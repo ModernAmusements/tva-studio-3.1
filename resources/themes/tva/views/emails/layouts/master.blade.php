@@ -215,6 +215,30 @@
                     "
                   >
                     <span
+                    class="apple-link"
+                    style="
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                    "
+                    >
+                        <a class="" href="https://www.instagram.com/tva.studio/" target="_blank">
+                            <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12ZM12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7Z" fill="rgba(51, 51, 51, 1)"></path><path d="M15.7514 7.00054C15.7514 7.68984 16.3102 8.24862 16.9995 8.24862C17.6887 8.24862 18.2475 7.68984 18.2475 7.00054C18.2475 6.31125 17.6887 5.75247 16.9995 5.75247C16.3102 5.75247 15.7514 6.31125 15.7514 7.00054Z" fill="rgba(51, 51, 51, 1)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4ZM8 2C4.68629 2 2 4.68629 2 8V16C2 19.3137 4.68629 22 8 22H16C19.3137 22 22 19.3137 22 16V8C22 4.68629 19.3137 2 16 2H8Z" fill="rgba(51, 51, 51, 1)"></path>
+                            </svg>
+                        </a>
+                        <a class="" href="https://www.facebook.com/tva.studio.ceramics/" target="_blank">
+                            <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4ZM6 2C3.79086 2 2 3.79086 2 6V18C2 20.2091 3.79086 22 6 22H18C20.2091 22 22 20.2091 22 18V6C22 3.79086 20.2091 2 18 2H6Z" fill="rgba(51, 51, 51, 1)">
+                                </path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9167 10C11.9167 8.34315 13.2598 7 14.9167 7H17V9H14.9167C14.3644 9 13.9167 9.44772 13.9167 10V12H17V14H13.9167V20H11.9167V14H10V12H11.9167V10Z" fill="rgba(51, 51, 51, 1)">
+                                </path>
+                            </svg>
+                        </a>
+                    </span>
+                    <br />
+                    <span
                       class="apple-link"
                       style="
                         color: #7d7d73;

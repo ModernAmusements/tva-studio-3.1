@@ -7,11 +7,25 @@
             </a>
         </div>
 
-        <div  style="font-size:16px; color:#242424; font-weight:600; margin-top: 60px; margin-bottom: 15px">
+        <div style="font-size:16px;
+                    color:#242424;
+                    font-weight:600;
+                    margin-top: 60px;
+                    margin-bottom: 15px;
+                    text-align-center;
+                    text-transform: normal;
+                    ">
             {!! __('shop::app.mail.customer.subscription.greeting') !!}
         </div>
 
-        <div>
+        <div style="font-size:16px;
+        color:#242424;
+        font-weight:600;
+        margin-top: 60px;
+        margin-bottom: 15px;
+        text-align-center;
+        text-transform: normal;
+        ">
             {!! __('shop::app.mail.customer.subscription.summary') !!}
         </div>
 

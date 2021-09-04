@@ -25,7 +25,11 @@
             {{ __('shop::app.mail.order.dear-admin', ['admin_name' => config('mail.from.name')]) }},
             </p>
 
-            <p style="font-size: 16px;color: #2A2920;line-height: 24px;">
+            <p style="font-size: 16px;
+            color: #2A2920;
+            line-height: 24px;
+            text-align-center;
+            ">
                 {!! __('shop::app.mail.order.greeting-admin', [
                     'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #1b2c13; font-weight: bold;">#' . $order->increment_id . '</a>',
                     'created_at' => $order->created_at
