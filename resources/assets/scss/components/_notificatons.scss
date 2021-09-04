@@ -17,6 +17,7 @@
         border-top: var(--border);
         border-bottom: var(--border);
         z-index: 999;
+        top: -256px;
         p {
             margin: 0;
             padding: 0;
@@ -26,19 +27,6 @@
 }
 
 
-@media (max-width: 736px) {
-    .alert-wrapper {
-        width: 100%;
-        top: 46px;
-        right: 0;
-        position: fixed;
-        text-align: center;
-    }
-    .alert-wrapper .alert {
-        border-left: none;
-        border-bottom: var(--border);
-    }
-}
 
 
 
@@ -56,8 +44,6 @@
 .alert-wrapper .alert.alert-warning {
     width: 100%;
 }
-
-
 
 
 .control-error {

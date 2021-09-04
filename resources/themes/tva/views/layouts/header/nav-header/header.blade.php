@@ -9,7 +9,8 @@ header('Referrer-Policy: origin-when-cross-origin');
 header('Strict-Transport-Security: max-age=31536000; includeSubDomains');
 header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), microphone=()');
 ?>
-<header class="title-animation">
+{{-- <header class="title-animation"> --}}
+<header class="">
     <!-- Header Logo -->
     <div class="header-logo">
         <a href="{{ route('shop.home.index') }}">

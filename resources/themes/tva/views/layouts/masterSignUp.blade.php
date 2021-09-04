@@ -27,17 +27,11 @@
     <link rel="prefetch" href="https://use.typekit.net/yxr4ufi.css">
 </head>
 <body @if (core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif>
-    <div id="page-loader">
-        <div class="tva-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-      </div>
-      {{-- Nav --}}
-      @include('shop::layouts.header.indexSignUp')
-        {{-- Vue + Main App--}}
+    {{-- Between Loader --}}
+    @include('shop::layouts.preloader.betweenLoader')
+    {{-- Nav --}}
+    @include('shop::layouts.header.indexSignUp')
+   {{-- Vue + Main App--}}
     <div id="app">
         <flash-wrapper ref='flashes'>
         </flash-wrapper>
@@ -50,7 +44,10 @@
         {{-- FOOTER --}}
         @include('shop::layouts.footer.footer')
     </div>
+
+    {{-- Opening Loader --}}
     @include('shop::layouts.preloader.opening')
+
     {{-- flashMessages --}}
     <script type="text/javascript">
         window.flashMessages = [];
@@ -75,6 +72,5 @@
     {{-- JSCRIPT --}}
     @include('shop::layouts.footer.javascript')
     @stack('scripts')
-
 </body>
 </html>

@@ -27,14 +27,8 @@
     <link rel="prefetch" href="https://use.typekit.net/yxr4ufi.css">
 </head>
 <body @if (core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif>
-    <div id="page-loader">
-        <div class="tva-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-      </div>
+      {{-- Between Loader --}}
+      @include('shop::layouts.preloader.betweenLoader')
       {{-- Nav --}}
       @include('shop::layouts.header.indexSignUp')
         {{-- Vue + Main App--}}
@@ -50,42 +44,16 @@
         {{-- FOOTER --}}
         @include('shop::layouts.footer.footer')
     </div>
-    @include('shop::layouts.preloader.opening')
- {{-- flashMessages --}}
-    <script type="text/javascript">
-        window.flashMessages = [];
-        @if ($success = session('success'))
-            window.flashMessages = [{'type': 'alert-success', 'message': "{{ $success }}" }];
-        @elseif ($addToCart = session('addToCart'))
-            const currentlyAdded  = document.getElementById('currentlyAdded');
-             currentlyAdded.style.opacity='1';
-             currentlyAdded.style.left='0';
-             setTimeout(function() {
-                currentlyAdded.style.opacity='0';
-            }, 4000);
-            setTimeout(function() {
-                currentlyAdded.style.display='none';
-            }, 9000);
-        @elseif ($warning = session('warning'))
-            window.flashMessages = [{'type': 'alert-warning', 'message': "{{ $warning }}" }];
-        @elseif ($error = session('error'))
-            window.flashMessages = [{'type': 'alert-error', 'message': "{{ $error }}" }
-            ];
-        @elseif ($info = session('info'))
-            window.flashMessages = [{'type': 'alert-info', 'message': "{{ $info }}" }
-            ];
-        @endif
-        window.serverErrors = [];
-        @if(isset($errors))
-            @if (count($errors))
-                window.serverErrors = @json($errors->getMessages());
-            @endif
-        @endif
-    </script>
-    {{-- JSCRIPT --}}
 
-      @include('shop::layouts.footer.javascript')
-      @stack('scripts')
+    {{-- Opening Loader --}}
+    {{-- @include('shop::layouts.preloader.opening') --}}
+
+    {{-- flashMessages --}}
+    @include('shop::layouts.alerts.alerts')
+
+    {{-- JSCRIPT --}}
+    @include('shop::layouts.footer.javascript')
+    @stack('scripts')
 
 </body>
 </html>
