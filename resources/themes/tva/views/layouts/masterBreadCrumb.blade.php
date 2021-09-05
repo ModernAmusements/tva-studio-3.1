@@ -31,10 +31,12 @@
       @include('shop::layouts.preloader.betweenLoader')
       {{-- Nav --}}
       @include('shop::layouts.header.indexSignUp')
-        {{-- Vue + Main App--}}
+    {{-- Vue + Main App--}}
     <div id="app">
         <flash-wrapper ref='flashes'>
         </flash-wrapper>
+        {{-- Opening Loader --}}
+        {{-- @include('shop::layouts.preloader.opening') --}}
         {{-- Main App--}}
         <div class="main-container-wrapper">
             <div class="content-container">
@@ -44,9 +46,6 @@
         {{-- FOOTER --}}
         @include('shop::layouts.footer.footer')
     </div>
-
-    {{-- Opening Loader --}}
-    {{-- @include('shop::layouts.preloader.opening') --}}
 
     {{-- flashMessages --}}
     @include('shop::layouts.alerts.alerts')

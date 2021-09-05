@@ -669,15 +669,15 @@ return [
 
             'subscription' => [
                 'subject' => 'E-Mail-Abonnement',
-                'greeting' => 'Willkommen zu unserem '.config('app.name').' Newsletter!',
+                'greeting' => 'Willkommen zu unserem två STUDIO Newsletter!',
                 'unsubscribe' => 'Abmelden',
-                'summary' => 'Wie schön, dass wir dich in unserem Newsletter aufnehmen dürfen. Dein Gutscheincode für den kostenlosen Versand lautet "ROLLERCOSTER".<br> Wir werden dich zukünftig über den Start unserer neuen Kollektionen informieren und da es diese nur 4x im Jahr gibt, wird dein Postfach von uns bestimmt nicht überlaufen. Du kannst den Newsletter natürlich auch jederzeit wieder abmelden.'
+                'summary' => 'Wie schön, dass wir dich in unserem Newsletter aufnehmen dürfen. Dein Gutscheincode für den kostenlosen Versand lautet "ROLLERCOASTER".<br> Wir werden dich zukünftig über den Start unserer neuen Kollektionen informieren und da es diese nur 4x im Jahr gibt, wird dein Postfach von uns bestimmt nicht überlaufen. Du kannst den Newsletter natürlich auch jederzeit wieder abmelden.'
             ]
         ]
     ],
 
     'webkul' => [
-        'copy-right' => '©2020 alle Rechte vorbehalten',
+        'copy-right' => 'två STUDIO ©2019 alle Rechte vorbehalten',
     ],
 
     'response' => [

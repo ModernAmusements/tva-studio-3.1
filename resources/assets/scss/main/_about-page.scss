@@ -114,7 +114,7 @@
         right: -100%;
         background: var(--background-color);
         transition: all 0.9s;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         .popup-content {
             /* Accordion styles */
             .tabs {
@@ -224,10 +224,10 @@
 
         .popup {
             display: none;
-            top: -1px;
+            top: 44px;
             bottom: -100%;
             z-index: 500;
-            margin-bottom: 200px;
+            margin-bottom: 50px;
         }
 
         .popup-visible {
@@ -267,8 +267,24 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .container-fluid {
-        height: 100%;
+        .container-fluid {
+
+            .popup {
+                display: none;
+                top: 44px;
+                bottom: -100%;
+                z-index: 500;
+                margin-bottom: 50px;
+            }
+
+            .popup-visible {
+                opacity: 1;
+                bottom: 0;
+                display: block
+
+            }
+        }
     }
 }

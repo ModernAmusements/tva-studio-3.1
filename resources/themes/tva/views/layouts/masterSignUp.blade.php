@@ -35,6 +35,8 @@
     <div id="app">
         <flash-wrapper ref='flashes'>
         </flash-wrapper>
+        {{-- Opening Loader --}}
+        {{-- @include('shop::layouts.preloader.opening') --}}
         {{-- Main App--}}
         <div class="main-container-wrapper">
             <div class="content-container">
@@ -45,8 +47,6 @@
         @include('shop::layouts.footer.footer')
     </div>
 
-    {{-- Opening Loader --}}
-    @include('shop::layouts.preloader.opening')
 
     {{-- flashMessages --}}
     <script type="text/javascript">
