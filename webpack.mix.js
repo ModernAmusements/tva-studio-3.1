@@ -23,6 +23,7 @@ mix.js([
     'resources/assets/js/homePagePreload.js',
     'resources/assets/js/cookieconsent.js',
     'resources/assets/js/cookieSettings.js',
+    'resources/assets/js/imgHover.js',
     ], 'public/themes/tva/assets/js/mainApp.js');
 
 

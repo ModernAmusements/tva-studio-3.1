@@ -12,10 +12,13 @@
 
     <div class="article-image">
         <a  href="{{ route('shop.productOrCategory.index', $product->url_key) }}" title="{{ $product->name }}">
-            <img class="tva-image"
+            <img class="tva-image hover"
                  alt="{{ $product->name }}"
                  src="{{ $productBaseImage['original_image_url'] }}"
                  onerror="this.src='{{ asset('vendor/backend/ui/assets/images/product/meduim-product-placeholder.png') }}'"
+                 data-hover="{{ asset('cache/original/' . $product->images->pull('1')->path) }}"
+                 onmouseover="{{ asset('cache/original/' . $product->images->pull('1')->path) }}"
+                 onmouseout="{{ $productBaseImage['original_image_url'] }}"
                 />
         </a>
     </div>

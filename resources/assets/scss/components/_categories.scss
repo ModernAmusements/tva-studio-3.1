@@ -4,6 +4,9 @@
     h1 {
         margin: 0;
     }
+    svg {
+        padding-bottom: 1rem;
+    }
 }
 .shop-categories {
     display: flex;
@@ -39,6 +42,7 @@
 @media (max-width: 460px) {
     .shop-categories {
         padding-bottom: 1rem;
+        padding-top: 55px;
         .categories-toggle {
             li {
                 display: grid;
@@ -51,6 +55,9 @@
                 font-size: 4em;
                 margin-bottom: 0;
                 padding-bottom: 0;
+            }
+            svg {
+                display: none;
             }
         }
     }
