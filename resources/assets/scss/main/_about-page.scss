@@ -212,6 +212,10 @@
     width: 100%;
 }
 
+.d-none {
+    display: none!important;
+}
+
 @media (max-width: 900px) {
     .container-fluid {
         margin-top: 45px;
@@ -227,36 +231,35 @@
             top: 44px;
             bottom: -100%;
             z-index: 500;
-            margin-bottom: 50px;
+
         }
 
         .popup-visible {
             opacity: 1;
             bottom: 0;
-            display: block
+            display: block;
+            height: 100vh;
+            max-height: calc(100vh - 60px) !important;
 
         }
-
+        .col-right {
+            height: 100%;
+            position: absolute;
+            .main-about {
+                display: none;
+            }
+        }
         .col-left {
+            height: 100%;
+            top: 0;
             border-right: none;
-            margin-bottom: 40px;
+
             h3 {
                 font-size: 20px;
             }
             p {
                 font-size: 14px;
             }
-        }
-        .col-right {
-            height: 100%;
-            .main-about {
-                display: none;
-            }
-        }
-        .col-left {
-            display: block;
-            height: 100%;
-            top: 0;
             .about-intro .box {
                 margin-top: 0;
             }

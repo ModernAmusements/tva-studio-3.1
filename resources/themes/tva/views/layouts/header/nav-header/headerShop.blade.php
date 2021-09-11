@@ -101,6 +101,15 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
             <li class="{{ Request::is('page/about-us') ? ' active' : '' }}" >
                 <a href="/page/about-us">Impressum</a>
             </li>
+
+
+            <li class="{{ Request::is('customer/register') ? ' active' : '' }}" >
+                <a href="{{ route('customer.register.index') }}">{{ __('shop::app.header.sign-up') }}</a>
+            </li>
+
+            <li class="{{ Request::is('customer/login') ? ' active' : '' }}" >
+                <a href="{{ route('customer.session.index') }}">{{ __('shop::app.header.sign-in') }}</a>
+            </li>
         </ul>
        </div>
     <div class="register-area">
@@ -135,7 +144,7 @@ header('Permissions-Policy: geolocation=(self "https://shady-tawfik.de/"), micro
                 <li class="">- Artikel speichern</li>
             </ul>
         </div>
-        <div class="login-area  border-t btn-grid btn-grid-primary btn-grid-large">
+        <div class="login-area  border-b border-t btn-grid btn-grid-primary btn-grid-large">
             <a class="btn-hover" href="{{ route('customer.register.index') }}">
                 <span class="text">{{ __('shop::app.header.sign-up') }}</span>
             </a>

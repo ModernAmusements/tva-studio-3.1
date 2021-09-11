@@ -128,11 +128,7 @@
         grid-column: 1 / 3;
         border-right: none;
     }
-    .register-area  {
-        display: grid;
-        grid-column: 2 / 3;
-        grid-template-columns: 1fr 1fr;
-    }
+
     .login-heading-registered,
     .login-heading-sign-up {
         display: flex;
@@ -206,7 +202,11 @@
     .twa-login-panel {
         border-right: none;
     }
+    .register-area  {
+        display: none;
+    }
     .twa-login-panel.is-open {
+
         width: 100%;
         z-index: 2;
         flex-direction: column;
