@@ -36,6 +36,8 @@
     </div>
 
 
+
+
     <div class="payable-amount" id="grand-total-detail">
         <label>{{ __('shop::app.checkout.total.grand-total') }}</label>
         <label class="right" id="grand-total-amount-detail">

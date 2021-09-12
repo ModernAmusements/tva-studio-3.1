@@ -129,6 +129,45 @@
     }
 }
 
+#checkout {
+    .checkout-content {
+        .right-side {
+            .order-summary {
+                border-bottom: 0;
+            }
+            .coupon-container {
+                display: flex;
+                width: 100%;
+                border-left: var(--border);
+                .discount-control  {
+                    display: flex;
+                    width: 100%;
+                }
+                .applied-coupon-details {
+                    display: flex;
+                    border-right: var(--border);
+                    border-bottom: var(--border);
+                    flex-direction: column;
+                    padding: 5px;
+                    padding-top: 14px;
+                }
+            }
+        }
+    }
+}
+
+.control-group {
+    .control-error {
+        padding: 0;
+    }
+}
+.control-group.has-error {
+    .control-error {
+        padding: 5px;
+    }
+}
+
+
 .empty-cart {
     padding: 1em;
     display: flex;

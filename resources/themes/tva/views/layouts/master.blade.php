@@ -37,7 +37,7 @@
             <flash-wrapper ref='flashes'>
             </flash-wrapper>
             {{-- Opening Loader --}}
-            {{-- @include('shop::layouts.preloader.opening') --}}
+            @include('shop::layouts.preloader.opening')
             {{-- Main App--}}
             <div class="main-container-wrapper">
                 <div class="content-container">

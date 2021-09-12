@@ -100,6 +100,9 @@
                 <summary-section :key="summeryComponentKey">
 
                 </summary-section>
+                <coupon-component>
+
+                </coupon-component>
 
             </div>
         </div>
