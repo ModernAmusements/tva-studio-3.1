@@ -114,7 +114,6 @@
         right: -100%;
         background: var(--background-color);
         transition: all 0.9s;
-        margin-bottom: 50px;
         .popup-content {
             /* Accordion styles */
             .tabs {
@@ -194,7 +193,7 @@
         opacity: 1;
         right: 0;
         z-index: 250;
-        max-height: calc(100vh - 120px) !important;
+        max-height: calc(100vh - 60px) !important;
     }
     .popup-visible.popup-visible {
         right: 0;
@@ -231,6 +230,9 @@
             top: 44px;
             bottom: -100%;
             z-index: 500;
+            .popup-content-text {
+                margin-bottom: 2rem;
+            }
 
         }
 
@@ -239,7 +241,7 @@
             bottom: 0;
             display: block;
             height: 100vh;
-            max-height: calc(100vh - 60px) !important;
+            max-height: calc(100vh - 80px) !important;
 
         }
         .col-right {
@@ -279,13 +281,14 @@
                 top: 44px;
                 bottom: -100%;
                 z-index: 500;
-                margin-bottom: 50px;
+
             }
 
             .popup-visible {
                 opacity: 1;
                 bottom: 0;
-                display: block
+                display: block;
+                max-height: calc(100vh - 80px) !important;
 
             }
         }

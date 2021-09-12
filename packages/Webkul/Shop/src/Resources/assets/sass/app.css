@@ -793,10 +793,6 @@ input {
   margin-bottom: 20px;
 }
 
-.main-container-wrapper section.featured-products .featured-heading .featured-separator {
-  color: lightgray;
-}
-
 .main-container-wrapper section.news-update {
   display: block;
   -webkit-box-sizing: border-box;

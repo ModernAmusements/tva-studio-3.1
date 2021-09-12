@@ -44,14 +44,14 @@
 
 .angle-right-icon {
   background-image: url("../images/Angle-Right.svg");
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
 }
 
 .angle-left-icon {
   background-image: url("../images/Angle-Left.svg");
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
 }
 
 .arrow-down-icon {
@@ -393,7 +393,7 @@
 
 .search-filter .control {
   font-size: 15px;
-  border: 2px solid #C7C7C7;
+  border: 1px solid #C7C7C7;
   border-right: none;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -405,11 +405,11 @@
 }
 
 .search-filter .contorl:focus {
-  border-color: #0041FF;
+  border-color: #544AC1;
 }
 
 .search-filter .icon-wrapper {
-  border: 2px solid #C7C7C7;
+  border: 1px solid #C7C7C7;
   border-radius: 3px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -435,7 +435,7 @@
           align-items: center;
   height: 36px;
   width: 200px;
-  border: 2px solid #C7C7C7;
+  border: 1px solid #C7C7C7;
   border-radius: 3px;
   color: #8E8E8E;
   padding: 0px 5px 0px 5px;
@@ -708,16 +708,16 @@ a:visited,
 a:focus,
 a:active {
   text-decoration: none;
-  color: #0041FF;
+  color: #544AC1;
 }
 
 ::-moz-selection {
-  background-color: rgba(0, 64, 255, 0.6);
+  background-color: #544AC1;
   color: #ffffff;
 }
 
 ::selection {
-  background-color: rgba(0, 64, 255, 0.6);
+  background-color: #544AC1;
   color: #ffffff;
 }
 
@@ -779,7 +779,7 @@ h5 {
 
 .btn {
   -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   border: none;
   color: #fff;
@@ -813,7 +813,7 @@ h5 {
 }
 
 .btn.btn-primary {
-  background: #0041FF;
+  background: #544AC1;
   color: #ffffff;
 }
 
@@ -839,7 +839,7 @@ h5 {
   min-width: 150px;
   text-align: left;
   background: #ffffff;
-  border: 2px solid #C7C7C7;
+  border: 1px solid #C7C7C7;
   border-radius: 3px;
   font-size: 14px;
   padding: 8px 35px 8px 10px;
@@ -849,7 +849,7 @@ h5 {
 
 .dropdown-btn:hover, .dropdown-btn:active, .dropdown-btn:focus {
   opacity: 0.75;
-  border: 2px solid #C7C7C7;
+  border: 1px solid #C7C7C7;
 }
 
 .dropdown-btn .icon {
@@ -871,7 +871,7 @@ h5 {
   width: 200px;
   margin-bottom: 20px;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 0 9px 0 rgba(0, 0, 0, 0.16);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 0 9px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 0 9px 0 rgba(0, 0, 0, 0.16);
   border-radius: 3px;
   background-color: #ffffff;
   position: absolute;
@@ -907,7 +907,7 @@ h5 {
 
 .dropdown-list .search-box .control {
   background: #fff;
-  border: 2px solid #C7C7C7;
+  border: 1px solid #C7C7C7;
   border-radius: 3px;
   width: 100%;
   height: 36px;
@@ -920,7 +920,7 @@ h5 {
 }
 
 .dropdown-list .search-box .control:focus {
-  border-color: #0041FF;
+  border-color: #544AC1;
 }
 
 .dropdown-list .dropdown-container {
@@ -956,7 +956,7 @@ h5 {
 }
 
 .dropdown-list .dropdown-container ul li a:hover {
-  color: #0041FF;
+  color: #544AC1;
 }
 
 .dropdown-list .dropdown-container ul li .checkbox {
@@ -978,7 +978,7 @@ h5 {
 
 .section .secton-title {
   font-size: 18px;
-  color: #8E8E8E;
+  color: #8e8e8e;
   padding: 15px 0;
   border-bottom: 1px solid #e8e8e8;
 }
@@ -1062,7 +1062,7 @@ h5 {
 
 .pagination .page-item {
   background: #ffffff;
-  border: 2px solid #C7C7C7;
+  border: 1px solid #C7C7C7;
   border-radius: 3px;
   padding: 7px 14px;
   margin-right: 5px;
@@ -1078,9 +1078,9 @@ h5 {
 }
 
 .pagination .page-item.active {
-  background: #0041ff;
+  background: #544ac1;
   color: #fff;
-  border-color: #0041ff;
+  border-color: #544ac1;
 }
 
 .pagination .page-item .icon {
@@ -1158,7 +1158,6 @@ h5 {
 
 .control-group {
   display: block;
-  margin-bottom: 25px;
   font-size: 15px;
   color: #333333;
   width: 750px;
@@ -1185,7 +1184,7 @@ h5 {
 
 .control-group .control {
   background: #fff;
-  border: 2px solid #C7C7C7;
+  border: 1px solid #C7C7C7;
   border-radius: 3px;
   width: 70%;
   height: 36px;
@@ -1200,7 +1199,7 @@ h5 {
 }
 
 .control-group .control:focus {
-  border-color: #0041FF;
+  border-color: #544AC1;
 }
 
 .control-group .control[disabled="disabled"] {
@@ -1217,7 +1216,7 @@ h5 {
   background-image: url("../images/Icon-Calendar.svg");
   width: 24px;
   height: 24px;
-  content: '';
+  content: "";
   display: inline-block;
   vertical-align: middle;
   margin-left: -34px;
@@ -1230,7 +1229,7 @@ h5 {
 .control-group .control-info {
   display: block;
   font-size: 14px;
-  color: #6F6F6F;
+  color: #6f6f6f;
   font-style: italic;
 }
 
@@ -1280,8 +1279,8 @@ h5 {
   right: 0;
   bottom: 0;
   background-color: #8e8e8e;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .control-group .slider:before {
@@ -1292,17 +1291,17 @@ h5 {
   left: 4px;
   bottom: 4px;
   background-color: #ffffff;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .control-group input:checked + .slider {
-  background-color: #0041FF;
+  background-color: #544AC1;
 }
 
 .control-group input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #0041FF;
-          box-shadow: 0 0 1px #0041FF;
+  -webkit-box-shadow: 0 0 1px #544AC1;
+          box-shadow: 0 0 1px #544AC1;
 }
 
 .control-group input:checked + .slider:before {
@@ -1328,8 +1327,9 @@ h5 {
   top: 10px;
   right: 10px;
   position: fixed;
-  z-index: 100;
+  z-index: 999;
   text-align: left;
+  border-left: none;
 }
 
 .alert-wrapper .alert {
@@ -1338,7 +1338,7 @@ h5 {
   border-radius: 3px;
   display: inline-block;
   -webkit-box-shadow: 0px 4px 15.36px 0.64px rgba(0, 0, 0, 0.1), 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 4px 15.36px 0.64px rgba(0, 0, 0, 0.1), 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 15.36px 0.64px rgba(0, 0, 0, 0.1), 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
   position: relative;
   -webkit-animation: jelly 0.5s ease-in-out;
           animation: jelly 0.5s ease-in-out;
@@ -1396,15 +1396,19 @@ h5 {
 }
 
 .tabs ul li.active a {
-  border-bottom: 3px solid #0041FF;
+  border-bottom: 3px solid #544AC1;
 }
 
-.accordian, accordian {
+.accordian,
+accordian {
   display: inline-block;
   width: 100%;
 }
 
-.accordian .accordian-header, .accordian div[slot*="header"], accordian .accordian-header, accordian div[slot*="header"] {
+.accordian .accordian-header,
+.accordian div[slot*="header"],
+accordian .accordian-header,
+accordian div[slot*="header"] {
   width: 100%;
   display: inline-block;
   font-size: 18px;
@@ -1416,32 +1420,48 @@ h5 {
   margin-top: -1px;
 }
 
-.accordian .accordian-header .expand-icon, .accordian div[slot*="header"] .expand-icon, accordian .accordian-header .expand-icon, accordian div[slot*="header"] .expand-icon {
+.accordian .accordian-header .expand-icon,
+.accordian div[slot*="header"] .expand-icon,
+accordian .accordian-header .expand-icon,
+accordian div[slot*="header"] .expand-icon {
   background-image: url("../images/Expand-Light.svg");
   margin-right: 10px;
   margin-top: 3px;
 }
 
-.accordian .accordian-header h1, .accordian div[slot*="header"] h1, accordian .accordian-header h1, accordian div[slot*="header"] h1 {
+.accordian .accordian-header h1,
+.accordian div[slot*="header"] h1,
+accordian .accordian-header h1,
+accordian div[slot*="header"] h1 {
   margin: 0;
   font-size: 20px;
   font-weight: 500;
   display: inline-block;
 }
 
-.accordian .accordian-header .icon, .accordian div[slot*="header"] .icon, accordian .accordian-header .icon, accordian div[slot*="header"] .icon {
+.accordian .accordian-header .icon,
+.accordian div[slot*="header"] .icon,
+accordian .accordian-header .icon,
+accordian div[slot*="header"] .icon {
   float: right;
 }
 
-.accordian .accordian-header .icon.left, .accordian div[slot*="header"] .icon.left, accordian .accordian-header .icon.left, accordian div[slot*="header"] .icon.left {
+.accordian .accordian-header .icon.left,
+.accordian div[slot*="header"] .icon.left,
+accordian .accordian-header .icon.left,
+accordian div[slot*="header"] .icon.left {
   float: left;
 }
 
-.accordian.error .accordian-header, accordian.error .accordian-header {
+.accordian.error .accordian-header,
+accordian.error .accordian-header {
   color: #ff5656;
 }
 
-.accordian .accordian-content, .accordian div[slot*="body"], accordian .accordian-content, accordian div[slot*="body"] {
+.accordian .accordian-content,
+.accordian div[slot*="body"],
+accordian .accordian-content,
+accordian div[slot*="body"] {
   width: 100%;
   padding: 20px 15px;
   display: none;
@@ -1449,11 +1469,13 @@ h5 {
   transition: 0.3s ease all;
 }
 
-.accordian.active > .accordian-content, accordian.active > .accordian-content {
+.accordian.active > .accordian-content,
+accordian.active > .accordian-content {
   display: inline-block;
 }
 
-.accordian.active > .accordian-header .expand-icon, accordian.active > .accordian-header .expand-icon {
+.accordian.active > .accordian-header .expand-icon,
+accordian.active > .accordian-header .expand-icon {
   background-image: url("../images/Expand-Light-On.svg");
 }
 
@@ -1507,7 +1529,7 @@ h5 {
 
 .panel {
   -webkit-box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   background: #fff;
 }
@@ -1551,7 +1573,7 @@ modal {
   position: fixed;
   z-index: 11;
   -webkit-box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.03), 0px 20px 45px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.03), 0px 20px 45px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.03), 0px 20px 45px 5px rgba(0, 0, 0, 0.2);
   -webkit-animation: fade-in-white 0.3s ease-in-out;
           animation: fade-in-white 0.3s ease-in-out;
   -webkit-animation: jelly 0.5s ease-in-out;
@@ -1594,7 +1616,7 @@ modal {
 }
 
 .label {
-  background: #E7E7E7;
+  background: #e7e7e7;
   border-radius: 2px;
   padding: 8px;
   color: #000311;
@@ -1645,7 +1667,7 @@ modal {
 }
 
 .badge.badge-info {
-  background-color: #0041FF;
+  background-color: #544AC1;
 }
 
 .badge.badge-danger {
@@ -1667,7 +1689,7 @@ modal {
   width: 200px;
   height: 200px;
   margin-right: 20px;
-  background: #F8F9FA;
+  background: #f8f9fa;
   border-radius: 3px;
   display: inline-block;
   position: relative;
