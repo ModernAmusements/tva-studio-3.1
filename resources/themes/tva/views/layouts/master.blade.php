@@ -28,7 +28,7 @@
 </head>
 <body>
     {{-- Preloader  --}}
-     {{-- @include('shop::layouts.preloader.gatesPreLoader') --}}
+     @include('shop::layouts.preloader.gatesPreLoader')
       {{-- Nav --}}
       @include('shop::layouts.header.index')
         {{-- Vue + Main App--}}
@@ -37,7 +37,7 @@
             <flash-wrapper ref='flashes'>
             </flash-wrapper>
             {{-- Opening Loader --}}
-            @include('shop::layouts.preloader.opening')
+            {{-- @include('shop::layouts.preloader.opening') --}}
             {{-- Main App--}}
             <div class="main-container-wrapper">
                 <div class="content-container">
