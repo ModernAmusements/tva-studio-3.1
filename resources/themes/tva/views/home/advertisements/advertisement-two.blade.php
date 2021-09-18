@@ -42,7 +42,7 @@
                     ein multidisziplinäres Keramik Design Duo aus Münster. två studio ist eine neue Plattform für handgefertigte und einzigartige Keramik mit Fokus auf Respekt für die Schönheit im Unvollkommenen.
                     <br>
                     <br>
-                    <a class="left" href="">Mehr erfahren</a>
+                    <a class="left" href="/page/about-us">Mehr erfahren</a>
                 </div>
                 @if ( isset($advertisementTwo[1]))
                 <a class="homepage-img">

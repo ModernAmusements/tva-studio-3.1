@@ -39,19 +39,20 @@
 
 @section('content-wrapper')
 
-    @if ($velocityMetaData)
+    {{-- @if ($velocityMetaData)
         <section class="homepage-cms">
             {!! DbView::make($velocityMetaData)->field('home_page_content')->render() !!}
         </section>
         @include('shop::home.advertisements.advertisement-two')
-    @else
-        @include('shop::home.advertisements.advertisement-four')
-        @include('shop::home.advertisements.advertisement-three')
-        @include('shop::home.advertisements.advertisement-two')
-        @include('shop::home.product-policy')
+    @else --}}
+        {{-- @include('shop::home.advertisements.advertisement-four')
+        @include('shop::home.advertisements.advertisement-three') --}}
         @include('shop::home.featured-products')
-        @include('shop::home.new-products')
-    @endif
+        @include('shop::home.advertisements.advertisement-two')
+        {{-- @include('shop::home.product-policy') --}}
+
+        {{-- @include('shop::home.new-products') --}}
+    {{-- @endif --}}
 
 
 @endsection

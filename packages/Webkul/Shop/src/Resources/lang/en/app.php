@@ -22,7 +22,7 @@ return [
 
     'home' => [
         'page-title' => config('app.name') . ' - Home',
-        'featured-products' => 'Produkte der Sommerkollektion 2021',
+        'featured-products' => 'Autumn Winter 2021',
         'new-products' => 'Produkte der Winterkollektion 2021',
         'verify-email' => 'Überprüfen Sie Ihr E-Mail-Konto',
         'resend-verify-email' => 'Verifizierungs-E-Mail erneut senden'

@@ -1,1 +1,1 @@
-<img src="{{ asset('vendor/webkul/ui/assets/images/tva-wortmarke.svg') }}" alt="Logo" title="Logo" style="display:block margin: auto;" width="106" height="84">
+<img src="{{ asset('vendor/webkul/ui/assets/images/tva-wortmarke-rgb.png') }}" alt="Logo" title="Logo" style="display:block margin: auto;" width="106" height="84">

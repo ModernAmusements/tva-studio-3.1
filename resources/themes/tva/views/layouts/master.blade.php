@@ -32,8 +32,7 @@
       {{-- Nav --}}
       @include('shop::layouts.header.index')
         {{-- Vue + Main App--}}
-        {{-- <div class="body-animation" id="app"> --}}
-        <div class="" id="app">
+        <div class="body-animation" id="app">
             <flash-wrapper ref='flashes'>
             </flash-wrapper>
             {{-- Opening Loader --}}
