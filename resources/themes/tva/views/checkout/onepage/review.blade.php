@@ -121,7 +121,7 @@
 
                     <div class="form-header">
                         <h1 class="large checkout-step-heading">
-                            Shipping
+                            Versandart
                         </h1>
                     </div>
                     <div class="text medium">
@@ -138,7 +138,7 @@
 
                 <div class="form-header">
                     <h1 class="large checkout-step-heading">
-                        Payment
+                        Zahlungsmethode
                     </h1>
                 </div>
 

@@ -26,9 +26,8 @@
                 !!}
             </p> --}}
             <p style="font-size: 16px;color: #242424;line-height: 24px;">
-                bitte begleichen Sie diese Rechnung innerhalb von 7 Tagen nach erhalt dieser Email.<br/>
-                Leistungsdatum = Datum dieser Email.<br/>
-                Zahlungsziel: 7 Tage.<br/>
+                nochmals vielen Dank für deine Bestellung xxxx vom xxxxx bei två studio.<br/>
+                bitte bachte, dass wir dein Objekt erst nach Zahlungseingang versenden.<br/>
             </p>
         </div>
 
@@ -202,5 +201,16 @@
                 {{ __('shop::app.mail.order.thanks') }}
             </p>
         </div>
+
+        <div style="font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 34px;">
+            <p style="font-size: 16px;color: #242424;line-height: 24px;">
+                Zahlbar innerhalb von 7 Tagen ab Rechnungsstellung Hallo.<br/>
+                bitte bachte, dass wir dein Objekt erst nach Zahlungseingang versenden.<br/>
+                Es gelten unsere allgemeinen Geschäftsbedingungen: <a href="https://www.tva-studio.de/page/about-us">Hier nachlesen.</a><br/>
+                Die Ware bleibt bis zur vollständigen Bezahlung unser Eigentum.
+            </p>
+        </div>
+
+
     </div>
 @endcomponent

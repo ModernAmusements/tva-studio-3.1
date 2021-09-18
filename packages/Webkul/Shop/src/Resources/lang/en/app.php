@@ -288,14 +288,14 @@ return [
                     'shipments' => 'Shipments',
                     'SKU' => 'SKU',
                     'product-name' => 'Name',
-                    'qty' => 'Qty',
+                    'qty' => 'Anzahl',
                     'item-status' => 'Item Status',
                     'item-ordered' => 'Ordered (:qty_ordered)',
                     'item-invoice' => 'Invoiced (:qty_invoiced)',
                     'item-shipped' => 'shipped (:qty_shipped)',
                     'item-canceled' => 'Canceled (:qty_canceled)',
                     'item-refunded' => 'Refunded (:qty_refunded)',
-                    'price' => 'Gesamtpreis',
+                    'price' => 'Artikelpreis',
                     'total' => 'Total',
                     'subtotal' => 'Zwischensumme',
                     'shipping-handling' => 'Versand & Bearbeitung',
@@ -310,7 +310,7 @@ return [
                     'total-due' => 'Total Due',
                     'shipping-address' => 'Lieferadresse',
                     'billing-address' => 'Rechnungsadresse',
-                    'shipping-method' => 'Versandart',
+                    'shipping-method' => 'Versand & Bearbeitung',
                     'payment-method' => 'Zahlungsmethode',
                     'individual-invoice' => 'Invoice #:invoice_id',
                     'individual-shipment' => 'Shipment #:shipment_id',
@@ -417,7 +417,7 @@ return [
         'links' => 'Links',
         'sample' => 'Sample',
         'name' => 'Name',
-        'qty' => 'Qty',
+        'qty' => 'Anzahl',
         'starting-at' => 'Starting at',
         'customize-options' => 'Customize Options',
         'choose-selection' => 'Choose a selection',
@@ -507,7 +507,7 @@ return [
             'payment-methods' => 'Zahlungsmethode auswählen',
             'payment-method' => 'Zahlungsmethode',
             'summary' => 'Zusammenfassung der Bestellung',
-            'price' => 'Gesamtpreis',
+            'price' => 'Artikelpreis',
             'quantity' => 'Menge',
             'billing-address' => 'Rechnungsadresse',
             'shipping-address' => 'Lieferadresse',
@@ -539,7 +539,7 @@ return [
             'delivery-charges' => 'Kosten der Lieferung',
             'tax' => 'Steuern',
             'discount' => 'Rabatt',
-            'price' => 'Gesamtpreis',
+            'price' => 'Artikelpreis',
             'disc-amount' => 'Ermäßigter Betrag',
             'new-grand-total' => 'Neue Gesamtsumme',
             'coupon' => 'Gutschein',
@@ -561,11 +561,11 @@ return [
 
     'mail' => [
         'order' => [
-            'subject' => 'Neue Bestellbestätigung',
-            'heading' => 'Auftragsbestätigung',
+            'subject' => 'två studio - Bestellbestätigung',
+            'heading' => 'Bestellbestätigung',
             'dear' => 'Hallo :customer_name',
             'dear-admin' => 'Hallo :admin_name',
-            'greeting' => 'Vielen Dank für deine Bestellung bei två studio! :order_id am :created_at',
+            'greeting' => 'Vielen Dank für deine Bestellung :order_id bei två studio! am :created_at',
             'greeting-admin' => 'Bestellnummer :order_id placed aufgesetzt am :created_at',
             'summary' => 'Zusammenfassung der Bestellung',
             'shipping-address' => 'Lieferadresse',
@@ -573,18 +573,18 @@ return [
             'contact' => 'Kontakt',
             'shipping' => 'Versandart',
             'payment' => 'Zahlungsmethode',
-            'price' => 'Gesamtpreis',
+            'price' => 'Artikelpreis',
             'quantity' => 'Menge',
             'subtotal' => 'Steuern 19 %',
             'shipping-handling' => 'Versand & Bearbeitung',
             'tax' => 'Steuer',
             'discount' => 'Rabatt',
             'grand-total' => 'Gesamtsumme',
-            'final-summary' => 'Wir werden dein två Objekt nun versandfertig machen. Du erhältst danach eine weitere Mail mit Sendungsinformationen von uns.',
+            'final-summary' => 'Wir werden dein två Objekt nun für den Versand vorbereiten. Du erhältst danach eine weitere Mail mit Sendungsinformationen von uns.',
             'help' => 'Für Rückfragen stehen wir Dir jederzeit gerne zur Verfügung via :support_email',
             'thanks' => 'Danke!',
             'cancel' => [
-                'subject' => 'Auftrags stornierungs Bestätigung',
+                'subject' => 'två studio - Auftrags stornierungs Bestätigung',
                 'heading' => 'Auftrag storniert',
                 'dear' => 'Hallo :customer_name',
                 'greeting' => 'Ihre Bestellung id #:order_id aufgesetzt am :created_at wurde storniert',
@@ -607,24 +607,24 @@ return [
 
         'invoice' => [
             'heading' => 'Ihre Rechnung #:invoice_id für Bestellung #:order_id',
-            'subject' => 'Rechnung zu Ihrer Bestellung #:order_id',
+            'subject' => 'två studio - Rechnung zu Ihrer Bestellung #:order_id',
             'summary' => 'Zusammenfassung der Rechnung',
             'invoice' => 'Bitte begleichen Sie den Rechnungsbetrag innerhalb von 7 Tagen.',
         ],
 
         'shipment' => [
-            'heading' => 'Versand #:shipment_id wurde für den Auftrag #:order_id erzeugt',
+            'heading' => 'Versandbestätigung der Bestellung :order_id',
             'inventory-heading' => 'Neue Sendung #:shipment_id wurde für Auftrag #:order_id erzeugt',
-            'subject' => 'Versand für Ihre Bestellung #:order_id',
-            'inventory-subject' => 'Neue Sendung wurde für Auftrag #:order_id erzeugt',
+            'subject' => 'två studio - Versand für Ihre Bestellung :order_id',
+            'inventory-subject' => 'två studio - Neue Sendung wurde für Auftrag #:order_id erzeugt',
             'summary' => 'Zusammenfassung des Versands',
             'carrier' => 'Transporteur',
-            'tracking-number' => 'Verfolgungsnummer',
+            'tracking-number' => 'Sendungsverfolgungsnummer',
             'greeting' => 'Eine Bestellung :order_id würde am :created_at aufgegeben',
         ],
 
         'refund' => [
-            'heading' => 'Ihre Rückerstattung #:refund_id für Bestellung #:order_id',
+            'heading' => 'två studio - Ihre Rückerstattung #:refund_id für Bestellung #:order_id',
             'subject' => 'Rückerstattung für Ihre Bestellung #:order_id',
             'summary' => 'Zusammenfassung der Rückerstattung',
             'adjustment-refund' => 'Anpassung Rückerstattung',
@@ -632,7 +632,7 @@ return [
         ],
 
         'forget-password' => [
-            'subject' => 'Kunden Passwort zurücksetzen',
+            'subject' => 'två studio - Kunden Passwort zurücksetzen',
             'dear' => 'Hallo :name',
             'info' => 'Sie erhalten diese E-Mail, weil wir eine Anfrage zum Zurücksetzen des Passworts für Ihr Konto erhalten haben',
             'reset-password' => 'Passwort zurücksetzen',
@@ -644,14 +644,14 @@ return [
             'new' => [
                 'dear' => 'Hallo :customer_name',
                 'username-email' => 'UserName/Email',
-                'subject' => 'Registrierung von Neukunden',
+                'subject' => 'två studio - Registrierung von Neukunden',
                 'password' => 'Passwort',
                 'summary' => 'Ihr Konto wurde erstellt. Ihre Kontodaten finden Sie unten: ',
                 'thanks' => 'Danke!',
             ],
 
             'registration' => [
-                'subject' => 'Registrierung von Neukunden',
+                'subject' => 'två studio - Registrierung von Neukunden',
                 'customer-registration' => 'Kunde erfolgreich registriert',
                 'dear' => 'Hallo :customer_name',
                 'greeting' => 'Herzlich willkommen und danke, dass Sie sich bei uns registriert haben!',
@@ -660,15 +660,15 @@ return [
             ],
 
             'verification' => [
-                'heading' => config('app.name') . ' - Email Verifizierung',
-                'subject' => 'Verifizierungs Mail',
+                'heading' => 'två studio - Email Verifizierung',
+                'subject' => 'två studio - Verifizierungs Mail',
                 'verify' => 'Überprüfen Sie Ihr Konto',
-                'summary' => 'Dies ist die E-Mail, mit der Sie bestätigen, dass die eingegebene E-Mail-Adresse die Ihre ist.
-                Bitte klicken Sie auf die Schaltfläche "Verify Your Account" unten, um Ihr Konto zu verifizieren.'
+                'summary' => 'Vielen Dank für deine Anmeldung bei två studio.<br><br>Dies ist die E-Mail, mit der Sie bestätigen, dass die eingegebene E-Mail-Adresse die Ihre ist.
+                Bitte klicken Sie auf die Schaltfläche "Überprüfen Sie Ihr Konto" unten, um Ihr Konto zu verifizieren.'
             ],
 
             'subscription' => [
-                'subject' => 'E-Mail-Abonnement',
+                'subject' => 'två studio - E-Mail-Abonnement',
                 'greeting' => 'Willkommen zu unserem två STUDIO Newsletter!',
                 'unsubscribe' => 'Abmelden',
                 'summary' => 'Wie schön, dass wir dich in unserem Newsletter aufnehmen dürfen. Dein Gutscheincode für den kostenlosen Versand lautet "ROLLERCOASTER".<br> Wir werden dich zukünftig über den Start unserer neuen Kollektionen informieren und da es diese nur 4x im Jahr gibt, wird dein Postfach von uns bestimmt nicht überlaufen. Du kannst den Newsletter natürlich auch jederzeit wieder abmelden.'

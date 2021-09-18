@@ -267,6 +267,17 @@
                         font-size: 12px;
                         text-align: center;
                     "
+                    ><strong>USt-ID:</strong><br />
+                    DE339694301
+                    </span>
+                    <br />
+                    <span
+                    class="apple-link"
+                    style="
+                        color: #7d7d73;
+                        font-size: 12px;
+                        text-align: center;
+                    "
                     ><strong>Steuernummer:</strong><br />
                     337/5072/2856 Finanzamt Münster
                     </span>

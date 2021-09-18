@@ -28,6 +28,12 @@
                     'created_at' => $order->created_at
                     ])
                 !!}
+                <br>
+                <span>
+                    Wir haben alles sorgfältig verpackt & dein två Objekt ist nun auf
+                    dem Weg zu dir. Der Versand erfolgt via DHL – du kannst dein
+                    Paket mit der untenstehenden Sendungsnummer verfolgen.
+                </span>
             </p>
         </div>
 
@@ -117,7 +123,7 @@
                 border-spacing: 0;width: 100%">
                     <thead>
                         <tr style="border-top: solid 1px #2A2920; border-bottom: solid 1px #2A2920; text-align: center;">
-                            <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.SKU') }}</th>
+                            {{-- <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.SKU') }}</th> --}}
                             <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.product-name') }}</th>
                             <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.price') }}</th>
                             <th style="text-align: left;padding: 8px">{{ __('shop::app.customer.account.order.view.qty') }}</th>
@@ -127,7 +133,7 @@
                     <tbody>
                         @foreach ($shipment->items as $item)
                             <tr>
-                                <td data-value="{{ __('shop::app.customer.account.order.view.SKU') }}" style="text-align: left;padding: 8px">{{ $item->sku }}</td>
+                                {{-- <td data-value="{{ __('shop::app.customer.account.order.view.SKU') }}" style="text-align: left;padding: 8px">{{ $item->sku }}</td> --}}
 
                                 <td data-value="{{ __('shop::app.customer.account.order.view.product-name') }}" style="text-align: left;padding: 8px">
                                     {{ $item->name }}
