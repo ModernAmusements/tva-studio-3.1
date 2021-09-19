@@ -1,4 +1,5 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<meta name="facebook-domain-verification" content="fmcg9xviozcih2kn9te6zzyo8vkxbw" />
 <script type="text/plain" data-src="https://www.googletagmanager.com/gtag/js?id=G-MCQYE5C158" data-cookiecategory="analytics" defer></script>
 
 <!-- Facebook Pixel Code -->
