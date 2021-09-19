@@ -35,6 +35,10 @@
                 fill: var(--foreground-color);
             }
         }
+        .tva-flower {
+            width: 50%;
+            height: auto;
+        }
         .preload-msg {
             font-weight: 300;
         }
@@ -80,7 +84,10 @@
             transition: transform 1.3s cubic-bezier(0.86, 0, 0.07, 1);
             background-color: var(--background-color);
             padding: 1em;
-            svg {
+            svg.tva-logo-preload {
+                padding-top: 0;
+            }
+            .tva-flower {
                 padding-top: 5em;
                 transform: translateY(1200px) scale(0.7);
             }
@@ -123,8 +130,8 @@
             transition: transform 1.3s cubic-bezier(0.86, 0, 0.07, 1);
             background-color: var(--background-color);
             padding: 1em;
-            svg {
-                padding-top: 5em;
+            svg.tva-logo-preload {
+                padding-top: 0;
                 transform: translateY(1200px) scale(0.7);
             }
         }

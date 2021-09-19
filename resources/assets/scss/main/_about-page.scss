@@ -227,9 +227,10 @@
 
         .popup {
             display: none;
-            top: 44px;
+            top: -1px;
             bottom: -100%;
             z-index: 500;
+            transition: all 0.9s;
             .popup-content-text {
                 margin-bottom: 2rem;
             }
@@ -281,6 +282,7 @@
                 top: 44px;
                 bottom: -100%;
                 z-index: 500;
+                transition: all 0.9s;
 
             }
 
