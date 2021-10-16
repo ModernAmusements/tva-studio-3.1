@@ -28,9 +28,9 @@ mix.js([
 
 
 // Admin
-// mix.sass("resources/assets/admin/sass/app.scss", "public/vendor/backend/admin/assets/css/admin-test.css");
-// mix.sass("resources/assets/ui/sass/app.scss", "public/vendor/backend/ui/assets/css/ui-test.css");
-// mix.js("resources/assets/shop/js/app.js", "public/themes/tva/assets/js/shop-test.js");
+//  mix.sass("resources/assets/admin/sass/app.scss", "public/vendor/backend/admin/assets/css/admin-test.css");
+//  mix.sass("resources/assets/ui/sass/app.scss", "public/vendor/backend/ui/assets/css/ui-test.css");
+//  mix.js("resources/assets/shop/js/app.js", "public/themes/tva/assets/js/shop-test.js");
 
 if (mix.inProduction()) {
     mix.version()
