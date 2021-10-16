@@ -1,3 +1,16 @@
+composer install 
+npm install
+
+php artisan serve
+
+
+
+
+
+
+
+
+
 Laravel Framework 6.20.18
 php artisan --version
 
