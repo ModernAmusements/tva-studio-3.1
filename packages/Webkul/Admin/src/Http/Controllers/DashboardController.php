@@ -140,13 +140,13 @@ class DashboardController extends Controller
                 'progress' => $this->getPercentageChange($previous, $current),
             ],
             'total_sales'              =>  [
-                'previous' => $previous = $this->previousOrders()->sum('base_grand_total_invoiced') - $this->previousOrders()->sum('base_grand_total_refunded'),
-                'current'  => $current = $this->currentOrders()->sum('base_grand_total_invoiced') - $this->currentOrders()->sum('base_grand_total_refunded'),
+                'previous' => $previous = $this->previousOrders()->sum('base_sub_total_invoiced') - $this->previousOrders()->sum('base_sub_total_refunded'),
+                'current'  => $current = $this->currentOrders()->sum('base_sub_total_invoiced') - $this->currentOrders()->sum('base_sub_total_refunded'),
                 'progress' => $this->getPercentageChange($previous, $current),
             ],
             'avg_sales'                =>  [
-                'previous' => $previous = $this->previousOrders()->avg('base_grand_total_invoiced') - $this->previousOrders()->avg('base_grand_total_refunded'),
-                'current'  => $current = $this->currentOrders()->avg('base_grand_total_invoiced') - $this->currentOrders()->avg('base_grand_total_refunded'),
+                'previous' => $previous = $this->previousOrders()->avg('base_sub_total_invoiced') - $this->previousOrders()->avg('base_sub_total_refunded'),
+                'current'  => $current = $this->currentOrders()->avg('base_sub_total_invoiced') - $this->currentOrders()->avg('base_sub_total_refunded'),
                 'progress' => $this->getPercentageChange($previous, $current),
             ],
             'top_selling_categories'   => $this->getTopSellingCategories(),
@@ -158,7 +158,7 @@ class DashboardController extends Controller
         foreach (core()->getTimeInterval($this->startDate, $this->endDate) as $interval) {
             $statistics['sale_graph']['label'][] = $interval['start']->format('d M');
 
-            $total = $this->getOrdersBetweenDate($interval['start'], $interval['end'])->sum('base_grand_total_invoiced') - $this->getOrdersBetweenDate($interval['start'], $interval['end'])->sum('base_grand_total_refunded');
+            $total = $this->getOrdersBetweenDate($interval['start'], $interval['end'])->sum('base_sub_total_invoiced') - $this->getOrdersBetweenDate($interval['start'], $interval['end'])->sum('base_sub_total_refunded');
 
             $statistics['sale_graph']['total'][] = $total;
             $statistics['sale_graph']['formated_total'][] = core()->formatBasePrice($total);
@@ -211,7 +211,7 @@ class DashboardController extends Controller
 
     /**
      * Returns top selling products
-     * 
+     *
      * @return \Illuminate\Support\Collection
      */
     public function getTopSellingProducts()
@@ -236,13 +236,13 @@ class DashboardController extends Controller
     public function getCustomerWithMostSales()
     {
         return $this->orderRepository->getModel()
-                    ->select(DB::raw('SUM(base_grand_total) as total_base_grand_total'))
+                    ->select(DB::raw('SUM(base_sub_total) as total_base_sub_total'))
                     ->addSelect(DB::raw('COUNT(id) as total_orders'))
                     ->addSelect('id', 'customer_id', 'customer_email', 'customer_first_name', 'customer_last_name')
                     ->where('orders.created_at', '>=', $this->startDate)
                     ->where('orders.created_at', '<=', $this->endDate)
                     ->groupBy('customer_email')
-                    ->orderBy('total_base_grand_total', 'DESC')
+                    ->orderBy('total_base_sub_total', 'DESC')
                     ->limit(5)
                     ->get();
     }

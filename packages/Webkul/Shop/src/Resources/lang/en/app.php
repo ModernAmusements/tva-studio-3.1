@@ -280,7 +280,7 @@ return [
                 ],
 
                 'view' => [
-                    'page-tile' => 'Order #:order_id',
+                    'page-tile' => 'Order :order_id',
                     'info' => 'Information',
                     'placed-on' => 'Placed On',
                     'products-ordered' => 'Products Ordered',
@@ -312,8 +312,8 @@ return [
                     'billing-address' => 'Rechnungsadresse',
                     'shipping-method' => 'Versand & Bearbeitung',
                     'payment-method' => 'Zahlungsmethode',
-                    'individual-invoice' => 'Invoice #:invoice_id',
-                    'individual-shipment' => 'Shipment #:shipment_id',
+                    'individual-invoice' => 'Invoice  :invoice_id',
+                    'individual-shipment' => 'Shipment  :shipment_id',
                     'print' => 'Print',
                     'invoice-id' => 'Invoice Id',
                     'order-id' => 'Order Id',
@@ -322,7 +322,7 @@ return [
                     'ship-to' => 'Ship to',
                     'contact' => 'Kontakt',
                     'refunds' => 'Refunds',
-                    'individual-refund' => 'Refund #:refund_id',
+                    'individual-refund' => 'Refund  :refund_id',
                     'adjustment-refund' => 'Adjustment Refund',
                     'adjustment-fee' => 'Adjustment Fee',
                     'cancel-btn-title' => 'Cancel',
@@ -371,7 +371,7 @@ return [
                 ],
 
                 'view' => [
-                    'page-tile' => 'Review #:id',
+                    'page-tile' => 'Review  :id',
                 ]
             ]
         ]
@@ -554,7 +554,7 @@ return [
         'success' => [
             'title' => 'Auftrag erfolgreich erteilt',
             'thanks' => 'Vielen Dank für Ihre Bestellung!',
-            'order-id-info' => 'Ihre Bestellnummer lautet #:order_id',
+            'order-id-info' => 'Ihre Bestellnummer lautet :order_id',
             'info' => 'Wir senden Ihnen eine E-Mail mit den Details Ihrer Bestellung und Informationen zur Sendungsverfolgung'
         ]
     ],
@@ -587,7 +587,7 @@ return [
                 'subject' => 'två studio - Auftrags stornierungs Bestätigung',
                 'heading' => 'Auftrag storniert',
                 'dear' => 'Hallo :customer_name',
-                'greeting' => 'Ihre Bestellung id #:order_id aufgesetzt am :created_at wurde storniert',
+                'greeting' => 'Ihre Bestellung id :order_id aufgesetzt am :created_at wurde storniert',
                 'summary' => 'Summary of Order',
                 'shipping-address' => 'Lieferadresse',
                 'billing-address' => 'Rechnungsadresse',
@@ -606,17 +606,17 @@ return [
         ],
 
         'invoice' => [
-            'heading' => 'Ihre Rechnung #:invoice_id für Bestellung #:order_id',
-            'subject' => 'två studio - Rechnung zu Ihrer Bestellung #:order_id',
+            'heading' => 'Ihre Rechnung für Bestellung :order_id',
+            'subject' => 'två studio - Rechnung zu Ihrer Bestellung :order_id',
             'summary' => 'Zusammenfassung der Rechnung',
             'invoice' => 'Bitte begleichen Sie den Rechnungsbetrag innerhalb von 7 Tagen.',
         ],
 
         'shipment' => [
             'heading' => 'Versandbestätigung der Bestellung :order_id',
-            'inventory-heading' => 'Neue Sendung #:shipment_id wurde für Auftrag #:order_id erzeugt',
+            'inventory-heading' => 'Neue Sendung  :shipment_id wurde für Auftrag :order_id erzeugt',
             'subject' => 'två studio - Versand für Ihre Bestellung :order_id',
-            'inventory-subject' => 'två studio - Neue Sendung wurde für Auftrag #:order_id erzeugt',
+            'inventory-subject' => 'två studio - Neue Sendung wurde für Auftrag :order_id erzeugt',
             'summary' => 'Zusammenfassung des Versands',
             'carrier' => 'Transporteur',
             'tracking-number' => 'Sendungsverfolgungsnummer',
@@ -624,8 +624,8 @@ return [
         ],
 
         'refund' => [
-            'heading' => 'två studio - Ihre Rückerstattung #:refund_id für Bestellung #:order_id',
-            'subject' => 'Rückerstattung für Ihre Bestellung #:order_id',
+            'heading' => 'två studio - Ihre Rückerstattung  :refund_id für Bestellung :order_id',
+            'subject' => 'Rückerstattung für Ihre Bestellung :order_id',
             'summary' => 'Zusammenfassung der Rückerstattung',
             'adjustment-refund' => 'Anpassung Rückerstattung',
             'adjustment-fee' => 'Abgleichgebühr'

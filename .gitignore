@@ -1,14 +1,4 @@
 /docker-compose-collection
-/bin
-/node_modules
-/public/hot
-/public/storage
-/public/css
-/public/js
-/public/vendor
-/public/themes
-/public/fonts
-/vendor
 /.idea
 /.vscode
 /.vagrant
@@ -22,7 +12,8 @@ yarn.lock
 package-lock.json
 yarn.lock
 .php_cs.cache
+/docker-compose-collection/
 storage/
 storage/*.key
-/docker-compose-collection/
-
+node_modules
+vendor

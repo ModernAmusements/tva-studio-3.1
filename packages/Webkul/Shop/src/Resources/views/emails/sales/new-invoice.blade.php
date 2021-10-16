@@ -18,14 +18,15 @@
             <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {{ __('shop::app.mail.order.dear', ['customer_name' => $order->customer_full_name]) }},
             </p>
-             <p style="font-size: 16px;color: #242424;line-height: 24px;">
+            {{-- <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {!! __('shop::app.mail.order.greeting', [
-                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #1b2c13; font-weight: bold;">' . $order->increment_id . '</a>',
+                    'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #1b2c13; font-weight: bold;">#' . $order->increment_id . '</a>',
                     'created_at' => $order->created_at
                     ])
                 !!}
-            </p>
+            </p> --}}
             <p style="font-size: 16px;color: #242424;line-height: 24px;">
+                nochmals vielen Dank für deine Bestellung xxxx vom xxxxx bei två studio.<br/>
                 bitte bachte, dass wir dein Objekt erst nach Zahlungseingang versenden.<br/>
             </p>
         </div>
@@ -149,12 +150,12 @@
             </div>
         </div>
 
-        <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 50%;margin-top: 20px;">
+        <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 40%;margin-top: 20px;">
             <div style="border-top: solid 1px #2A2920;">
-                <span>Brutto inkl. 19%</span>
+                <span>{{ __('shop::app.mail.order.subtotal') }}</span>
                 <span style="float: right;">
                     {{-- Gesamtsumme --}}
-                    {{ core()->formatPrice($invoice->base_sub_total, $invoice->order_currency_code) }}
+                    {{ core()->formatPrice($invoice->grand_total, $invoice->order_currency_code) }}
                 </span>
             </div>
 
@@ -167,11 +168,10 @@
                 </div>
             @endif
 
-             <div>
+            <div>
                 <span>{{ __('shop::app.mail.order.tax') }}</span>
                 <span id="taxamount" style="float: right;">
-                    {{-- {{ core()->formatPrice($invoice->baseTaxAmount, $order->order_currency_code) }} --}}
-                    19%
+                    {{ core()->formatPrice($invoice->tax_amount, $order->order_currency_code) }}
                 </span>
             </div>
 
@@ -188,7 +188,7 @@
                 <span>{{ __('shop::app.mail.order.grand-total') }}</span>
                 <span style="float: right;">
                     {{-- Gesamtsumme --}}
-                    {{ core()->formatPrice($invoice->base_grand_total, $invoice->order_currency_code) }}
+                    {{ core()->formatPrice($invoice->sub_total, $invoice->order_currency_code) }}
                 </span>
             </div>
         </div>
@@ -204,7 +204,7 @@
 
         <div style="font-size: 20px;color: #242424;line-height: 30px;margin-bottom: 34px;">
             <p style="font-size: 16px;color: #242424;line-height: 24px;">
-                Zahlbar innerhalb von 7 Tagen ab Rechnungsstellung.<br/>
+                Zahlbar innerhalb von 7 Tagen ab Rechnungsstellung Hallo.<br/>
                 bitte bachte, dass wir dein Objekt erst nach Zahlungseingang versenden.<br/>
                 Es gelten unsere allgemeinen Geschäftsbedingungen: <a href="https://www.tva-studio.de/page/about-us">Hier nachlesen.</a><br/>
                 Die Ware bleibt bis zur vollständigen Bezahlung unser Eigentum.

@@ -1,7 +1,45 @@
+<script>
+var logger = function()
+{
+    var oldConsoleLog = null;
+    var pub = {};
+
+    pub.enableLogger =  function enableLogger()
+                        {
+                            if(oldConsoleLog == null)
+                                return;
+
+                            window['console']['log'] = oldConsoleLog;
+                        };
+
+    pub.disableLogger = function disableLogger()
+                        {
+                            oldConsoleLog = console.log;
+                            window['console']['log'] = function() {};
+                        };
+
+    return pub;
+}();
+
+$(document).ready(
+    function()
+    {
+        console.log('hello');
+
+        logger.disableLogger();
+        console.log('hi', 'hiya');
+        console.log('this wont show up in console');
+
+        logger.enableLogger();
+        console.log('This will show up!');
+    }
+ );
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<meta name="facebook-domain-verification" content="fmcg9xviozcih2kn9te6zzyo8vkxbw" />
 <script type="text/plain" data-src="https://www.googletagmanager.com/gtag/js?id=G-MCQYE5C158" data-cookiecategory="analytics" defer></script>
 
+<!-- Facebook Pixel Code -->
+<meta name="facebook-domain-verification" content="fmcg9xviozcih2kn9te6zzyo8vkxbw" />
 <!-- Facebook Pixel Code -->
 <script>
     !function(f,b,e,v,n,t,s)
