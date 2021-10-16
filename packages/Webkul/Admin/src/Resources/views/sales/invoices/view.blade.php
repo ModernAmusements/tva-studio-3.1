@@ -291,9 +291,16 @@
 
                         <table class="sale-summary">
                             <tr>
-                                <td>{{ __('admin::app.sales.orders.subtotal') }}</td>
+                                <td>Brutto</td>
                                 <td>-</td>
                                 <td>{{ core()->formatBasePrice($invoice->base_sub_total) }}</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Netto</td>
+                                <td>-</td>
+                                <td>{{ core()->formatBasePrice($invoice->base_tax_amount) }}</td>
                             </tr>
 
                             <tr>
@@ -302,11 +309,6 @@
                                 <td>{{ core()->formatBasePrice($invoice->base_shipping_amount) }}</td>
                             </tr>
 
-                            <tr>
-                                <td>{{ __('admin::app.sales.orders.tax') }}</td>
-                                <td>-</td>
-                                <td>{{ core()->formatBasePrice($invoice->base_tax_amount) }}</td>
-                            </tr>
 
                             @if ($invoice->base_discount_amount > 0)
                                 <tr>

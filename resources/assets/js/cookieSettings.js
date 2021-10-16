@@ -7,7 +7,7 @@ var cc = initCookieConsent();
 // run plugin with config object
 cc.run({
     autorun: true,
-    delay: 5000,
+    delay: 9000,
     current_lang: 'de',
     auto_language: false,
     autoclear_cookies: true,
@@ -18,9 +18,9 @@ cc.run({
     /* New options from v2.4 (everything is optional) */
     // remove_cookie_tables: false              // default: false (if set to true, cookie table's html will not be generated)
 
-    // cookie_domain: location.hostname,       	// default: current domain
+     cookie_domain: 'http://127.0.0.1:8000/',       	// default: current domain
     // cookie_path: "/",                        // default: root
-    // cookie_same_site: "Lax",
+     cookie_same_site: "Lax",
 
     /* Manage existing <scripts> tags (check readme.md) */
     page_scripts: true, // default: false (by default don't manage existing script tags)

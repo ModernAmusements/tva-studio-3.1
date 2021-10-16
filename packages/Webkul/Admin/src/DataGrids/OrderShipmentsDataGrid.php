@@ -38,14 +38,14 @@ class OrderShipmentsDataGrid extends DataGrid
 
     public function addColumns()
     {
-        $this->addColumn([
-            'index'      => 'shipment_id',
-            'label'      => trans('admin::app.datagrid.id'),
-            'type'       => 'number',
-            'searchable' => false,
-            'sortable'   => true,
-            'filterable' => true,
-        ]);
+        // $this->addColumn([
+        //     'index'      => 'shipment_id',
+        //     'label'      => trans('admin::app.datagrid.id'),
+        //     'type'       => 'number',
+        //     'searchable' => false,
+        //     'sortable'   => true,
+        //     'filterable' => true,
+        // ]);
 
         $this->addColumn([
             'index'      => 'shipment_order_id',
