@@ -18,7 +18,7 @@ cc.run({
     /* New options from v2.4 (everything is optional) */
     // remove_cookie_tables: false              // default: false (if set to true, cookie table's html will not be generated)
 
-     cookie_domain: 'http://127.0.0.1:8000/',       	// default: current domain
+    //  cookie_domain: 'https://www.tva-studio.de/',       	// default: current domain
     // cookie_path: "/",                        // default: root
      cookie_same_site: "Lax",
 
@@ -51,6 +51,9 @@ cc.run({
 
                 gtag('config', 'G-MCQYE5C158');
             });
+        }
+        else {
+            window['ga-disable-UA-XXXXX-Y'] = true;
         }
 
 
