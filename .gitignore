@@ -13,7 +13,7 @@ package-lock.json
 yarn.lock
 .php_cs.cache
 /docker-compose-collection/
-storage/debugbar
-storage/logs
+storage/
+storage/*.key
 node_modules
 vendor

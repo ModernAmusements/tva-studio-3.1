@@ -18,15 +18,14 @@
             <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {{ __('shop::app.mail.order.dear', ['customer_name' => $order->customer_full_name]) }},
             </p>
-            {{-- <p style="font-size: 16px;color: #242424;line-height: 24px;">
+            <p style="font-size: 16px;color: #242424;line-height: 24px;">
                 {!! __('shop::app.mail.order.greeting', [
                     'order_id' => '<a href="' . route('customer.orders.view', $order->id) . '" style="color: #1b2c13; font-weight: bold;">#' . $order->increment_id . '</a>',
                     'created_at' => $order->created_at
                     ])
                 !!}
-            </p> --}}
+            </p>
             <p style="font-size: 16px;color: #242424;line-height: 24px;">
-                nochmals vielen Dank für deine Bestellung xxxx vom xxxxx bei två studio.<br/>
                 bitte bachte, dass wir dein Objekt erst nach Zahlungseingang versenden.<br/>
             </p>
         </div>
@@ -150,15 +149,28 @@
             </div>
         </div>
 
-        <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 40%;margin-top: 20px;">
-            <div style="border-top: solid 1px #2A2920;">
-                <span>{{ __('shop::app.mail.order.subtotal') }}</span>
-                <span style="float: right;">
-                    {{-- Gesamtsumme --}}
-                    {{ core()->formatPrice($invoice->grand_total, $invoice->order_currency_code) }}
+        <div style="font-size: 16px;color: #242424;line-height: 30px;float: right;width: 60%;margin-top: 20px;">
+
+
+            {{-- Netto --}}
+            <div>
+                <span>{{ __('shop::app.mail.order.tax') }}</span>
+                <span id="taxamount" style="float: right;">
+                    {{ core()->formatPrice($invoice->tax_amount, $order->order_currency_code) }}
                 </span>
             </div>
 
+            {{-- steuer summe --}}
+            <div style="">
+                <span>{{ __('shop::app.mail.order.subtotal') }}</span>
+                <span style="float: right;">
+                    {{-- steuer summe --}}
+                    {{ core()->formatPrice($invoice->base_grand_total, $invoice->order_currency_code) }}
+                </span>
+            </div>
+
+
+            {{-- Versand --}}
             @if ($order->shipping_address)
                 <div>
                     <span>{{ __('shop::app.mail.order.shipping-handling') }}</span>
@@ -168,12 +180,7 @@
                 </div>
             @endif
 
-            <div>
-                <span>{{ __('shop::app.mail.order.tax') }}</span>
-                <span id="taxamount" style="float: right;">
-                    {{ core()->formatPrice($invoice->tax_amount, $order->order_currency_code) }}
-                </span>
-            </div>
+
 
             @if ($invoice->discount_amount > 0)
                 <div>
@@ -188,7 +195,7 @@
                 <span>{{ __('shop::app.mail.order.grand-total') }}</span>
                 <span style="float: right;">
                     {{-- Gesamtsumme --}}
-                    {{ core()->formatPrice($invoice->sub_total, $invoice->order_currency_code) }}
+                    {{ core()->formatPrice($invoice->grand_total, $invoice->order_currency_code) }}
                 </span>
             </div>
         </div>

@@ -151,8 +151,8 @@ class InvoiceRepository extends Repository
                             'base_price'           => $childOrderItem->base_price,
                             'total'                => $childOrderItem->price * $finalQty,
                             'base_total'           => $childOrderItem->base_price * $finalQty,
-                            'tax_amount'           => 0,
-                            'base_tax_amount'      => 0,
+                            'tax_amount'           => ($childOrderItem->total * 100) / (100 * 1.1900),
+                            'base_tax_amount'      => ($childOrderItem->base_total * 100) / (100 * 1.1900),
                             'discount_amount'      => 0,
                             'base_discount_amount' => 0,
                             'product_id'           => $childOrderItem->product_id,
@@ -248,9 +248,11 @@ class InvoiceRepository extends Repository
                 }
             }
         }
+        $invoice->base_grand_total = $invoice->base_sub_total - $invoice->base_tax_amount;
 
-        $invoice->grand_total = $invoice->sub_total + $invoice->tax_amount + $invoice->shipping_amount - $invoice->discount_amount;
-        $invoice->base_grand_total = $invoice->base_sub_total + $invoice->base_tax_amount + $invoice->base_shipping_amount - $invoice->base_discount_amount;
+        $invoice->grand_total = $invoice->sub_total + $invoice->shipping_amount - $invoice->discount_amount;
+
+
 
         $invoice->save();
 

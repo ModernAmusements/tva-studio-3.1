@@ -3790,8 +3790,8 @@ html.force--consent body {
       scroll-snap-type: mandatory;
   -ms-scroll-snap-destination: 100% 0%;
       scroll-snap-destination: 100% 0%;
-  padding-bottom: calc(0.75 * var(--gutter));
-  margin-bottom: calc(-0.25 * var(--gutter));
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
   -webkit-overflow-scrolling: touch;
 }
 
@@ -6421,7 +6421,7 @@ html.force--consent body {
   background-color: var(--background-color);
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOS4wOSAxTDQuNTQ1IDQuNTkgMCAxIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iLjgiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz48L3N2Zz4=");
   background-repeat: no-repeat;
-  background-position: calc(100% - 0.625rem) 50%;
+  background-position: calc(100% - .625rem) 50%;
   background-size: 11px 5px;
   border: 1px solid var(--background-color);
   box-shadow: none;
