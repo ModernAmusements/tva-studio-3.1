@@ -16,9 +16,6 @@
                  alt="{{ $product->name }}"
                  src="{{ $productBaseImage['original_image_url'] }}"
                  onerror="this.src='{{ asset('vendor/backend/ui/assets/images/product/meduim-product-placeholder.png') }}'"
-                 data-hover="{{ asset('cache/original/' . $product->images->pull('1')->path) }}"
-                 onmouseover="{{ asset('cache/original/' . $product->images->pull('1')->path) }}"
-                 onmouseout="{{ $productBaseImage['original_image_url'] }}"
                 />
         </a>
     </div>

@@ -15,11 +15,11 @@ class OrderInvoicesDataGrid extends DataGrid
     {
         $queryBuilder = DB::table('invoices')
             ->leftJoin('orders as ors', 'invoices.order_id', '=', 'ors.id')
-            ->select('invoices.id as id', 'ors.increment_id as order_id', 'invoices.state as state', 'invoices.base_grand_total as base_grand_total', 'invoices.created_at as created_at');
+            ->select('invoices.id as id', 'ors.increment_id as order_id', 'invoices.state as state', 'invoices.base_sub_total as base_sub_total', 'invoices.created_at as created_at');
 
         $this->addFilter('id', 'invoices.id');
         $this->addFilter('order_id', 'ors.increment_id');
-        $this->addFilter('base_grand_total', 'invoices.base_grand_total');
+        $this->addFilter('base_grand_total', 'invoices.base_sub_total');
         $this->addFilter('created_at', 'invoices.created_at');
 
         $this->setQueryBuilder($queryBuilder);
@@ -27,14 +27,14 @@ class OrderInvoicesDataGrid extends DataGrid
 
     public function addColumns()
     {
-        // $this->addColumn([
-        //     'index'      => 'id',
-        //     'label'      => trans('admin::app.datagrid.id'),
-        //     'type'       => 'number',
-        //     'searchable' => false,
-        //     'sortable'   => true,
-        //     'filterable' => true,
-        // ]);
+         $this->addColumn([
+             'index'      => 'id',
+             'label'      => trans('admin::app.datagrid.id'),
+             'type'       => 'number',
+             'searchable' => false,
+             'sortable'   => true,
+             'filterable' => true,
+         ]);
 
         $this->addColumn([
             'index'      => 'order_id',
@@ -46,7 +46,7 @@ class OrderInvoicesDataGrid extends DataGrid
         ]);
 
         $this->addColumn([
-            'index'      => 'base_grand_total',
+            'index'      => 'base_sub_total',
             'label'      => trans('admin::app.datagrid.grand-total'),
             'type'       => 'price',
             'searchable' => true,

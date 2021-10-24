@@ -80,7 +80,7 @@ class Ipn
     }
 
     /**
-     * Load order via ipn invoice id
+     * Load order via ipn Kundennummer
      *
      * @return void
      */
