@@ -1,12 +1,9 @@
-$(function() {
-
-let img = document.querySelector('img.hover');
-let start = img.src;
-let hover = img.getAttribute('data-hover');
-
-img.onmouseover = () => { img.src = hover; }
-img.onmouseout = () => { img.src = start; }
-
-
+$(document).ready(function() {
+    if (document.getElementById("addToCart").disabled = true) {
+        document.getElementById("addToCart").innerHTML = "Sold Out";
+        $("#addToCart").addClass('disabled');
+        $("#productCard").css('opacity', '0.6');
+    }
 });
+
 

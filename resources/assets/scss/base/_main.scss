@@ -110,5 +110,8 @@ a.left {
 
 .disabled {
     cursor: not-allowed;
-    opacity: .1!important;
+
+}
+.disabled:hover {
+    color: var(--background-color);
 }

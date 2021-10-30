@@ -209,3 +209,8 @@
 .btn-close:hover {
     transform: rotate(-90deg);
 }
+
+
+button[disabled=disabled], button:disabled {
+    pointer-events: none;
+}

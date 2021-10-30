@@ -51,7 +51,7 @@
         transform: translate3d(0%, 1%, 0px);
         svg,
         .preload-msg  {
-            transform: translateY(0) scale(0.7);
+            transform: translateY(0) scale(0.9);
         }
     }
 }
@@ -67,7 +67,7 @@
         .preload-msg  {
             transition-property: opacity;
             transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-            transform: scale(0.7);
+            transform: scale(0.9);
             opacity: 0;
             transition-delay: 0s;
         }
@@ -88,8 +88,8 @@
                 padding-top: 0;
             }
             .tva-flower {
-                padding-top: 5em;
-                transform: translateY(1200px) scale(0.7);
+                padding-top: 1rem;
+                transform: translateY(1200px) scale(0.9);
             }
         }
     }
@@ -98,7 +98,7 @@
         .intro {
             transform: translate3d(0%, 20%, 0px);
             svg {
-              transform: scale(0.7);
+              transform: scale(0.9);
             }
         }
     }
@@ -112,7 +112,7 @@
             svg {
                 transition-property: opacity;
                 transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-                transform: scale(0.7);
+                transform: scale(0.9);
                 opacity: 0;
                 transition-delay: 0s;
             }
@@ -132,7 +132,7 @@
             padding: 1em;
             svg.tva-logo-preload {
                 padding-top: 0;
-                transform: translateY(1200px) scale(0.7);
+                transform: translateY(1200px) scale(0.9);
             }
         }
     }
@@ -141,7 +141,7 @@
         .intro {
             transform: translate3d(0%, 20%, 0px);
             svg {
-              transform: scale(0.7);
+              transform: scale(0.9);
             }
         }
     }
@@ -155,7 +155,7 @@
             svg {
                 transition-property: opacity;
                 transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-                transform: scale(0.7);
+                transform: scale(0.9);
                 opacity: 0;
                 transition-delay: 0s;
             }

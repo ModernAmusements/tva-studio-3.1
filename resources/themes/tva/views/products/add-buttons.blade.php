@@ -8,7 +8,7 @@
         @csrf
         <input type="hidden" name="product_id" value="{{ $product->product_id }}">
         <input type="hidden" name="quantity" value="1">
-        <button class="btn-hover"{{ $product->isSaleable() ? '' : 'disabled' }}>
+        <button id="addToCart" class="btn-hover"{{ $product->isSaleable() ? '' : 'disabled' }}>
             {{ __('shop::app.products.add-to-cart') }}
         </button>
     </form>

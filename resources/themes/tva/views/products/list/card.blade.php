@@ -1,4 +1,4 @@
-<div class="product-card shop-article scroll">
+<div id="productCard" class="product-card shop-article scroll">
 
     @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
 
