@@ -160,9 +160,15 @@ h1 {
     margin-top: 0;
 }
 
+h1.text-main {
+    font-size: 24px;
+    color: $text-main;
+    margin: 0;
+}
+
 h2 {
     font-size: 24px;
-    color: $font-color;
+    color: $text-main;
 }
 
 h3 {
@@ -680,6 +686,10 @@ h5 {
         }
     }
 }
+.control-error {
+    color: #ff5656;
+    margin-top: 5px;
+}
 
 .control-group {
     .switch {
@@ -942,9 +952,9 @@ accordian {
 }
 
 .panel {
-    @include box-shadow(0 2px 25px 0 rgba(0, 0, 0, 0.15));
-    @include border-radius(5px);
-    background: #fff;
+    // @include box-shadow(0 2px 25px 0 rgba(0, 0, 0, 0.15));
+    // @include border-radius(5px);
+    // background: #fff;
 
     .panel-content {
         padding: 20px;

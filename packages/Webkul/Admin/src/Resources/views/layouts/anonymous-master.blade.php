@@ -20,24 +20,32 @@
         <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('vendor/backend/ui/assets/images/favicon/favicon-32x32.png') }}" />
         <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('vendor/backend/ui/assets/images/favicon/favicon-96x96.png') }}" />
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('vendor/backend/ui/assets/images/favicon/favicon-16x16.png') }}" />
-
         <link rel="manifest" href="{{ asset('vendor/backend/ui/assets/images/favicon/manifest.json') }}" />
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-
-
-        <link rel="stylesheet" href="{{ asset('vendor/backend/admin/assets/css/admin-test.css') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset('vendor/backend/ui/assets/css/ui-test.css') }}">
-
-
+        <link rel="stylesheet" href="{{ asset('vendor/backend/admin/assets/css/admin-test.css') }}">
 
         @yield('css')
     </head>
     <style>
+        html,
+        body {
+        height: 100%;
+        }
+
+        body {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #F5F5F7;
+        }
+
         .container {
             text-align: center;
-            position: absolute;
             width: 100%;
             height: 100%;
             display: table;
@@ -82,38 +90,45 @@
         .btn.btn-primary {
             width: 100%;
         }
+
+        .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: auto;
+        }
+
+        .form-signin .checkbox {
+        font-weight: 400;
+        }
+
+        .form-signin .form-floating:focus-within {
+        z-index: 2;
+        }
+
+        .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        }
+
+        .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        }
     </style>
     <body @if (core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif style="scroll-behavior: smooth;">
         <div id="app" class="container">
-
             <flash-wrapper ref='flashes'></flash-wrapper>
-
             <div class="center-box">
                 <div class="adjacent-center">
-
-
-
                     @yield('content')
-
-{{--
-                    @if (core()->getConfigData('general.content.footer.footer_toggle'))
-                        <div class="footer">
-                            <p style="text-align: center;">
-                                @if (core()->getConfigData('general.content.footer.footer_content'))
-                                    {{ core()->getConfigData('general.content.footer.footer_content') }}
-                                @else
-                                    {!! trans('admin::app.footer.copy-right') !!}
-                                @endif
-                            </p>
-                        </div>
-                    @endif --}}
-
                     <div class="footer">
-                        <p style="text-align: center;">
-
-                                ©2021 <a href="" target="_blank">FFF-Corp </a>&amp;
-                                <a href="" target="_blank">Modern Amusements</a>
-
+                        <p style="text-align: center;">©2017–2021
+                            <a href="" target="_blank">
+                                Modern Amusements
+                            </a>
                         </p>
                     </div>
                 </div>
