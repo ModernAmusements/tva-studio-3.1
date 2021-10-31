@@ -28,7 +28,7 @@
                     Diese Kollektion ist ein Aufschwung – eine Sicht auf etwas Neues, etwas Aufregendes.
                     <br>
                     <br>
-                    <a class="left disabled" href="#!">Zur Kollektion</a>
+                    <a class="left" href="/all">Zur Kollektion</a>
                 </div>
                 @if ( isset($advertisementTwo[0]))
                     <a class="homepage-img">

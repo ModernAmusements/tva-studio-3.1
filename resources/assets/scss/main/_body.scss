@@ -22,6 +22,12 @@ body {
   font-weight: 500;
   width: 100%;
   height: 100%;
+  cursor: url('/images/pointer/tva-pointer.png'), auto;
+  /* You may need coordinates to adjust the pointer
+     for example, the custom cursor is circular and you want
+     the middle to be where you click */
+  cursor: url('/images/pointer/tva-pointer.svg') 15 15, move;
+
 }
 
 body.animation {
