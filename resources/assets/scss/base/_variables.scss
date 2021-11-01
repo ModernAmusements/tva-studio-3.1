@@ -57,15 +57,3 @@
     }
 }
 
-
-cursor {
-    .custom {
-        /* The second value here is a fallback. */
-        cursor: url('/images/pointer/tva-pointer.png'), auto;
-
-        /* You may need coordinates to adjust the pointer
-           for example, the custom cursor is circular and you want
-           the middle to be where you click */
-        cursor: url('/images/pointer/tva-pointer.svg') 15 15, move;
-      }
-}

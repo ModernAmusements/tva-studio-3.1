@@ -39,6 +39,8 @@
                 <div class="full-description medium">
                     {!! $product->description !!}
                 </div>
+                <br>
+                <small>MwSt. im Preis enthalten – Versandkosten werden im Kassenbereich kalkuliert.</small>
             {{-- @include ('shop::products.view.reviews') --}}
             </div>
             <product-view>

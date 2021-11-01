@@ -409,7 +409,7 @@ return [
         'whoops' => 'Whoops!',
         'quantity' => 'Menge',
         'in-stock' => 'Auf Lager',
-        'out-of-stock' => 'Out Of Stock',
+        'out-of-stock' => 'Nicht auf Lager',
         'view-all' => 'View All',
         'select-above-options' => 'Please select above options first.',
         'less-quantity' => 'Quantity can not be less than one.',

@@ -10,10 +10,7 @@
 
         </div>
 
-        <section
-      class="project-list opacity-0 no-scrollbar mask-right"
-      data-toggle-class="toggled"
-    >
+        <section class="project-list no-scrollbar mask-right" data-toggle-class="toggled">
 
             @foreach ($relatedProducts as $related_product)
 

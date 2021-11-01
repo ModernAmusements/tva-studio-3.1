@@ -60,6 +60,11 @@
     }
 }
 
+.product-card#sold-out {
+    opacity: 0.6;
+    // pointer-events: none;
+}
+
 .product-card-subpage {
     grid-area: 2 / 2;
     grid-row: 1;

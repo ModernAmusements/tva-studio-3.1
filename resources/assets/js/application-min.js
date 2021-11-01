@@ -1,6 +1,6 @@
 var $ = require("jquery");
 
-$(document).ready(function() {
+$(function() {
     $(".btn-toggle").on("click", function() {
         var currentPopup = $(this).data("toggle");
 

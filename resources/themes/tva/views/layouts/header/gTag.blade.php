@@ -2,6 +2,7 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script type="text/plain" data-src="https://www.googletagmanager.com/gtag/js?id=G-MCQYE5C158" data-cookiecategory="analytics" defer></script>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#2A2920">
 
 <!-- Facebook Pixel Code -->
 <meta name="facebook-domain-verification" content="fmcg9xviozcih2kn9te6zzyo8vkxbw" />
